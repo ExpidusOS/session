@@ -24,7 +24,7 @@ fi
 
 # set XDG_CURRENT_DESKTOP so that Qt 5 applications can identify user set Expidus theme
 if test "x$XDG_CURRENT_DESKTOP" = "x"; then
-  XDG_CURRENT_DESKTOP="ExpidusOS"
+  XDG_CURRENT_DESKTOP="ExpidusOS Shell"
   export XDG_CURRENT_DESKTOP
 fi
 
