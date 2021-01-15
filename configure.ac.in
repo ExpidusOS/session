@@ -6,8 +6,8 @@ dnl Written for Expidus by Benedikt Meurer <benny@expidus.org>.
 dnl
 
 dnl Version information
-m4_define([essm_version_major], [4])
-m4_define([essm_version_minor], [16])
+m4_define([essm_version_major], [1])
+m4_define([essm_version_minor], [0])
 m4_define([essm_version_micro], [0])
 m4_define([essm_version_nano], []) dnl leave this empty to have no nano version
 m4_define([essm_version_build], [@REVISION@])
@@ -19,7 +19,7 @@ m4_define([intltool_minimum_version], [0.35])
 
 dnl Initialize autoconf
 AC_COPYRIGHT([Copyright (c) 2003-2019
-        The Expidus development team. All rights reserved.
+        The XFCE ExpidusOS development team. All rights reserved.
 
 Written for Expidus by Benedikt Meurer <benny@expidus.org>.])
 AC_INIT([expidus1-session], [essm_version], [https://bugzilla.expidus.org/])
@@ -100,13 +100,13 @@ dnl Check for i18n support
 XDT_I18N([@LINGUAS@])
 
 dnl Check for required packages
-XDT_CHECK_PACKAGE([LIBEXPIDUS1UTIL], [libexpidus1util-1.0], [4.15.2])
-XDT_CHECK_PACKAGE([LIBEXPIDUS1UI], [libexpidus1ui-2], [4.15.1])
+XDT_CHECK_PACKAGE([LIBEXPIDUS1UTIL], [libexpidus1util-1.0], [1.0.0])
+XDT_CHECK_PACKAGE([LIBEXPIDUS1UI], [libexpidus1ui-2], [1.0.0])
 XDT_CHECK_PACKAGE([GTK], [gtk+-3.0], [3.22.0])
 XDT_CHECK_PACKAGE([GIO], [gio-2.0], [2.50.0])
 XDT_CHECK_PACKAGE([GMODULE], [gmodule-2.0], [2.50.0])
 XDT_CHECK_PACKAGE([LIBWNCK], [libwnck-3.0], [3.10])
-XDT_CHECK_PACKAGE([ESCONF], [libesconf-0], [4.12.0])
+XDT_CHECK_PACKAGE([ESCONF], [libesconf-0], [1.0.0])
 
 dnl Check for Polkit/PolicyKit
 XDT_CHECK_OPTIONAL_PACKAGE([POLKIT], [polkit-gobject-1], [0.102],
