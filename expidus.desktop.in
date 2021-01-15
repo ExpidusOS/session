@@ -5,4 +5,4 @@ _Comment=Use this session to run Expidus as your desktop environment
 Exec=startexpidus1
 Icon=
 Type=Application
-DesktopNames=EXPIDUS
+DesktopNames=ExpidusOS
