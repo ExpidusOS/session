@@ -15,7 +15,7 @@
       <property name="Client0_Priority" type="int" value="15"/>
       <property name="Client0_PerScreen" type="bool" value="false"/>
       <property name="Client1_Command" type="array">
-        <value type="string" value="xfsettingsd"/>
+        <value type="string" value="essettingsd"/>
       </property>
       <property name="Client1_Priority" type="int" value="20"/>
       <property name="Client1_PerScreen" type="bool" value="false"/>
@@ -31,7 +31,7 @@
       <property name="Client3_Priority" type="int" value="30"/>
       <property name="Client3_PerScreen" type="bool" value="false"/>
       <property name="Client4_Command" type="array">
-        <value type="string" value="xfdesktop"/>
+        <value type="string" value="esdesktop"/>
       </property>
       <property name="Client4_Priority" type="int" value="35"/>
       <property name="Client4_PerScreen" type="bool" value="false"/>
