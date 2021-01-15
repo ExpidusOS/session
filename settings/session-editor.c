@@ -82,13 +82,13 @@ session_editor_ensure_dbus(void)
 
     manager_dbus_proxy = essm_manager_proxy_new_for_bus_sync(G_BUS_TYPE_SESSION,
                                                              G_DBUS_PROXY_FLAGS_NONE,
-                                                             "org.expidus.SessionManager",
-                                                             "/org/expidus/SessionManager",
+                                                             "com.expidus.SessionManager",
+                                                             "/com/expidus/SessionManager",
                                                              NULL,
                                                              &error);
 
     if (manager_dbus_proxy == NULL) {
-        g_error ("error connecting to org.expidus.SessionManager, reason was: %s", error->message);
+        g_error ("error connecting to com.expidus.SessionManager, reason was: %s", error->message);
         g_clear_error(&error);
         return FALSE;
     }
@@ -223,7 +223,7 @@ session_editor_clear_sessions(GtkWidget *btn,
             /* only clean Expidus related items */
             if(!g_str_has_prefix(item_name, "expidus1-session-") &&
                !g_str_has_prefix(item_name, "Thunar-") &&
-               !g_str_has_prefix(item_name, "xfwm4-")) {
+               !g_str_has_prefix(item_name, "eswm1-")) {
                 continue;
             }
 
@@ -473,14 +473,14 @@ manager_client_registered(EssmManager *proxy,
 
     client_proxy = essm_client_proxy_new_for_bus_sync(G_BUS_TYPE_SESSION,
                                                       G_DBUS_PROXY_FLAGS_NONE,
-                                                      "org.expidus.SessionManager",
+                                                      "com.expidus.SessionManager",
                                                       object_path,
                                                       NULL,
                                                       &error);
 
     if(error != NULL)
     {
-        g_warning("Unable to connect to org.expidus.SessionManager, reason: %s",
+        g_warning("Unable to connect to com.expidus.SessionManager, reason: %s",
                   error->message);
         g_clear_error(&error);
         return;

@@ -40,7 +40,7 @@
 #include <expidus1-session/essm-error.h>
 #include <expidus1-session/essm-client-dbus.h>
 
-#define ESSM_CLIENT_OBJECT_PATH_PREFIX  "/org/expidus/SessionClients/"
+#define ESSM_CLIENT_OBJECT_PATH_PREFIX  "/com/expidus/SessionClients/"
 
 struct _EssmClient
 {
@@ -527,7 +527,7 @@ essm_client_save_desktop_file (EssmClient *client)
     desktop_file = NULL;
 
     /* Find the last '.' and try to load that. This is because the app_id is
-     * in the funky org.expidus.parole format and the desktop file may just be
+     * in the funky com.expidus.parole format and the desktop file may just be
      * parole.desktop */
     begin = g_strrstr (app_id, ".");
 

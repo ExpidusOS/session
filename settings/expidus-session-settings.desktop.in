@@ -2,7 +2,7 @@
 _Name=Session and Startup
 _Comment=Customize desktop startup
 Exec=expidus1-session-settings
-Icon=org.expidus.session
+Icon=com.expidus.session
 Terminal=false
 StartupNotify=true
 Type=Application

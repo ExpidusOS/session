@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<node name="/org/expidus/SessionClients">
-    <interface name="org.expidus.Session.Client">
+<node name="/com/expidus/SessionClients">
+    <interface name="com.expidus.Session.Client">
         <annotation name="org.freedesktop.DBus.GLib.CSymbol"
                     value="essm_client_dbus"/>
         <annotation name="org.freedesktop.DBus.GLib.ClientCSymbol"
                     value="essm_client_dbus_client"/>
 
         <!--
-             String org.expidus.Session.Client.GetID()
+             String com.expidus.Session.Client.GetID()
 
              Retrieves the client's SM client ID.
         -->
@@ -17,7 +17,7 @@
         </method>
 
         <!--
-             Unsigned Int org.expidus.Session.Client.GetState()
+             Unsigned Int com.expidus.Session.Client.GetState()
 
              Queries the session manager for a client's state.
              Valid states are:
@@ -44,7 +44,7 @@
         </method>
 
         <!--
-             Dict[] org.expidus.Session.Client.GetAllSmProperties()
+             Dict[] com.expidus.Session.Client.GetAllSmProperties()
 
              Retrieves all session management properties set on
              the client.
@@ -54,7 +54,7 @@
         </method>
 
         <!--
-             Dict[] org.expidus.Session.Client.GetSmProperties(String[] names)
+             Dict[] com.expidus.Session.Client.GetSmProperties(String[] names)
 
              @names: A string array of property names to fetch.
 
@@ -67,7 +67,7 @@
         </method>
 
         <!--
-             void org.expidus.Session.Client.SetSmProperties(HashArray properties)
+             void com.expidus.Session.Client.SetSmProperties(HashArray properties)
 
              @properties: A hash array of properties, with string
                           keys and variant values.
@@ -85,7 +85,7 @@
         </method>
 
         <!--
-             void org.expidus.Session.Client.DeleteSmProperties(String[] names)
+             void com.expidus.Session.Client.DeleteSmProperties(String[] names)
 
              @names: An string array of property names.
 
@@ -101,7 +101,7 @@
         </method>
 
         <!--
-             void org.expidus.Session.Client.Terminate()
+             void com.expidus.Session.Client.Terminate()
 
              Instructs the client to exit.  Whether or not the client
              remains in the session depends on its restart hint
@@ -115,7 +115,7 @@
         <method name="Terminate"/>
 
         <!--
-             void org.expidus.Session.Client.EndSessionResponse(Boolean is_ok,
+             void com.expidus.Session.Client.EndSessionResponse(Boolean is_ok,
                                                              String  reason)
 
              @is_ok: Whether or not it is OK to proceed. If not, the client
@@ -133,7 +133,7 @@
         </method>
 
         <!--
-             void org.expidus.Session.Client.StateChanged(Unsigned Int old_state,
+             void com.expidus.Session.Client.StateChanged(Unsigned Int old_state,
                                                        Unsigned Int new_state)
 
              @old_state: The client's previous state.
@@ -148,7 +148,7 @@
         </signal>
 
         <!--
-             void org.expidus.Session.Client.SmPropertyChanged(String name,
+             void com.expidus.Session.Client.SmPropertyChanged(String name,
                                                             Variant value)
 
              @name: The name of a property.
@@ -163,7 +163,7 @@
         </signal>
 
         <!--
-             void org.expidus.Session.Client.SmPropertyDeleted(String name)
+             void com.expidus.Session.Client.SmPropertyDeleted(String name)
 
              @name: The name of a property.
 
@@ -179,7 +179,7 @@
         </signal>
 
         <!--
-             void org.expidus.Session.Client.QueryEndSession(Unsigned Int flags)
+             void com.expidus.Session.Client.QueryEndSession(Unsigned Int flags)
 
              @flags: 0 = a forceful quit.
                      1 = a normal save and quit.
@@ -194,7 +194,7 @@
         </signal>
 
         <!--
-             void org.expidus.Session.Client.EndSession(Unsigned Int flags)
+             void com.expidus.Session.Client.EndSession(Unsigned Int flags)
 
              @flags: 0 = a forceful quit.
                      1 = a normal save and quit.
@@ -209,7 +209,7 @@
         </signal>
 
         <!--
-             void org.expidus.Session.Client.CancelEndSession(void)
+             void com.expidus.Session.Client.CancelEndSession(void)
 
              Emitted when QueryEndSession has been canceled. Resume normal
              operation.
@@ -218,7 +218,7 @@
         </signal>
 
         <!--
-             void org.expidus.Session.Client.Stop(void)
+             void com.expidus.Session.Client.Stop(void)
 
              Emitted when the client should terminate, this is the friendly
              version giving the client time to save and exit gracefully before

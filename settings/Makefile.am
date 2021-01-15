@@ -73,14 +73,14 @@ expidus1-session-settings_ui.h: expidus1-session-settings.ui
 essm-client-dbus-client.c essm-client-dbus-client.h : $(top_srcdir)/expidus1-session/essm-client-dbus.xml Makefile.am
 	gdbus-codegen \
 		--c-namespace=Essm \
-		--interface-prefix=org.expidus.Session. \
+		--interface-prefix=com.expidus.Session. \
 		--generate-c-code=essm-client-dbus-client \
 		$(top_srcdir)/expidus1-session/essm-client-dbus.xml
 
 essm-manager-dbus-client.c essm-manager-dbus-client.h : $(top_srcdir)/expidus1-session/essm-manager-dbus.xml Makefile.am
 	gdbus-codegen \
 		--c-namespace=Essm \
-		--interface-prefix=org.expidus.Session. \
+		--interface-prefix=com.expidus.Session. \
 		--generate-c-code=essm-manager-dbus-client \
 		$(top_srcdir)/expidus1-session/essm-manager-dbus.xml
 

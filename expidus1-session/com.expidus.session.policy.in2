@@ -15,7 +15,7 @@
   <icon_name>expidus1-session</icon_name>
 
 
-  <action id="org.expidus.session.essm-shutdown-helper">
+  <action id="com.expidus.session.essm-shutdown-helper">
     <!-- SECURITY:
           - A normal active user on the local machine does not need permission
             to suspend or hibernate their system.

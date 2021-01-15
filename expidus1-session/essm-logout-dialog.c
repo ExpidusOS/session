@@ -592,7 +592,7 @@ essm_logout_dialog_screenshot_new (GdkScreen *screen)
 
 
 static GdkPixbuf *
-exo_gdk_pixbuf_scale_ratio (GdkPixbuf *source,
+endo_gdk_pixbuf_scale_ratio (GdkPixbuf *source,
                             gint       dest_size)
 {
   gdouble wratio;
@@ -643,7 +643,7 @@ essm_logout_dialog_screenshot_save (GdkPixbuf   *screenshot,
   g_return_if_fail (GDK_IS_PIXBUF (screenshot));
   g_return_if_fail (GDK_IS_SCREEN (screen));
 
-  scaled = exo_gdk_pixbuf_scale_ratio (screenshot, SHOTSIZE);
+  scaled = endo_gdk_pixbuf_scale_ratio (screenshot, SHOTSIZE);
   if (G_LIKELY (scaled != NULL))
     {
       dpy = gdk_screen_get_display (screen);

@@ -249,7 +249,7 @@ static void
 essm_dbus_init (EssmManager *manager)
 {
   name_id = g_bus_own_name (G_BUS_TYPE_SESSION,
-                            "org.expidus.SessionManager",
+                            "com.expidus.SessionManager",
                             G_BUS_NAME_OWNER_FLAGS_NONE,
                             bus_acquired, name_acquired, name_lost,
                             manager,

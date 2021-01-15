@@ -21,7 +21,7 @@ expidus1-session/essm-startup.c
 expidus1-session/essm-shutdown.c
 expidus1-session-logout/main.c
 expidus1-session-logout/expidus1-session-logout.desktop.in
-expidus1-session/org.expidus.session.policy.in2
+expidus1-session/com.expidus.session.policy.in2
 
 # files added by intltool-prepare.
 settings/expidus-session-settings.desktop.in

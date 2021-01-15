@@ -245,9 +245,9 @@ expidus_screensaver_setup(ExpidusScreenSaver *saver)
         DBG ("using freedesktop compliant screensaver daemon");
         saver->priv->screensaver_type = SCREENSAVER_TYPE_FREEDESKTOP;
     } else if (screen_saver_proxy_setup (saver,
-                                         "org.expidus.ScreenSaver",
-                                         "/org/expidus/ScreenSaver",
-                                         "org.expidus.ScreenSaver"))
+                                         "com.expidus.ScreenSaver",
+                                         "/com/expidus/ScreenSaver",
+                                         "com.expidus.ScreenSaver"))
     {
         DBG ("using expidus screensaver daemon");
         saver->priv->screensaver_type = SCREENSAVER_TYPE_EXPIDUS;

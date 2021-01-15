@@ -158,9 +158,9 @@ main (int argc, char **argv)
   proxy = g_dbus_proxy_new_for_bus_sync (G_BUS_TYPE_SESSION,
                                          G_DBUS_PROXY_FLAGS_NONE,
                                          NULL,
-                                         "org.expidus.SessionManager",
-                                         "/org/expidus/SessionManager",
-                                         "org.expidus.Session.Manager",
+                                         "com.expidus.SessionManager",
+                                         "/com/expidus/SessionManager",
+                                         "com.expidus.Session.Manager",
                                          NULL,
                                          &err);
   if (proxy == NULL)

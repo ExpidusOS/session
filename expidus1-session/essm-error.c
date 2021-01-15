@@ -22,7 +22,7 @@
 
 #include <expidus1-session/essm-error.h>
 
-#define ESSM_DBUS_NAME "org.expidus.SessionManager"
+#define ESSM_DBUS_NAME "com.expidus.SessionManager"
 
 static const GDBusErrorEntry essm_error_entries[] =
 {

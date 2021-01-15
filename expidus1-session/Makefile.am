@@ -107,7 +107,7 @@ if HAVE_POLKIT
 
 polkit_policydir = $(datadir)/polkit-1/actions
 polkit_policy_DATA =					\
-	org.expidus.session.policy
+	com.expidus.session.policy
 .in2.in:
 	sed "s|[@]HELPER_PATH_PREFIX@|${HELPER_PATH_PREFIX}|" $< > $@
 
@@ -128,14 +128,14 @@ essm-marshal.c: $(srcdir)/essm-marshal.list Makefile
 essm-client-dbus.c essm-client-dbus.h : $(srcdir)/essm-client-dbus.xml Makefile.am
 	gdbus-codegen \
 		--c-namespace=EssmDbus \
-		--interface-prefix=org.expidus.Session. \
+		--interface-prefix=com.expidus.Session. \
 		--generate-c-code=essm-client-dbus \
 		$(srcdir)/essm-client-dbus.xml
 
 essm-manager-dbus.c essm-manager-dbus.h : $(srcdir)/essm-manager-dbus.xml Makefile.am
 	gdbus-codegen \
 		--c-namespace=EssmDbus \
-		--interface-prefix=org.expidus.Session. \
+		--interface-prefix=com.expidus.Session. \
 		--generate-c-code=essm-manager-dbus \
 		$(srcdir)/essm-manager-dbus.xml
 
@@ -150,11 +150,11 @@ EXTRA_DIST =								\
 	essm-marshal.list						\
 	essm-client-dbus.xml						\
 	essm-manager-dbus.xml					\
-	org.expidus.session.policy.in2
+	com.expidus.session.policy.in2
 
 DISTCLEANFILES =							\
 	$(BUILT_SOURCES)				\
-	org.expidus.session.policy					\
-	org.expidus.session.policy.in
+	com.expidus.session.policy					\
+	com.expidus.session.policy.in
 
 # vi:set ts=8 sw=8 noet ai nocindent syntax=automake:

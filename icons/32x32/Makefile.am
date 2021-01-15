@@ -1,5 +1,5 @@
 iconsdir = $(datadir)/icons/hicolor/32x32/apps
 icons_DATA = 								\
-	org.expidus.session.png
+	com.expidus.session.png
 
 EXTRA_DIST = $(icons_DATA)

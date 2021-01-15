@@ -73,7 +73,7 @@ expidus1-session/essm-marshal.h
 essm-shutdown-helper/essm-shutdown-helper
 ChangeLog
 expidus1-session.spec
-expidus1-session/org.expidus.session.policy
+expidus1-session/com.expidus.session.policy
 expidus1-session/essm-chooser-icon.h
 expidus1-session/essm-client-dbus.h
 expidus1-session/essm-client-dbus.c

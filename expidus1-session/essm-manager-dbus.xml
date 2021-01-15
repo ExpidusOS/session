@@ -12,15 +12,15 @@
      * extra shutdown type for "safe suspend" aka "s2both"?
 -->
 
-<node name="/org/expidus/SessionManager">
-    <interface name="org.expidus.Session.Manager">
+<node name="/com/expidus/SessionManager">
+    <interface name="com.expidus.Session.Manager">
         <annotation name="org.freedesktop.DBus.GLib.CSymbol"
                     value="essm_manager_dbus"/>
         <annotation name="org.freedesktop.DBus.GLib.ClientCSymbol"
                     value="essm_manager_dbus_client"/>
 
         <!--
-             (String, String, String) org.expidus.Session.Manager.GetInfo()
+             (String, String, String) com.expidus.Session.Manager.GetInfo()
 
              Returns:
 
@@ -35,11 +35,11 @@
         </method>
 
         <!--
-             ObjectPath[] org.expidus.Session.Manager.ListClients()
+             ObjectPath[] com.expidus.Session.Manager.ListClients()
 
              Retrieves a list of session clients from the session
              manager, as a list of D-Bus object paths.  These
-             object paths all support the org.expidus.Session.Client
+             object paths all support the com.expidus.Session.Client
              interface.
         -->
         <method name="ListClients">
@@ -47,7 +47,7 @@
         </method>
 
         <!--
-             Unsigned Int org.expidus.Session.Manager.GetState()
+             Unsigned Int com.expidus.Session.Manager.GetState()
 
              Queries the session manager for its current operating
              state.  Valid values are:
@@ -198,7 +198,7 @@
         </method>
 
         <!--
-             void org.expidus.Session.Manager.StateChanged(Unsigned Int old_state,
+             void com.expidus.Session.Manager.StateChanged(Unsigned Int old_state,
                                                         Unsigned Int new_state)
 
              @old_state: The SM's previous state.
@@ -214,7 +214,7 @@
         </signal>
 
         <!--
-             void org.expidus.Session.Manager.ClientRegistered(ObjectPath client)
+             void com.expidus.Session.Manager.ClientRegistered(ObjectPath client)
 
              @client: A D-Bus object path.
 
@@ -225,7 +225,7 @@
         </signal>
 
         <!--
-             void org.expidus.Session.Manager.ShutdownCancelled()
+             void com.expidus.Session.Manager.ShutdownCancelled()
 
              Emitted when a previously-started shutdown has been
              cancelled.

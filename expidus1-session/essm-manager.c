@@ -395,8 +395,8 @@ essm_manager_handle_failed_properties (EssmManager    *manager,
            * come up with consistent behaviour.
            *
            * But for now, this work-around fixes the problem of the
-           * ever-growing number of xfwm4 session files when restarting
-           * xfwm4 within a session.
+           * ever-growing number of eswm1 session files when restarting
+           * eswm1 within a session.
            */
           essm_verbose ("Client Id = %s: running discard command %s:%d.\n\n",
                         properties->client_id, *discard_command,
@@ -2109,11 +2109,11 @@ essm_manager_dbus_init (EssmManager *manager, GDBusConnection *connection)
 
   manager->connection = g_object_ref (connection);
 
-  g_debug ("exporting path /org/expidus/SessionManager");
+  g_debug ("exporting path /com/expidus/SessionManager");
 
   if (!g_dbus_interface_skeleton_export (G_DBUS_INTERFACE_SKELETON (ESSM_DBUS_MANAGER (manager)),
                                          manager->connection,
-                                         "/org/expidus/SessionManager",
+                                         "/com/expidus/SessionManager",
                                          &error)) {
     if (error != NULL) {
             g_critical ("error exporting interface: %s", error->message);

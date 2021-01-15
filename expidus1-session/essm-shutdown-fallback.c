@@ -78,11 +78,11 @@
 #endif
 #endif
 
-#define POLKIT_AUTH_SHUTDOWN_ESSM     "org.expidus.session.essm-shutdown-helper"
-#define POLKIT_AUTH_RESTART_ESSM      "org.expidus.session.essm-shutdown-helper"
-#define POLKIT_AUTH_SUSPEND_ESSM      "org.expidus.session.essm-shutdown-helper"
-#define POLKIT_AUTH_HIBERNATE_ESSM    "org.expidus.session.essm-shutdown-helper"
-#define POLKIT_AUTH_HYBRID_SLEEP_ESSM "org.expidus.session.essm-shutdown-helper"
+#define POLKIT_AUTH_SHUTDOWN_ESSM     "com.expidus.session.essm-shutdown-helper"
+#define POLKIT_AUTH_RESTART_ESSM      "com.expidus.session.essm-shutdown-helper"
+#define POLKIT_AUTH_SUSPEND_ESSM      "com.expidus.session.essm-shutdown-helper"
+#define POLKIT_AUTH_HIBERNATE_ESSM    "com.expidus.session.essm-shutdown-helper"
+#define POLKIT_AUTH_HYBRID_SLEEP_ESSM "com.expidus.session.essm-shutdown-helper"
 
 
 
