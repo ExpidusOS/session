@@ -1,18 +1,18 @@
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
 SUBDIRS =								\
-	libxfsm								\
+	libessm								\
 	doc								\
 	icons								\
 	po								\
 	settings							\
 	scripts								\
-	xfce4-session							\
-	xfce4-session-logout						\
-	xfsm-shutdown-helper
+	expidus1-session							\
+	expidus1-session-logout						\
+	essm-shutdown-helper
 
 desktopdir = $(XSESSION_PREFIX)/share/xsessions
-desktop_in_files = xfce.desktop.in
+desktop_in_files = expidus.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 

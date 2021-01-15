@@ -2,7 +2,7 @@ Session manager FAQ:
 --------------------
 
 1) Question:
-     xfce4-session complains about /tmp/.ICE-unix should be set to root. What
+     expidus1-session complains about /tmp/.ICE-unix should be set to root. What
      should I do?
 
    Answer:
@@ -16,13 +16,13 @@ Session manager FAQ:
 
 
 2) Question:
-     What do I need to do in order to use xfce4-session as session manager
-     with Xfce4?
+     What do I need to do in order to use expidus1-session as session manager
+     with Expidus4?
 
    Answer:
-     If you have a recent xfce-utils (post 20030708) then xfce4-session
-     is automatically started by startxfce4 as long as you don't have
-     a file ~/.xfce4/xinitrc in your home directory. Alternatively you
-     can copy the file $sysconfdir/xfce4/xinitrc.xfce4-session to
-     ~/.xfce4/xinitrc and start your X session using the startxfce4 script.
+     If you have a recent expidus-utils (post 20030708) then expidus1-session
+     is automatically started by startexpidus1 as long as you don't have
+     a file ~/.expidus1/xinitrc in your home directory. Alternatively you
+     can copy the file $sysconfdir/expidus1/xinitrc.expidus1-session to
+     ~/.expidus1/xinitrc and start your X session using the startexpidus1 script.
 

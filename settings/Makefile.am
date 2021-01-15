@@ -1,47 +1,47 @@
-bin_PROGRAMS = xfce4-session-settings
+bin_PROGRAMS = expidus1-session-settings
 
-xfce4_session_settings_SOURCES = \
+expidus1_session_settings_SOURCES = \
 	main.c \
 	session-editor.c \
-	xfae-dialog.c \
-	xfae-dialog.h \
-	xfae-model.c \
-	xfae-model.h \
-	xfae-window.c \
-	xfae-window.h \
-	xfce4-session-marshal.c \
-	xfce4-session-marshal.h \
-	xfce4-session-settings-common.h \
-	xfce4-session-settings_ui.h \
-	xfsm-client-dbus-client.h \
-	xfsm-client-dbus-client.c \
-	xfsm-manager-dbus-client.h \
-	xfsm-manager-dbus-client.c
+	esae-dialog.c \
+	esae-dialog.h \
+	esae-model.c \
+	esae-model.h \
+	esae-window.c \
+	esae-window.h \
+	expidus1-session-marshal.c \
+	expidus1-session-marshal.h \
+	expidus1-session-settings-common.h \
+	expidus1-session-settings_ui.h \
+	essm-client-dbus-client.h \
+	essm-client-dbus-client.c \
+	essm-manager-dbus-client.h \
+	essm-manager-dbus-client.c
 
-xfce4_session_settings_CFLAGS = \
+expidus1_session_settings_CFLAGS = \
 	-DLOCALEDIR=\"$(localedir)\" \
-	-DG_LOG_DOMAIN=\"xfce4-session-settings\" \
+	-DG_LOG_DOMAIN=\"expidus1-session-settings\" \
 	-I$(top_srcdir) \
-	-I$(top_srcdir)/libxfsm \
-	$(LIBXFCE4UTIL_CFLAGS) \
-	$(LIBXFCE4UI_CFLAGS) \
-	$(XFCONF_CFLAGS) \
+	-I$(top_srcdir)/libessm \
+	$(LIBEXPIDUS1UTIL_CFLAGS) \
+	$(LIBEXPIDUS1UI_CFLAGS) \
+	$(ESCONF_CFLAGS) \
 	$(GIO_CFLAGS) \
 	$(GMODULE_CFLAGS)
 
-xfce4_session_settings_LDADD = \
-	$(top_builddir)/libxfsm/libxfsm.la \
-	$(LIBXFCE4UTIL_CFLAGS) \
-	$(LIBXFCE4UI_LIBS) \
-	$(XFCONF_LIBS) \
+expidus1_session_settings_LDADD = \
+	$(top_builddir)/libessm/libessm.la \
+	$(LIBEXPIDUS1UTIL_CFLAGS) \
+	$(LIBEXPIDUS1UI_LIBS) \
+	$(ESCONF_LIBS) \
 	$(GIO_LIBS) \
 	$(GMODULE_LIBS)
 
-settingsdir = $(sysconfdir)/xdg/xfce4/xfconf/xfce-perchannel-xml
-settings_DATA = xfce4-session.xml
+settingsdir = $(sysconfdir)/xdg/expidus1/esconf/expidus-perchannel-xml
+settings_DATA = expidus1-session.xml
 
 desktopdir = $(datadir)/applications
-desktop_in_files = xfce-session-settings.desktop.in
+desktop_in_files = expidus-session-settings.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 
 @INTLTOOL_DESKTOP_RULE@
@@ -50,47 +50,47 @@ desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 if MAINTAINER_MODE
 
 BUILT_SOURCES = \
-	xfce4-session-marshal.c \
-	xfce4-session-marshal.h \
-	xfce4-session-settings_ui.h \
-	xfsm-client-dbus-client.h \
-	xfsm-client-dbus-client.c \
-	xfsm-manager-dbus-client.h \
-	xfsm-manager-dbus-client.c
+	expidus1-session-marshal.c \
+	expidus1-session-marshal.h \
+	expidus1-session-settings_ui.h \
+	essm-client-dbus-client.h \
+	essm-client-dbus-client.c \
+	essm-manager-dbus-client.h \
+	essm-manager-dbus-client.c
 
-xfce4-session-marshal.h: stamp-xfce4-session-marshal.h
+expidus1-session-marshal.h: stamp-expidus1-session-marshal.h
 	@true
-stamp-xfce4-session-marshal.h: xfce4-session-marshal.list Makefile
-	$(AM_V_GEN) glib-genmarshal --prefix=xfce4_session_marshal xfce4-session-marshal.list --header > xfce4-session-marshal.h
+stamp-expidus1-session-marshal.h: expidus1-session-marshal.list Makefile
+	$(AM_V_GEN) glib-genmarshal --prefix=expidus1_session_marshal expidus1-session-marshal.list --header > expidus1-session-marshal.h
 	echo timestamp > $(@F)
-xfce4-session-marshal.c: xfce4-session-marshal.list Makefile
-	$(AM_V_GEN) echo '#include "xfce4-session-marshal.h"' > $@
-	glib-genmarshal --prefix=xfce4_session_marshal xfce4-session-marshal.list --body >> xfce4-session-marshal.c
+expidus1-session-marshal.c: expidus1-session-marshal.list Makefile
+	$(AM_V_GEN) echo '#include "expidus1-session-marshal.h"' > $@
+	glib-genmarshal --prefix=expidus1_session_marshal expidus1-session-marshal.list --body >> expidus1-session-marshal.c
 
-xfce4-session-settings_ui.h: xfce4-session-settings.ui
-	$(AM_V_GEN) xdt-csource --static --strip-comments --strip-content --name=xfce4_session_settings_ui $< >$@
+expidus1-session-settings_ui.h: expidus1-session-settings.ui
+	$(AM_V_GEN) xdt-csource --static --strip-comments --strip-content --name=expidus1_session_settings_ui $< >$@
 
-xfsm-client-dbus-client.c xfsm-client-dbus-client.h : $(top_srcdir)/xfce4-session/xfsm-client-dbus.xml Makefile.am
+essm-client-dbus-client.c essm-client-dbus-client.h : $(top_srcdir)/expidus1-session/essm-client-dbus.xml Makefile.am
 	gdbus-codegen \
-		--c-namespace=Xfsm \
-		--interface-prefix=org.xfce.Session. \
-		--generate-c-code=xfsm-client-dbus-client \
-		$(top_srcdir)/xfce4-session/xfsm-client-dbus.xml
+		--c-namespace=Essm \
+		--interface-prefix=org.expidus.Session. \
+		--generate-c-code=essm-client-dbus-client \
+		$(top_srcdir)/expidus1-session/essm-client-dbus.xml
 
-xfsm-manager-dbus-client.c xfsm-manager-dbus-client.h : $(top_srcdir)/xfce4-session/xfsm-manager-dbus.xml Makefile.am
+essm-manager-dbus-client.c essm-manager-dbus-client.h : $(top_srcdir)/expidus1-session/essm-manager-dbus.xml Makefile.am
 	gdbus-codegen \
-		--c-namespace=Xfsm \
-		--interface-prefix=org.xfce.Session. \
-		--generate-c-code=xfsm-manager-dbus-client \
-		$(top_srcdir)/xfce4-session/xfsm-manager-dbus.xml
+		--c-namespace=Essm \
+		--interface-prefix=org.expidus.Session. \
+		--generate-c-code=essm-manager-dbus-client \
+		$(top_srcdir)/expidus1-session/essm-manager-dbus.xml
 
 endif
 
 
 EXTRA_DIST = \
 	$(desktop_in_files) \
-	xfce4-session.xml \
-	xfce4-session-settings.ui
+	expidus1-session.xml \
+	expidus1-session-settings.ui
 
 DISTCLEANFILES = \
 	$(desktop_DATA)

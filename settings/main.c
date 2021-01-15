@@ -24,26 +24,26 @@
 #include <stdlib.h>
 #endif
 
-#include <xfconf/xfconf.h>
+#include <esconf/esconf.h>
 
 #include <gtk/gtk.h>
 #include <gtk/gtkx.h>
 #include <gdk/gdkx.h>
 
-#include <libxfce4util/libxfce4util.h>
-#include <libxfce4ui/libxfce4ui.h>
+#include <libexpidus1util/libexpidus1util.h>
+#include <libexpidus1ui/libexpidus1ui.h>
 
-#include <libxfsm/xfsm-util.h>
+#include <libessm/essm-util.h>
 
-#include "xfae-window.h"
-#include "xfce4-session-settings-common.h"
-#include "xfce4-session-settings_ui.h"
+#include "esae-window.h"
+#include "expidus1-session-settings-common.h"
+#include "expidus1-session-settings_ui.h"
 
 
-static void xfce4_session_settings_dialog_response (GtkDialog *dialog, gint response, gpointer userdata)
+static void expidus1_session_settings_dialog_response (GtkDialog *dialog, gint response, gpointer userdata)
 {
     if (response == GTK_RESPONSE_HELP) {
-       xfce_dialog_show_help (GTK_WINDOW (dialog), "xfce4-session", "preferences", NULL);
+       expidus_dialog_show_help (GTK_WINDOW (dialog), "expidus1-session", "preferences", NULL);
     }
     else {
       gtk_widget_destroy(GTK_WIDGET(dialog));
@@ -52,8 +52,8 @@ static void xfce4_session_settings_dialog_response (GtkDialog *dialog, gint resp
 }
 
 static void
-xfce4_session_settings_show_saved_sessions (GtkBuilder *builder,
-                                            XfceRc     *rc,
+expidus1_session_settings_show_saved_sessions (GtkBuilder *builder,
+                                            ExpidusRc     *rc,
                                             gboolean    visible)
 {
     GtkWidget *notebook = GTK_WIDGET (gtk_builder_get_object (builder, "plug-child"));
@@ -77,14 +77,14 @@ main(int argc,
 {
     GtkBuilder *builder;
     GtkWidget *notebook;
-    GtkWidget *xfae_page;
+    GtkWidget *esae_page;
     GtkWidget *lbl;
     GtkWidget *label_active_session;
     GObject *delete_button;
     GObject *treeview;
     GError *error = NULL;
-    XfconfChannel *channel;
-    XfceRc *rc;
+    EsconfChannel *channel;
+    ExpidusRc *rc;
     gboolean visible;
     gchar *active_session;
     gchar *active_session_label;
@@ -101,7 +101,7 @@ main(int argc,
         { NULL }
     };
 
-    xfce_textdomain(GETTEXT_PACKAGE, LOCALEDIR, "UTF-8");
+    expidus_textdomain(GETTEXT_PACKAGE, LOCALEDIR, "UTF-8");
 
     if(!gtk_init_with_args (&argc, &argv, NULL, option_entries,
                             GETTEXT_PACKAGE, &error))
@@ -118,38 +118,38 @@ main(int argc,
     }
 
     if(G_UNLIKELY(opt_version)) {
-        g_print("%s %s (Xfce %s)\n\n", G_LOG_DOMAIN, PACKAGE_VERSION, xfce_version_string ());
+        g_print("%s %s (Expidus %s)\n\n", G_LOG_DOMAIN, PACKAGE_VERSION, expidus_version_string ());
         g_print("%s\n", "Copyright (c) 2004-2020");
-        g_print("\t%s\n\n", _("The Xfce development team. All rights reserved."));
+        g_print("\t%s\n\n", _("The Expidus development team. All rights reserved."));
         g_print(_("Please report bugs to <%s>."), PACKAGE_BUGREPORT);
         g_print("\n");
 
         return EXIT_SUCCESS;
     }
 
-    if(G_UNLIKELY(!xfconf_init(&error))) {
-        xfce_dialog_show_error (NULL,
+    if(G_UNLIKELY(!esconf_init(&error))) {
+        expidus_dialog_show_error (NULL,
                                 error,
                                 _("Unable to contact settings server"));
         g_error_free(error);
         return EXIT_FAILURE;
     }
 
-    gtk_window_set_default_icon_name("xfce4-session");
+    gtk_window_set_default_icon_name("expidus1-session");
 
-    /* hook to make sure the libxfce4ui library is linked */
-    if (xfce_titled_dialog_get_type() == 0)
+    /* hook to make sure the libexpidus1ui library is linked */
+    if (expidus_titled_dialog_get_type() == 0)
         return EXIT_FAILURE;
 
     builder = gtk_builder_new();
     gtk_builder_add_from_string(builder,
-                                xfce4_session_settings_ui,
-                                xfce4_session_settings_ui_length,
+                                expidus1_session_settings_ui,
+                                expidus1_session_settings_ui_length,
                                 &error);
 
     if(!builder) {
         if (error) {
-            xfce_dialog_show_error(NULL, error,
+            expidus_dialog_show_error(NULL, error,
                 _("Unable to create user interface from embedded definition data"));
             g_error_free (error);
         }
@@ -158,18 +158,18 @@ main(int argc,
 
     session_editor_init(builder);
 
-    channel = xfconf_channel_get (SETTINGS_CHANNEL);
+    channel = esconf_channel_get (SETTINGS_CHANNEL);
 
     /* FIXME: someday, glade-ify this, maybe. */
-    xfae_page = xfae_window_new();
-    gtk_widget_show(xfae_page);
+    esae_page = esae_window_new();
+    gtk_widget_show(esae_page);
     notebook = GTK_WIDGET(gtk_builder_get_object(builder, "plug-child"));
     lbl = gtk_label_new_with_mnemonic(_("App_lication Autostart"));
     gtk_widget_show(lbl);
-    gtk_notebook_insert_page(GTK_NOTEBOOK(notebook), xfae_page, lbl, 1);
+    gtk_notebook_insert_page(GTK_NOTEBOOK(notebook), esae_page, lbl, 1);
 
     label_active_session = GTK_WIDGET (gtk_builder_get_object (builder, "label_active_session"));
-    active_session = xfconf_channel_get_string (channel, "/general/SessionName", "Default");
+    active_session = esconf_channel_get_string (channel, "/general/SessionName", "Default");
     active_session_label = _("Currently active session:");
     format = "%s <b>%s</b>";
     markup = g_markup_printf_escaped (format, active_session_label, active_session);
@@ -186,35 +186,35 @@ main(int argc,
         visible = TRUE;
     else
         visible = FALSE;
-    xfce4_session_settings_show_saved_sessions (builder, rc, visible);
+    expidus1_session_settings_show_saved_sessions (builder, rc, visible);
 
-    /* bind widgets to xfconf */
-    xfconf_g_property_bind(channel, "/chooser/AlwaysDisplay", G_TYPE_BOOLEAN,
+    /* bind widgets to esconf */
+    esconf_g_property_bind(channel, "/chooser/AlwaysDisplay", G_TYPE_BOOLEAN,
                            gtk_builder_get_object(builder, "chk_display_chooser"),
                            "active");
-    xfconf_g_property_bind(channel, "/general/AutoSave", G_TYPE_BOOLEAN,
+    esconf_g_property_bind(channel, "/general/AutoSave", G_TYPE_BOOLEAN,
                            gtk_builder_get_object(builder, "chk_session_autosave"),
                            "active");
-    xfconf_g_property_bind(channel, "/general/PromptOnLogout", G_TYPE_BOOLEAN,
+    esconf_g_property_bind(channel, "/general/PromptOnLogout", G_TYPE_BOOLEAN,
                            gtk_builder_get_object(builder, "chk_logout_prompt"),
                            "active");
-    xfconf_g_property_bind(channel, "/compat/LaunchGNOME", G_TYPE_BOOLEAN,
+    esconf_g_property_bind(channel, "/compat/LaunchGNOME", G_TYPE_BOOLEAN,
                            gtk_builder_get_object(builder, "chk_compat_gnome"),
                            "active");
-    xfconf_g_property_bind(channel, "/compat/LaunchKDE", G_TYPE_BOOLEAN,
+    esconf_g_property_bind(channel, "/compat/LaunchKDE", G_TYPE_BOOLEAN,
                            gtk_builder_get_object(builder, "chk_compat_kde"),
                            "active");
-    xfconf_g_property_bind(channel, "/security/EnableTcp", G_TYPE_BOOLEAN,
+    esconf_g_property_bind(channel, "/security/EnableTcp", G_TYPE_BOOLEAN,
                            gtk_builder_get_object(builder, "chk_enable_tcp"),
                            "active");
-    xfconf_g_property_bind(channel, "/shutdown/LockScreen", G_TYPE_BOOLEAN,
+    esconf_g_property_bind(channel, "/shutdown/LockScreen", G_TYPE_BOOLEAN,
                            gtk_builder_get_object(builder, "chk_lock_screen"),
                            "active");
 
     if(G_UNLIKELY(opt_socket_id == 0)) {
-        GtkWidget *dialog = GTK_WIDGET(gtk_builder_get_object(builder, "xfce4_session_settings_dialog"));
+        GtkWidget *dialog = GTK_WIDGET(gtk_builder_get_object(builder, "expidus1_session_settings_dialog"));
 
-        g_signal_connect(dialog, "response", G_CALLBACK(xfce4_session_settings_dialog_response), NULL);
+        g_signal_connect(dialog, "response", G_CALLBACK(expidus1_session_settings_dialog_response), NULL);
         g_signal_connect(dialog, "delete-event", G_CALLBACK(gtk_main_quit), NULL);
 
         gtk_widget_show(dialog);

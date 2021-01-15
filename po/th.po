@@ -7,31 +7,31 @@
 # Theppitak Karoonboonyanan <theppitak@gmail.com>, 2013,2017,2019
 msgid ""
 msgstr ""
-"Project-Id-Version: Xfce4-session\n"
+"Project-Id-Version: Expidus4-session\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-01 00:31+0200\n"
 "PO-Revision-Date: 2020-03-31 22:31+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
-"Language-Team: Thai (http://www.transifex.com/xfce/xfce4-session/language/th/)\n"
+"Last-Translator: Expidus Bot <transifex@expidus.org>\n"
+"Language-Team: Thai (http://www.transifex.com/expidus/expidus1-session/language/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: th\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../xfce.desktop.in.h:1
-msgid "Xfce Session"
-msgstr "วาระ Xfce"
+#: ../expidus.desktop.in.h:1
+msgid "Expidus Session"
+msgstr "วาระ Expidus"
 
-#: ../xfce.desktop.in.h:2
-msgid "Use this session to run Xfce as your desktop environment"
-msgstr "ใช้วาระนี้เพื่อเรียกใช้ Xfce เป็นเดสก์ท็อปของคุณ"
+#: ../expidus.desktop.in.h:2
+msgid "Use this session to run Expidus as your desktop environment"
+msgstr "ใช้วาระนี้เพื่อเรียกใช้ Expidus เป็นเดสก์ท็อปของคุณ"
 
-#: ../libxfsm/xfsm-util.c:331
+#: ../libessm/essm-util.c:331
 msgid "Session"
 msgstr "วาระ"
 
-#: ../libxfsm/xfsm-util.c:342
+#: ../libessm/essm-util.c:342
 msgid "Last accessed"
 msgstr "เข้าใช้ล่าสุด"
 
@@ -55,23 +55,23 @@ msgstr "หมายเลขซ็อกเก็ต"
 msgid "Version information"
 msgstr "ข้อมูลรุ่นโปรแกรม"
 
-#: ../settings/main.c:111 ../xfce4-session/main.c:333
+#: ../settings/main.c:111 ../expidus1-session/main.c:333
 #, c-format
 msgid "Type '%s --help' for usage."
 msgstr "ลองสั่ง '%s --help' เพื่อดูวิธีใช้"
 
-#: ../settings/main.c:123 ../xfce4-session/main.c:343
-#: ../xfce4-session-logout/main.c:146
-msgid "The Xfce development team. All rights reserved."
-msgstr "The Xfce development team. All rights reserved."
+#: ../settings/main.c:123 ../expidus1-session/main.c:343
+#: ../expidus1-session-logout/main.c:146
+msgid "The Expidus development team. All rights reserved."
+msgstr "The Expidus development team. All rights reserved."
 
-#: ../settings/main.c:124 ../xfce4-session/main.c:344
-#: ../xfce4-session-logout/main.c:149
+#: ../settings/main.c:124 ../expidus1-session/main.c:344
+#: ../expidus1-session-logout/main.c:149
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "หากพบปัญหา กรุณารายงานไปที่ <%s>"
 
-#: ../settings/main.c:133 ../xfce4-session/main.c:352
+#: ../settings/main.c:133 ../expidus1-session/main.c:352
 msgid "Unable to contact settings server"
 msgstr "ไม่สามารถติดต่อเซิร์ฟเวอร์ค่าตั้ง"
 
@@ -112,8 +112,8 @@ msgid "Unable to save the session"
 msgstr "ไม่สามารถบันทึกวาระได้"
 
 #: ../settings/session-editor.c:141 ../settings/session-editor.c:313
-#: ../xfce4-session/xfsm-manager.c:1281
-#: ../settings/xfce4-session-settings.ui.h:3
+#: ../expidus1-session/essm-manager.c:1281
+#: ../settings/expidus1-session-settings.ui.h:3
 msgid "_Close"
 msgstr "ปิ_ด"
 
@@ -132,8 +132,8 @@ msgid ""
 msgstr "ในการเข้าระบบครั้งหน้าของคุณ จะไม่มีการคืนสถานะของโปรแกรมต่างๆ ของคุณที่บันทึกไว้"
 
 #: ../settings/session-editor.c:201 ../settings/session-editor.c:288
-#: ../settings/xfae-dialog.c:77 ../xfce4-session/xfsm-manager.c:682
-#: ../xfce4-session/xfsm-logout-dialog.c:221
+#: ../settings/esae-dialog.c:77 ../expidus1-session/essm-manager.c:682
+#: ../expidus1-session/essm-logout-dialog.c:221
 msgid "_Cancel"
 msgstr "_ยกเลิก"
 
@@ -147,8 +147,8 @@ msgid "You might need to delete some files manually in \"%s\"."
 msgstr "คุณอาจต้องลบแฟ้มบางแฟ้มใน \"%s\" เอง"
 
 #: ../settings/session-editor.c:243
-msgid "All Xfce cache files could not be cleared"
-msgstr "ไม่สามารถล้างแฟ้มแคชทั้งหมดของ Xfce ได้"
+msgid "All Expidus cache files could not be cleared"
+msgstr "ไม่สามารถล้างแฟ้มแคชทั้งหมดของ Expidus ได้"
 
 #: ../settings/session-editor.c:282
 #, c-format
@@ -165,7 +165,7 @@ msgid ""
 "your next session."
 msgstr "โปรแกรมดังกล่าวจะสูญเสียสถานะการทำงานที่ยังไม่เก็บบันทึก และจะไม่ถูกเรียกใหม่ในการเข้าวาระครั้งหน้าของคุณ"
 
-#: ../settings/session-editor.c:289 ../settings/xfce4-session-settings.ui.h:19
+#: ../settings/session-editor.c:289 ../settings/expidus1-session-settings.ui.h:19
 msgid "_Quit Program"
 msgstr "_ออกจากโปรแกรม"
 
@@ -185,7 +185,7 @@ msgstr "ความสำคัญ"
 msgid "PID"
 msgstr "PID"
 
-#: ../settings/session-editor.c:782 ../settings/xfae-window.c:172
+#: ../settings/session-editor.c:782 ../settings/esae-window.c:172
 msgid "Program"
 msgstr "โปรแกรม"
 
@@ -193,288 +193,288 @@ msgstr "โปรแกรม"
 msgid "Restart Style"
 msgstr "รูปแบบการเปิดซ้ำ"
 
-#: ../settings/xfae-dialog.c:78 ../xfce4-session/xfsm-manager.c:684
+#: ../settings/esae-dialog.c:78 ../expidus1-session/essm-manager.c:684
 msgid "_OK"
 msgstr "_ตกลง"
 
-#: ../settings/xfae-dialog.c:82 ../settings/xfae-window.c:220
+#: ../settings/esae-dialog.c:82 ../settings/esae-window.c:220
 msgid "Add application"
 msgstr "เพิ่มโปรแกรม"
 
-#: ../settings/xfae-dialog.c:96
+#: ../settings/esae-dialog.c:96
 msgid "Name:"
 msgstr "ชื่อ:"
 
-#: ../settings/xfae-dialog.c:111
+#: ../settings/esae-dialog.c:111
 msgid "Description:"
 msgstr "คำบรรยาย:"
 
-#: ../settings/xfae-dialog.c:125 ../settings/xfae-model.c:548
+#: ../settings/esae-dialog.c:125 ../settings/esae-model.c:548
 msgid "Command:"
 msgstr "คำสั่ง:"
 
-#: ../settings/xfae-dialog.c:138
+#: ../settings/esae-dialog.c:138
 msgid "Trigger:"
 msgstr "การสะกิดเรียก:"
 
-#: ../settings/xfae-dialog.c:209
+#: ../settings/esae-dialog.c:209
 msgid "Select a command"
 msgstr "เลือกคำสั่ง"
 
-#: ../settings/xfae-dialog.c:212
+#: ../settings/esae-dialog.c:212
 msgid "Cancel"
 msgstr "ยกเลิก"
 
-#: ../settings/xfae-dialog.c:213
+#: ../settings/esae-dialog.c:213
 msgid "OK"
 msgstr "ตกลง"
 
-#: ../settings/xfae-dialog.c:260 ../settings/xfae-window.c:242
+#: ../settings/esae-dialog.c:260 ../settings/esae-window.c:242
 msgid "Edit application"
 msgstr "แก้ไขโปรแกรม"
 
-#: ../settings/xfae-model.c:87
+#: ../settings/esae-model.c:87
 msgid "on login"
 msgstr "เมื่อเข้าวาระ"
 
-#: ../settings/xfae-model.c:88
+#: ../settings/esae-model.c:88
 msgid "on logout"
 msgstr "เมื่อออกจากวาระ"
 
-#: ../settings/xfae-model.c:89
+#: ../settings/esae-model.c:89
 msgid "on shutdown"
 msgstr "เมื่อปิดเครื่อง"
 
-#: ../settings/xfae-model.c:90
+#: ../settings/esae-model.c:90
 msgid "on restart"
 msgstr "เมื่อเปิดเครื่องใหม่"
 
-#: ../settings/xfae-model.c:91
+#: ../settings/esae-model.c:91
 msgid "on suspend"
 msgstr "เมื่อพักวาระ"
 
-#: ../settings/xfae-model.c:92
+#: ../settings/esae-model.c:92
 msgid "on hibernate"
 msgstr "เมื่อจำศึลเครื่อง"
 
-#: ../settings/xfae-model.c:93
+#: ../settings/esae-model.c:93
 msgid "on hybrid sleep"
 msgstr "เมื่อวาระหลับแบบไฮบริด"
 
-#: ../settings/xfae-model.c:94
+#: ../settings/esae-model.c:94
 msgid "on switch user"
 msgstr "เมื่อสลับผู้ใช้"
 
-#: ../settings/xfae-model.c:304 ../settings/xfae-model.c:972
-#: ../settings/xfae-model.c:1030
+#: ../settings/esae-model.c:304 ../settings/esae-model.c:972
+#: ../settings/esae-model.c:1030
 #, c-format
 msgid "Failed to open %s for writing"
 msgstr "เปิดแฟ้ม %s เพื่อเขียนไม่สำเร็จ"
 
-#: ../settings/xfae-model.c:681
+#: ../settings/esae-model.c:681
 #, c-format
 msgid "Failed to unlink %s: %s"
 msgstr "unlink %s ไม่สำเร็จ: %s"
 
-#: ../settings/xfae-model.c:772
+#: ../settings/esae-model.c:772
 #, c-format
 msgid "Failed to create file %s"
 msgstr "สร้างแฟ้ม %s ไม่สำเร็จ"
 
-#: ../settings/xfae-model.c:796
+#: ../settings/esae-model.c:796
 #, c-format
 msgid "Failed to write file %s"
 msgstr "เขียนแฟ้ม %s ไม่สำเร็จ"
 
-#: ../settings/xfae-model.c:856
+#: ../settings/esae-model.c:856
 #, c-format
 msgid "Failed to open %s for reading"
 msgstr "เปิดแฟ้ม %s เพื่ออ่านไม่สำเร็จ"
 
-#: ../settings/xfae-window.c:98
+#: ../settings/esae-window.c:98
 msgid "Failed to set run hook"
 msgstr "กำหนดการทำงานที่จุด hook ไม่สำเร็จ"
 
-#: ../settings/xfae-window.c:193
+#: ../settings/esae-window.c:193
 msgid "Trigger"
 msgstr "การสะกิดเรียก"
 
-#: ../settings/xfae-window.c:229
+#: ../settings/esae-window.c:229
 msgid "Remove application"
 msgstr ""
 
-#: ../settings/xfae-window.c:306
+#: ../settings/esae-window.c:306
 msgid "Add"
 msgstr "เพิ่ม"
 
-#: ../settings/xfae-window.c:312
+#: ../settings/esae-window.c:312
 msgid "Remove"
 msgstr "ลบออก"
 
-#: ../settings/xfae-window.c:366
+#: ../settings/esae-window.c:366
 #, c-format
 msgid "Failed adding \"%s\""
 msgstr "เพิ่ม \"%s\" ไม่สำเร็จ"
 
-#: ../settings/xfae-window.c:397 ../settings/xfae-window.c:411
+#: ../settings/esae-window.c:397 ../settings/esae-window.c:411
 msgid "Failed to remove item"
 msgstr "ลบรายการไม่สำเร็จ"
 
-#: ../settings/xfae-window.c:440
+#: ../settings/esae-window.c:440
 msgid "Failed to edit item"
 msgstr "แก้ไขรายการไม่สำเร็จ"
 
-#: ../settings/xfae-window.c:460
+#: ../settings/esae-window.c:460
 #, c-format
 msgid "Failed to edit item \"%s\""
 msgstr "แก้ไขรายการ \"%s\" ไม่สำเร็จ"
 
-#: ../settings/xfae-window.c:488
+#: ../settings/esae-window.c:488
 msgid "Failed to toggle item"
 msgstr "สลับค่าของรายการไม่สำเร็จ"
 
-#: ../xfce4-session/main.c:77
+#: ../expidus1-session/main.c:77
 msgid "Disable binding to TCP ports"
 msgstr "ปิดการ bind กับพอร์ต TCP"
 
-#: ../xfce4-session/main.c:78 ../xfce4-session-logout/main.c:102
+#: ../expidus1-session/main.c:78 ../expidus1-session-logout/main.c:102
 msgid "Print version information and exit"
 msgstr "แสดงข้อมูลรุ่นแล้วจบการทำงาน"
 
-#: ../xfce4-session/xfsm-chooser.c:147
+#: ../expidus1-session/essm-chooser.c:147
 msgid "Session Manager"
 msgstr "โปรแกรมจัดการวาระ"
 
-#: ../xfce4-session/xfsm-chooser.c:168
+#: ../expidus1-session/essm-chooser.c:168
 msgid ""
 "Choose the session you want to restore. You can simply double-click the "
 "session name to restore it."
 msgstr "เลือกวาระที่คุณต้องการกู้คืน คุณสามารถดับเบิลคลิกที่ชื่อวาระที่จะกู้คืนก็ได้"
 
-#: ../xfce4-session/xfsm-chooser.c:184
+#: ../expidus1-session/essm-chooser.c:184
 msgid "Create a new session."
 msgstr "สร้างวาระใหม่"
 
-#: ../xfce4-session/xfsm-chooser.c:191
+#: ../expidus1-session/essm-chooser.c:191
 msgid "Delete a saved session."
 msgstr "ลบวาระที่บันทึกไว้"
 
 #. "Logout" button
-#: ../xfce4-session/xfsm-chooser.c:202
-#: ../xfce4-session-logout/xfce4-session-logout.desktop.in.h:1
+#: ../expidus1-session/essm-chooser.c:202
+#: ../expidus1-session-logout/expidus1-session-logout.desktop.in.h:1
 msgid "Log Out"
 msgstr "ออกจากระบบ"
 
-#: ../xfce4-session/xfsm-chooser.c:204
+#: ../expidus1-session/essm-chooser.c:204
 msgid "Cancel the login attempt and return to the login screen."
 msgstr "ยกเลิกความพยายามเข้าระบบครั้งนี้ และกลับไปที่หน้าจอเข้าระบบ"
 
 #. "Start" button
-#: ../xfce4-session/xfsm-chooser.c:211
+#: ../expidus1-session/essm-chooser.c:211
 msgid "Start"
 msgstr "เปิดเรียก"
 
-#: ../xfce4-session/xfsm-chooser.c:212
+#: ../expidus1-session/essm-chooser.c:212
 msgid "Start an existing session."
 msgstr "เปิดเรียกวาระที่มีอยู่"
 
-#: ../xfce4-session/xfsm-dns.c:78
+#: ../expidus1-session/essm-dns.c:78
 msgid "(Unknown)"
 msgstr "(ไม่ทราบ)"
 
-#: ../xfce4-session/xfsm-dns.c:152
+#: ../expidus1-session/essm-dns.c:152
 #, c-format
 msgid ""
 "Could not look up internet address for %s.\n"
-"This will prevent Xfce from operating correctly.\n"
+"This will prevent Expidus from operating correctly.\n"
 "It may be possible to correct the problem by adding\n"
 "%s to the file /etc/hosts on your system."
-msgstr "ไม่สามารถเปิดหาที่อยู่อินเทอร์เน็ตสำหรับ %s ได้\nปัญหานี้อาจทำให้ Xfce ไม่สามารถทำงานได้อย่างถูกต้อง\nอาจแก้ไขได้โดยเพิ่ม %s ลงในแฟ้ม /etc/hosts\nในระบบของคุณ"
+msgstr "ไม่สามารถเปิดหาที่อยู่อินเทอร์เน็ตสำหรับ %s ได้\nปัญหานี้อาจทำให้ Expidus ไม่สามารถทำงานได้อย่างถูกต้อง\nอาจแก้ไขได้โดยเพิ่ม %s ลงในแฟ้ม /etc/hosts\nในระบบของคุณ"
 
-#: ../xfce4-session/xfsm-dns.c:159
+#: ../expidus1-session/essm-dns.c:159
 msgid "Continue anyway"
 msgstr "ยืนยันทำต่อไป"
 
-#: ../xfce4-session/xfsm-dns.c:160
+#: ../expidus1-session/essm-dns.c:160
 msgid "Try again"
 msgstr "ลองอีกครั้ง"
 
-#: ../xfce4-session/xfsm-manager.c:566
+#: ../expidus1-session/essm-manager.c:566
 #, c-format
 msgid ""
-"Unable to determine failsafe session name.  Possible causes: xfconfd isn't "
+"Unable to determine failsafe session name.  Possible causes: esconfd isn't "
 "running (D-Bus setup problem); environment variable $XDG_CONFIG_DIRS is set "
-"incorrectly (must include \"%s\"), or xfce4-session is installed "
+"incorrectly (must include \"%s\"), or expidus1-session is installed "
 "incorrectly."
-msgstr "ไม่สามารถพิจารณาชื่อของวาระ failsafe ได้ สาเหตุที่เป็นไปได้คือ xfconfd อาจไม่ได้ทำงานอยู่ (ปัญหาการตั้งค่าของ D-Bus), ตัวแปรภาวะแวดล้อม $XDG_CONFIG_DIRS กำหนดค่าไว้ไม่ถูกต้อง (ต้องมี \"%s\" ด้วย), หรือติดตั้ง xfce4-session ไว้ไม่สมบูรณ์"
+msgstr "ไม่สามารถพิจารณาชื่อของวาระ failsafe ได้ สาเหตุที่เป็นไปได้คือ esconfd อาจไม่ได้ทำงานอยู่ (ปัญหาการตั้งค่าของ D-Bus), ตัวแปรภาวะแวดล้อม $XDG_CONFIG_DIRS กำหนดค่าไว้ไม่ถูกต้อง (ต้องมี \"%s\" ด้วย), หรือติดตั้ง expidus1-session ไว้ไม่สมบูรณ์"
 
-#: ../xfce4-session/xfsm-manager.c:577
+#: ../expidus1-session/essm-manager.c:577
 #, c-format
 msgid ""
 "The specified failsafe session (\"%s\") is not marked as a failsafe session."
 msgstr "วาระ failsafe (\"%s\") ที่ระบุ ไม่ได้ถูกทำเครื่องหมายไว้ว่าเป็นวาระ failsafe"
 
-#: ../xfce4-session/xfsm-manager.c:610
+#: ../expidus1-session/essm-manager.c:610
 msgid "The list of applications in the failsafe session is empty."
 msgstr "รายชื่อของโปรแกรมในวาระ failsafe ว่างเปล่าอยู่"
 
-#: ../xfce4-session/xfsm-manager.c:696
+#: ../expidus1-session/essm-manager.c:696
 msgid "Name for the new session"
 msgstr "ชื่อของวาระใหม่"
 
 #. FIXME: migrate this into the splash screen somehow so the
 #. * window doesn't look ugly (right now no WM is running, so it
 #. * won't have window decorations).
-#: ../xfce4-session/xfsm-manager.c:774
+#: ../expidus1-session/essm-manager.c:774
 msgid "Session Manager Error"
 msgstr "ข้อผิดพลาดในโปรแกรมจัดการวาระ"
 
-#: ../xfce4-session/xfsm-manager.c:776
+#: ../expidus1-session/essm-manager.c:776
 msgid "Unable to load a failsafe session"
 msgstr "ไม่สามารถโหลดวาระ failsafe"
 
-#: ../xfce4-session/xfsm-manager.c:778
+#: ../expidus1-session/essm-manager.c:778
 msgid "_Quit"
 msgstr "_ออก"
 
-#: ../xfce4-session/xfsm-manager.c:1271
+#: ../expidus1-session/essm-manager.c:1271
 msgid "Shutdown Failed"
 msgstr "ปิดระบบไม่สำเร็จ"
 
-#: ../xfce4-session/xfsm-manager.c:1274
+#: ../expidus1-session/essm-manager.c:1274
 msgid "Failed to suspend session"
 msgstr "พักวาระไม่สำเร็จ"
 
-#: ../xfce4-session/xfsm-manager.c:1276
+#: ../expidus1-session/essm-manager.c:1276
 msgid "Failed to hibernate session"
 msgstr "จำศีลวาระไม่สำเร็จ"
 
-#: ../xfce4-session/xfsm-manager.c:1278
+#: ../expidus1-session/essm-manager.c:1278
 msgid "Failed to hybrid sleep session"
 msgstr "ทำให้วาระหลับแบบไฮบริดไม่สำเร็จ"
 
-#: ../xfce4-session/xfsm-manager.c:1279
+#: ../expidus1-session/essm-manager.c:1279
 msgid "Failed to switch user"
 msgstr "สลับผู้ใช้ไม่สำเร็จ"
 
-#: ../xfce4-session/xfsm-manager.c:1585
+#: ../expidus1-session/essm-manager.c:1585
 #, c-format
 msgid "Can only terminate clients when in the idle state"
 msgstr "สามารถจบการทำงานของไคลเอนต์ได้เมื่ออยู่ในสถานะเดินเครื่องเปล่าเท่านั้น"
 
-#: ../xfce4-session/xfsm-manager.c:2247
+#: ../expidus1-session/essm-manager.c:2247
 msgid "Session manager must be in idle state when requesting a checkpoint"
 msgstr "โปรแกรมจัดการวาระต้องอยู่ในสถานะเดินเครื่องเปล่าขณะร้องขอจุดตรวจสอบ"
 
-#: ../xfce4-session/xfsm-manager.c:2317 ../xfce4-session/xfsm-manager.c:2337
+#: ../expidus1-session/essm-manager.c:2317 ../expidus1-session/essm-manager.c:2337
 msgid "Session manager must be in idle state when requesting a shutdown"
 msgstr "โปรแกรมจัดการวาระต้องอยู่ในสถานะเดินเครื่องเปล่าขณะร้องขอการปิดระบบ"
 
-#: ../xfce4-session/xfsm-manager.c:2382
+#: ../expidus1-session/essm-manager.c:2382
 msgid "Session manager must be in idle state when requesting a restart"
 msgstr "โปรแกรมจัดการวาระต้องอยู่ในสถานะเดินเครื่องเปล่าขณะร้องขอการเริ่มเปิดเครื่องใหม่"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:193
+#: ../expidus1-session/essm-logout-dialog.c:193
 #, c-format
 msgid "Log out %s"
 msgstr "ออกจากวาระของ %s"
@@ -482,248 +482,248 @@ msgstr "ออกจากวาระของ %s"
 #. *
 #. * Logout
 #. *
-#: ../xfce4-session/xfsm-logout-dialog.c:238
+#: ../expidus1-session/essm-logout-dialog.c:238
 msgid "_Log Out"
 msgstr "_ออกจากระบบ"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:258
+#: ../expidus1-session/essm-logout-dialog.c:258
 msgid "_Restart"
 msgstr "เ_ริ่มเปิดเครื่องใหม่"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:278
+#: ../expidus1-session/essm-logout-dialog.c:278
 msgid "Shut _Down"
 msgstr "ปิ_ดเครื่อง"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:302
+#: ../expidus1-session/essm-logout-dialog.c:302
 msgid "Sus_pend"
 msgstr "_พักเครื่อง"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:336
+#: ../expidus1-session/essm-logout-dialog.c:336
 msgid "_Hibernate"
 msgstr "_จำศีลเครื่อง"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:367
+#: ../expidus1-session/essm-logout-dialog.c:367
 msgid "H_ybrid Sleep"
 msgstr "หลับแบบ_ไฮบริด"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:398
+#: ../expidus1-session/essm-logout-dialog.c:398
 msgid "Switch _User"
 msgstr "_สลับผู้ใช้"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:423
+#: ../expidus1-session/essm-logout-dialog.c:423
 msgid "_Save session for future logins"
 msgstr "_บันทึกวาระสำหรับใช้เข้าระบบครั้งต่อไป"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:451
+#: ../expidus1-session/essm-logout-dialog.c:451
 msgid "An error occurred"
 msgstr "เกิดข้อผิดพลาด"
 
-#: ../xfce4-session/xfsm-shutdown.c:162
+#: ../expidus1-session/essm-shutdown.c:162
 msgid "Shutdown is blocked by the kiosk settings"
 msgstr "การปิดระบบถูกปิดกั้นโดยค่าตั้งของตู้ขายของ"
 
-#: ../xfce4-session/xfsm-shutdown.c:219
+#: ../expidus1-session/essm-shutdown.c:219
 #, c-format
 msgid "Unknown shutdown method %d"
 msgstr "พบวิธีการปิดระบบ %d ซึ่งไม่รู้จัก"
 
-#: ../xfce4-session-logout/main.c:70
+#: ../expidus1-session-logout/main.c:70
 msgid "Log out without displaying the logout dialog"
 msgstr "ออกจากระบบโดยไม่ต้องแสดงกล่องโต้ตอบออกจากระบบ"
 
-#: ../xfce4-session-logout/main.c:74
+#: ../expidus1-session-logout/main.c:74
 msgid "Halt without displaying the logout dialog"
 msgstr "ปิดเครื่องโดยไม่ต้องแสดงกล่องโต้ตอบออกจากระบบ"
 
-#: ../xfce4-session-logout/main.c:78
+#: ../expidus1-session-logout/main.c:78
 msgid "Reboot without displaying the logout dialog"
 msgstr "เริ่มเปิดเครื่องใหม่โดยไม่ต้องแสดงกล่องโต้ตอบออกจากระบบ"
 
-#: ../xfce4-session-logout/main.c:82
+#: ../expidus1-session-logout/main.c:82
 msgid "Suspend without displaying the logout dialog"
 msgstr "พักเครื่องโดยไม่ต้องแสดงกล่องโต้ตอบออกจากระบบ"
 
-#: ../xfce4-session-logout/main.c:86
+#: ../expidus1-session-logout/main.c:86
 msgid "Hibernate without displaying the logout dialog"
 msgstr "จำศีลเครื่องโดยไม่ต้องแสดงกล่องโต้ตอบออกจากระบบ"
 
-#: ../xfce4-session-logout/main.c:90
+#: ../expidus1-session-logout/main.c:90
 msgid "Hybrid Sleep without displaying the logout dialog"
 msgstr "หลับแบบไฮบริดโดยไม่ต้องแสดงกล่องโต้ตอบออกจากระบบ"
 
-#: ../xfce4-session-logout/main.c:94
+#: ../expidus1-session-logout/main.c:94
 msgid "Switch user without displaying the logout dialog"
 msgstr "สลับผู้ใช้โดยไม่ต้องแสดงกล่องโต้ตอบออกจากระบบ"
 
-#: ../xfce4-session-logout/main.c:98
+#: ../expidus1-session-logout/main.c:98
 msgid "Log out quickly; don't save the session"
 msgstr "ออกจากระบบอย่างเร็วโดยไม่ต้องบันทึกวาระ"
 
-#: ../xfce4-session-logout/main.c:121
+#: ../expidus1-session-logout/main.c:121
 msgid "Unknown error"
 msgstr "เกิดข้อผิดพลาดไม่ทราบสาเหตุ"
 
-#: ../xfce4-session-logout/main.c:147
-msgid "Written by Benedikt Meurer <benny@xfce.org>"
-msgstr "เขียนโดย Benedikt Meurer <benny@xfce.org>"
+#: ../expidus1-session-logout/main.c:147
+msgid "Written by Benedikt Meurer <benny@expidus.org>"
+msgstr "เขียนโดย Benedikt Meurer <benny@expidus.org>"
 
-#: ../xfce4-session-logout/main.c:148
-msgid "and Brian Tarricone <kelnos@xfce.org>."
-msgstr "และ Brian Tarricone <kelnos@xfce.org>."
+#: ../expidus1-session-logout/main.c:148
+msgid "and Brian Tarricone <kelnos@expidus.org>."
+msgstr "และ Brian Tarricone <kelnos@expidus.org>."
 
-#: ../xfce4-session-logout/main.c:168 ../xfce4-session-logout/main.c:279
+#: ../expidus1-session-logout/main.c:168 ../expidus1-session-logout/main.c:279
 msgid "Received error while trying to log out"
 msgstr "ได้รับรายงานข้อผิดพลาดขณะพยายามออกจากระบบ"
 
-#: ../xfce4-session-logout/main.c:244
+#: ../expidus1-session-logout/main.c:244
 #, c-format
 msgid "Received error while trying to log out, error was %s"
 msgstr "พบข้อผิดพลาดขณะพยายามออกจากระบบ ข้อผิดพลาดคือ %s"
 
-#: ../xfce4-session-logout/xfce4-session-logout.desktop.in.h:2
-msgid "Log out of the Xfce Desktop"
-msgstr "ออกจากเดสก์ท็อป Xfce"
+#: ../expidus1-session-logout/expidus1-session-logout.desktop.in.h:2
+msgid "Log out of the Expidus Desktop"
+msgstr "ออกจากเดสก์ท็อป Expidus"
 
-#: ../settings/xfce-session-settings.desktop.in.h:1
-#: ../settings/xfce4-session-settings.ui.h:1
+#: ../settings/expidus-session-settings.desktop.in.h:1
+#: ../settings/expidus1-session-settings.ui.h:1
 msgid "Session and Startup"
 msgstr "วาระและการเริ่ม"
 
-#: ../settings/xfce-session-settings.desktop.in.h:2
+#: ../settings/expidus-session-settings.desktop.in.h:2
 msgid "Customize desktop startup"
 msgstr "ปรับแต่งการเปิดวาระเดสก์ท็อป"
 
-#: ../settings/xfce-session-settings.desktop.in.h:3
+#: ../settings/expidus-session-settings.desktop.in.h:3
 msgid ""
 "session;settings;preferences;manager;startup;login;logout;shutdown;lock "
 "screen;application;autostart;launch;services;daemon;agent;"
 msgstr ""
 
-#: ../settings/xfce4-session-settings.ui.h:2
+#: ../settings/expidus1-session-settings.ui.h:2
 msgid "_Help"
 msgstr "_วิธีใช้"
 
-#: ../settings/xfce4-session-settings.ui.h:4
+#: ../settings/expidus1-session-settings.ui.h:4
 msgid "_Display chooser on login"
 msgstr "แ_สดงกล่องเลือกเมื่อเข้าระบบ"
 
-#: ../settings/xfce4-session-settings.ui.h:5
-msgid "Display the session chooser every time Xfce starts"
-msgstr "แสดงกล่องเลือกวาระทุกครั้งที่ Xfce เริ่มทำงาน"
+#: ../settings/expidus1-session-settings.ui.h:5
+msgid "Display the session chooser every time Expidus starts"
+msgstr "แสดงกล่องเลือกวาระทุกครั้งที่ Expidus เริ่มทำงาน"
 
-#: ../settings/xfce4-session-settings.ui.h:6
+#: ../settings/expidus1-session-settings.ui.h:6
 msgid "<b>Session Chooser</b>"
 msgstr "<b>กล่องเลือกวาระ</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:7
+#: ../settings/expidus1-session-settings.ui.h:7
 msgid "Automatically save session on logo_ut"
 msgstr "บันทึกวาระโดยอัตโนมัติเมื่อออ_กจากระบบ"
 
-#: ../settings/xfce4-session-settings.ui.h:8
+#: ../settings/expidus1-session-settings.ui.h:8
 msgid "Always save the session when logging out"
 msgstr "บันทึกวาระเสมอเมื่อออกจากระบบ"
 
-#: ../settings/xfce4-session-settings.ui.h:9
+#: ../settings/expidus1-session-settings.ui.h:9
 msgid "Pro_mpt on logout"
 msgstr "_ถามก่อนออกจากระบบ"
 
-#: ../settings/xfce4-session-settings.ui.h:10
+#: ../settings/expidus1-session-settings.ui.h:10
 msgid "Prompt for confirmation when logging out"
 msgstr "ถามยืนยันก่อนออกจากระบบ"
 
-#: ../settings/xfce4-session-settings.ui.h:11
+#: ../settings/expidus1-session-settings.ui.h:11
 msgid "<b>Logout Settings</b>"
 msgstr "<b>การออกจากระบบ</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:12
+#: ../settings/expidus1-session-settings.ui.h:12
 msgid "Lock screen be_fore sleep"
 msgstr "ล็อคหน้าจอ_ก่อนพักเครื่อง"
 
-#: ../settings/xfce4-session-settings.ui.h:13
+#: ../settings/expidus1-session-settings.ui.h:13
 msgid "Run xflock4 before suspending or hibernating the system"
 msgstr "เรียกทำงาน xflock4 ก่อนที่จะพักเครื่องหรือจำศึลเครื่อง"
 
-#: ../settings/xfce4-session-settings.ui.h:14
+#: ../settings/expidus1-session-settings.ui.h:14
 msgid "<b>Shutdown</b>"
 msgstr "<b>การปิดระบบ</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:15
+#: ../settings/expidus1-session-settings.ui.h:15
 msgid "_General"
 msgstr "_ทั่วไป"
 
-#: ../settings/xfce4-session-settings.ui.h:16
+#: ../settings/expidus1-session-settings.ui.h:16
 msgid "Currently active session: <b>Default</b>"
 msgstr "วาระที่ทำงานอยู่: <b>ปริยาย</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:17
+#: ../settings/expidus1-session-settings.ui.h:17
 msgid "Save Sess_ion"
 msgstr "_บันทึกวาระ"
 
-#: ../settings/xfce4-session-settings.ui.h:18
+#: ../settings/expidus1-session-settings.ui.h:18
 msgid ""
 "These applications are a part of the currently-running session, and can be "
 "saved now or when you log out.  Changes below will only take effect when the"
 " session is saved."
 msgstr ""
 
-#: ../settings/xfce4-session-settings.ui.h:20
+#: ../settings/expidus1-session-settings.ui.h:20
 msgid "Current Sessio_n"
 msgstr "_วาระปัจจุบัน"
 
-#: ../settings/xfce4-session-settings.ui.h:21
+#: ../settings/expidus1-session-settings.ui.h:21
 msgid "Delete the selected session"
 msgstr "ลบวาระที่เลือก"
 
-#: ../settings/xfce4-session-settings.ui.h:22
+#: ../settings/expidus1-session-settings.ui.h:22
 msgid "Clear Save_d Sessions"
 msgstr "_ล้างวาระที่บันทึกไว้"
 
-#: ../settings/xfce4-session-settings.ui.h:23
+#: ../settings/expidus1-session-settings.ui.h:23
 msgid "Saved _Sessions"
 msgstr "วาระที่_บันทึกไว้"
 
-#: ../settings/xfce4-session-settings.ui.h:24
+#: ../settings/expidus1-session-settings.ui.h:24
 msgid "Launch GN_OME services on startup"
 msgstr "เปิดบริการของ _GNOME เมื่อเริ่มวาระ"
 
-#: ../settings/xfce4-session-settings.ui.h:25
+#: ../settings/expidus1-session-settings.ui.h:25
 msgid "Start GNOME services, such as gnome-keyring"
 msgstr "เปิดบริการต่างๆ ของ GNOME เช่น gnome-keyring"
 
-#: ../settings/xfce4-session-settings.ui.h:26
+#: ../settings/expidus1-session-settings.ui.h:26
 msgid "Launch _KDE services on startup"
 msgstr "เปิดบริการของ _KDE เมื่อเริ่มวาระ"
 
-#: ../settings/xfce4-session-settings.ui.h:27
+#: ../settings/expidus1-session-settings.ui.h:27
 msgid "Start KDE services, such as kdeinit"
 msgstr "เปิดบริการต่างๆ ของ KDE เช่น kdeinit"
 
-#: ../settings/xfce4-session-settings.ui.h:28
+#: ../settings/expidus1-session-settings.ui.h:28
 msgid "<b>Compatibility</b>"
 msgstr "<b>ความเข้ากันได้</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:29
+#: ../settings/expidus1-session-settings.ui.h:29
 msgid "Manage _remote applications"
 msgstr "จัดการโปรแกรมผ่านเ_ครือข่าย"
 
-#: ../settings/xfce4-session-settings.ui.h:30
+#: ../settings/expidus1-session-settings.ui.h:30
 msgid ""
 "Manage remote applications over the network (this may be a security risk)"
 msgstr "จัดการโปรแกรมผ่านเครือข่าย (อาจทำให้เกิดความเสี่ยงในระบบรักษาความปลอดภัย)"
 
-#: ../settings/xfce4-session-settings.ui.h:31
+#: ../settings/expidus1-session-settings.ui.h:31
 msgid "<b>Security</b>"
 msgstr "<b>การรักษาความปลอดภัย</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:32
+#: ../settings/expidus1-session-settings.ui.h:32
 msgid "Ad_vanced"
 msgstr "_ขั้นสูง"
 
-#: ../settings/xfce4-session-settings.ui.h:33
+#: ../settings/expidus1-session-settings.ui.h:33
 msgid "Saving Session"
 msgstr "กำลังบันทึกวาระ"
 
-#: ../settings/xfce4-session-settings.ui.h:34
+#: ../settings/expidus1-session-settings.ui.h:34
 msgid ""
 "Your session is being saved.  If you do not wish to wait, you may close this"
 " window."

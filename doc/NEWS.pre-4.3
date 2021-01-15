@@ -12,14 +12,14 @@
 
 	* Version 4.1.2
 	* Icon changes in the tray icon menu (the session control icon)
-	* Added about dialog now that XfceAboutDialog is in libxfcegui4.
+	* Added about dialog now that ExpidusAboutDialog is in libexpidusgui4.
 
 20040129:
 ---------
 
 	* Version 4.1.1 (big jump indeed, but need to catch up with the rest
 	  of the desktop :-))
-	* Finally moved xfce_setenv()/xfce_putenv() to libxfce4util and
+	* Finally moved expidus_setenv()/expidus_putenv() to libexpidus1util and
 	  we are now secured from stupid native implementations of both
 	  functions.
 	* Some autotools and copyright updates.
@@ -27,14 +27,14 @@
 20040125:
 ---------
 	* Version 0.2.1
-	* Updated the xfce4-session manual page to reflect the latest
+	* Updated the expidus1-session manual page to reflect the latest
 	  changes.
 
 20040113:
 ---------
 	* Added --disable-tcp option to disable binding to TCP ports. This
 	  is no new configure option, but a runtime option, that is, it can
-	  be supplied to xfce4-session at startup.
+	  be supplied to expidus1-session at startup.
 
 20040110:
 ---------
@@ -42,7 +42,7 @@
 	* Added support for user defined poweroff/halt/reboot commands,
 	  and some cleanups, thanks to Brian Tarricone.
 	* Various fixes in the meantime, too bad I have no spare time for
-	  xfce :-(
+	  expidus :-(
 
 20030721:
 ---------
@@ -51,18 +51,18 @@
 
 20030716:
 ---------
-	* XfceTrayIcon now both provides "clicked" (a single left button
+	* ExpidusTrayIcon now both provides "clicked" (a single left button
 	  click) and "double_clicked" (double left button click) signals
-	* XfceTrayIcon no longer autoconnects, you'll need to call
-	  xfce_tray_icon_connect() explicitly
+	* ExpidusTrayIcon no longer autoconnects, you'll need to call
+	  expidus_tray_icon_connect() explicitly
 
 20030715:
 ---------
 	* Version 0.1.1
 	* Make "session control" sticky again, since the xfwm4 problem with
 	  sticky windows seems to be fixed
-	* Many improvements on the XfceTrayIcon class (will be moved to
-	  libxfcegui4 soon)
+	* Many improvements on the ExpidusTrayIcon class (will be moved to
+	  libexpidusgui4 soon)
 	* Session managers tray icon can now be enabled/disabled from
 	  the settings dialog
 	* Added more helpful tooltips to the settings dialog (translations
@@ -82,7 +82,7 @@
 20030712:
 ---------
 	* Fixed tray icon problem
-	* New tray icon wrapper XfceTrayIcon, will be moved to libxfcegui4
+	* New tray icon wrapper ExpidusTrayIcon, will be moved to libexpidusgui4
 	  later
 
 20030710:
@@ -96,17 +96,17 @@
 	  IDLE state after a succesfull checkpoint)
 	* Added UNIX signals support: SIGUSR1 saves current session, SIGINT
 	  quits current session
-	* Added security check to xfce4-shutdown (shutdown.allow is only used
+	* Added security check to expidus1-shutdown (shutdown.allow is only used
 	  if owned by root)
 	* Honor fast SaveYourself requests
 
 20030708:
 ---------
-	* startxfce4 in xfce-utils was altered to automatically use
-	  xfce4-session by default if installed.
+	* startexpidus1 in expidus-utils was altered to automatically use
+	  expidus1-session by default if installed.
 	* Added "session control" dialog and tray icon. Made several
-	  improvements. Now requires libxfcegui4 >= 3.92.2
-	* smproxy now works with xfce4-session, that says, X11R5 session
+	  improvements. Now requires libexpidusgui4 >= 3.92.2
+	* smproxy now works with expidus1-session, that says, X11R5 session
 	  apps are now managed by the session manager as well (e.g. xcalc,
 	  xedit, xbiff or even apps like gimp and gqview)
 
@@ -131,6 +131,6 @@
 20030702:
 ---------
 	* session file naming scheme has changed from
-		~/.xfce4/sessions/session-<hostname>
+		~/.expidus1/sessions/session-<hostname>
 	  to
-		~/.xfce4/sessions/xfsm-<hostname>
+		~/.expidus1/sessions/essm-<hostname>

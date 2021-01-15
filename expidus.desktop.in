@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+_Name=Expidus Session
+_Comment=Use this session to run Expidus as your desktop environment
+Exec=startexpidus1
+Icon=
+Type=Application
+DesktopNames=EXPIDUS

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Copyright (c) 2002-2020 The Xfce development team. All rights reserved.
+# Copyright (c) 2002-2020 The Expidus development team. All rights reserved.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,17 +17,17 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 # MA 02110-1301 USA.
 #
-# Written for Xfce by Benedikt Meurer <benny@xfce.org>
+# Written for Expidus by Benedikt Meurer <benny@expidus.org>
 # and Brian Tarricone <brian@tarricone.org>.
 #
 
 (type xdt-autogen) >/dev/null 2>&1 || {
   cat >&2 <<EOF
-autogen.sh: You don't seem to have the Xfce development tools (at least
+autogen.sh: You don't seem to have the Expidus development tools (at least
             version $XDT_REQURED_VERSION) installed on your system, which
             are required to build this software.
-            Please install the xfce4-dev-tools package first; it is available
-            from your distribution or https://www.xfce.org/.
+            Please install the expidus1-dev-tools package first; it is available
+            from your distribution or https://www.expidus.org/.
 EOF
   exit 1
 }

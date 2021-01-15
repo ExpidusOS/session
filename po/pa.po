@@ -1,12 +1,12 @@
-# Punjabi translations for xfce4-session package.
-# Copyright (C) 2003-2006 The Xfce development team.
-# This file is distributed under the same license as the xfce4-session package.
+# Punjabi translations for expidus1-session package.
+# Copyright (C) 2003-2006 The Expidus development team.
+# This file is distributed under the same license as the expidus1-session package.
 # Amanpreet Singh Alam <aalam@redhat.com>, 2004.
 # Jaswinder Singh Phulewala <jaswinderphulewala@yahoo.com>, 2004.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xfce4-session 4.4.0\n"
+"Project-Id-Version: expidus1-session 4.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-16 17:35+0100\n"
 "PO-Revision-Date: 2005-10-08 20:42+0900\n"
@@ -138,97 +138,97 @@ msgstr ""
 msgid "Simple Splash Engine"
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:86
+#: ../panel-plugin/essm-logout-plugin.c:86
 #, fuzzy
 msgid "Session"
 msgstr "ਨਵਾਂ ਅਜਲਾਸ"
 
-#: ../panel-plugin/xfsm-logout-plugin.c:87
+#: ../panel-plugin/essm-logout-plugin.c:87
 msgid "Loc_k screen"
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:88
-#: ../panel-plugin/xfsm-logout-plugin.c:128
+#: ../panel-plugin/essm-logout-plugin.c:88
+#: ../panel-plugin/essm-logout-plugin.c:128
 msgid "_Suspend"
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:89
-#: ../panel-plugin/xfsm-logout-plugin.c:135
+#: ../panel-plugin/essm-logout-plugin.c:89
+#: ../panel-plugin/essm-logout-plugin.c:135
 msgid "_Hibernate"
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:90
-#: ../panel-plugin/xfsm-logout-plugin.c:121
+#: ../panel-plugin/essm-logout-plugin.c:90
+#: ../panel-plugin/essm-logout-plugin.c:121
 msgid "_Reboot"
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:91
-#: ../panel-plugin/xfsm-logout-plugin.c:114
+#: ../panel-plugin/essm-logout-plugin.c:91
+#: ../panel-plugin/essm-logout-plugin.c:114
 msgid "Shut _down"
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:92
-#: ../panel-plugin/xfsm-logout-plugin.c:107
+#: ../panel-plugin/essm-logout-plugin.c:92
+#: ../panel-plugin/essm-logout-plugin.c:107
 #, fuzzy
 msgid "_Log out"
 msgstr "ਬਾਹਰੀ ਦਰ"
 
-#. XFSM_SHUTDOWN_ASK
-#. XFSM_SHUTDOWN_LOGOUT
-#: ../panel-plugin/xfsm-logout-plugin.c:105
+#. ESSM_SHUTDOWN_ASK
+#. ESSM_SHUTDOWN_LOGOUT
+#: ../panel-plugin/essm-logout-plugin.c:105
 msgid "Are you sure you want to log out?"
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:106
+#: ../panel-plugin/essm-logout-plugin.c:106
 #, c-format
 msgid "You will be logged out in %u seconds."
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:109
+#: ../panel-plugin/essm-logout-plugin.c:109
 msgid "Failed to log out."
 msgstr ""
 
-#. XFSM_SHUTDOWN_HALT
-#: ../panel-plugin/xfsm-logout-plugin.c:112
+#. ESSM_SHUTDOWN_HALT
+#: ../panel-plugin/essm-logout-plugin.c:112
 msgid "Are you sure you want to shut down?"
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:113
+#: ../panel-plugin/essm-logout-plugin.c:113
 #, c-format
 msgid "Your system will shut down in %u seconds."
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:116
+#: ../panel-plugin/essm-logout-plugin.c:116
 msgid "Failed to shut down."
 msgstr ""
 
-#. XFSM_SHUTDOWN_REBOOT
-#: ../panel-plugin/xfsm-logout-plugin.c:119
+#. ESSM_SHUTDOWN_REBOOT
+#: ../panel-plugin/essm-logout-plugin.c:119
 msgid "Are you sure you want to reboot?"
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:120
+#: ../panel-plugin/essm-logout-plugin.c:120
 #, c-format
 msgid "Your system will reboot in %u seconds."
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:123
+#: ../panel-plugin/essm-logout-plugin.c:123
 msgid "Failed to reboot."
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:130
+#: ../panel-plugin/essm-logout-plugin.c:130
 msgid "Failed to suspend"
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:137
+#: ../panel-plugin/essm-logout-plugin.c:137
 msgid "Failed to hibernate"
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:150
+#: ../panel-plugin/essm-logout-plugin.c:150
 msgid "Xflock4 could not be launched"
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.c:222
+#: ../panel-plugin/essm-logout-plugin.c:222
 #, fuzzy
 msgid "Close Session"
 msgstr "ਅਜਲਾਸ ਚੁਣੋ"
@@ -251,16 +251,16 @@ msgstr "ਜਾਣਕਾਰੀ"
 msgid "Type '%s --help' for usage."
 msgstr ""
 
-#: ../settings/main.c:85 ../xfce4-session/main.c:226
-msgid "The Xfce development team. All rights reserved."
+#: ../settings/main.c:85 ../expidus1-session/main.c:226
+msgid "The Expidus development team. All rights reserved."
 msgstr ""
 
-#: ../settings/main.c:86 ../xfce4-session/main.c:232
+#: ../settings/main.c:86 ../expidus1-session/main.c:232
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr ""
 
-#: ../settings/main.c:95 ../xfce4-session/main.c:238 ../xfce4-tips/main.c:270
+#: ../settings/main.c:95 ../expidus1-session/main.c:238 ../expidus1-tips/main.c:270
 msgid "Unable to contact settings server"
 msgstr ""
 
@@ -312,7 +312,7 @@ msgid ""
 msgstr ""
 
 #: ../settings/session-editor.c:191
-#: ../settings/xfce4-session-settings.glade.h:35
+#: ../settings/expidus1-session-settings.glade.h:35
 msgid "_Quit Program"
 msgstr ""
 
@@ -347,169 +347,169 @@ msgstr ""
 msgid "None"
 msgstr "ਕੋਈ ਨਹੀਂ"
 
-#: ../settings/xfae-dialog.c:78
+#: ../settings/esae-dialog.c:78
 msgid "Add application"
 msgstr ""
 
-#: ../settings/xfae-dialog.c:92
+#: ../settings/esae-dialog.c:92
 msgid "Name:"
 msgstr ""
 
-#: ../settings/xfae-dialog.c:109
+#: ../settings/esae-dialog.c:109
 #, fuzzy
 msgid "Description:"
 msgstr "<b>ਵਰਣਨ:</b>"
 
-#: ../settings/xfae-dialog.c:124
+#: ../settings/esae-dialog.c:124
 msgid "Command:"
 msgstr ""
 
-#: ../settings/xfae-dialog.c:184
+#: ../settings/esae-dialog.c:184
 msgid "Select a command"
 msgstr ""
 
-#: ../settings/xfae-dialog.c:233
+#: ../settings/esae-dialog.c:233
 #, fuzzy
 msgid "Edit application"
 msgstr "ਦੂਰਵਰਤੀ ਕਾਰਜਾਂ ਦਾ ਪ੍ਰਬੰਧ ਕਰੋ"
 
-#: ../settings/xfae-model.c:562
+#: ../settings/esae-model.c:562
 #, c-format
 msgid "Failed to unlink %s: %s"
 msgstr ""
 
-#: ../settings/xfae-model.c:651
+#: ../settings/esae-model.c:651
 #, c-format
 msgid "Failed to create file %s"
 msgstr ""
 
-#: ../settings/xfae-model.c:673
+#: ../settings/esae-model.c:673
 #, c-format
 msgid "Failed to write file %s"
 msgstr ""
 
-#: ../settings/xfae-model.c:732
+#: ../settings/esae-model.c:732
 #, c-format
 msgid "Failed to open %s for reading"
 msgstr ""
 
-#: ../settings/xfae-model.c:841 ../settings/xfae-model.c:898
+#: ../settings/esae-model.c:841 ../settings/esae-model.c:898
 #, c-format
 msgid "Failed to open %s for writing"
 msgstr ""
 
-#: ../settings/xfae-window.c:101
+#: ../settings/esae-window.c:101
 msgid ""
 "Below is the list of applications that will be started automatically when "
-"you login to your Xfce desktop, in addition to the applications that were "
+"you login to your Expidus desktop, in addition to the applications that were "
 "saved when you logged out last time:"
 msgstr ""
 
-#: ../settings/xfae-window.c:289
+#: ../settings/esae-window.c:289
 #, c-format
 msgid "Failed adding \"%s\""
 msgstr ""
 
-#: ../settings/xfae-window.c:320 ../settings/xfae-window.c:334
+#: ../settings/esae-window.c:320 ../settings/esae-window.c:334
 msgid "Failed to remove item"
 msgstr ""
 
-#: ../settings/xfae-window.c:326
+#: ../settings/esae-window.c:326
 msgid ""
 "This will permanently remove the application from the list of automatically "
 "started applications"
 msgstr ""
 
-#: ../settings/xfae-window.c:328
+#: ../settings/esae-window.c:328
 #, c-format
 msgid "Are you sure you want to remove \"%s\""
 msgstr ""
 
-#: ../settings/xfae-window.c:362
+#: ../settings/esae-window.c:362
 msgid "Failed to edit item"
 msgstr ""
 
-#: ../settings/xfae-window.c:382
+#: ../settings/esae-window.c:382
 #, c-format
 msgid "Failed to edit item \"%s\""
 msgstr ""
 
-#: ../settings/xfae-window.c:410
+#: ../settings/esae-window.c:410
 msgid "Failed to toggle item"
 msgstr ""
 
-#: ../xfce4-session/main.c:76
+#: ../expidus1-session/main.c:76
 msgid "Disable binding to TCP ports"
 msgstr ""
 
-#: ../xfce4-session/main.c:77 ../xfce4-session-logout/main.c:93
+#: ../expidus1-session/main.c:77 ../expidus1-session-logout/main.c:93
 #, fuzzy
 msgid "Print version information and exit"
 msgstr "ਜਾਣਕਾਰੀ"
 
-#: ../xfce4-session/main.c:140
+#: ../expidus1-session/main.c:140
 msgid "Loading desktop settings"
 msgstr "ਵਿਹੜਾ ਵਿਵਸਥਾਵਾਂ ਲੋਡ ਕਰ ਰਿਹਾ "
 
-#: ../xfce4-session/main.c:227
-msgid "Written by Benedikt Meurer <benny@xfce.org>."
+#: ../expidus1-session/main.c:227
+msgid "Written by Benedikt Meurer <benny@expidus.org>."
 msgstr ""
 
-#: ../xfce4-session/main.c:228
+#: ../expidus1-session/main.c:228
 #, c-format
 msgid "Built with Gtk+-%d.%d.%d, running with Gtk+-%d.%d.%d"
 msgstr ""
 
 #. verify that the DNS settings are ok
-#: ../xfce4-session/main.c:258
+#: ../expidus1-session/main.c:258
 msgid "Verifying DNS settings"
 msgstr "DNS ਵਿਵਸਥਾਵਾਂ ਦੀ ਜਾਂਚ ਕਰ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/main.c:261
+#: ../expidus1-session/main.c:261
 msgid "Loading session data"
 msgstr "ਅਜਲਾਸ ਡਾਟਾ ਲੋਡ ਕਰ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/shutdown.c:372
+#: ../expidus1-session/shutdown.c:372
 #, c-format
 msgid "<span size='large'><b>Log out %s</b></span>"
 msgstr ""
 
-#: ../xfce4-session/shutdown.c:422
-#: ../xfce4-session-logout/xfce4-session-logout.desktop.in.h:1
+#: ../expidus1-session/shutdown.c:422
+#: ../expidus1-session-logout/expidus1-session-logout.desktop.in.h:1
 #, fuzzy
 msgid "Log Out"
 msgstr "ਬਾਹਰੀ ਦਰ"
 
-#: ../xfce4-session/shutdown.c:457
+#: ../expidus1-session/shutdown.c:457
 msgid "Restart"
 msgstr ""
 
-#: ../xfce4-session/shutdown.c:499
+#: ../expidus1-session/shutdown.c:499
 msgid "Shut Down"
 msgstr ""
 
-#: ../xfce4-session/shutdown.c:561
+#: ../expidus1-session/shutdown.c:561
 msgid "Suspend"
 msgstr ""
 
-#: ../xfce4-session/shutdown.c:599
+#: ../expidus1-session/shutdown.c:599
 msgid "Hibernate"
 msgstr ""
 
-#: ../xfce4-session/shutdown.c:608
+#: ../expidus1-session/shutdown.c:608
 msgid "_Save session for future logins"
 msgstr "ਬਾਅਦ ਵਿੱਚ ਲਾਗਆਨ ਕਰਨ ਲਈ ਅਜਲਾਸ ਸੰਭਾਲੋ"
 
-#: ../xfce4-session/shutdown.c:668
+#: ../expidus1-session/shutdown.c:668
 msgid "Please enter your password:"
 msgstr "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਗੁਪਤ ਕੋਡ ਭਰੋ"
 
-#: ../xfce4-session/shutdown.c:700
+#: ../expidus1-session/shutdown.c:700
 #, fuzzy
 msgid "<b>An error occurred</b>"
 msgstr "<b>ਇੱਕ ਗਲਤੀ ਵਾਪਰੀ ਹੈ</b>"
 
-#: ../xfce4-session/shutdown.c:714
+#: ../expidus1-session/shutdown.c:714
 msgid ""
 "Either the password you entered is invalid, or the system administrator "
 "disallows shutting down this computer with your user account."
@@ -517,20 +517,20 @@ msgstr ""
 "ਜਾਂ ਤਾਂ ਤੁਹਾਡਾ ਗੁਪਤ ਕੋਡ ਗਲਤ ਹੈ ਜਾਂ ਸਿਸਟਮ ਪ੍ਰਬੰਧਕ ਨੇ ਤੁਹਾਨੂੰ ਤੁਹਾਡੇ ਉਪਯੋਗੀ ਖਾਤੇ ਨਾਲ ਇਹ ਮਸ਼ੀਨ ਬੰਦ "
 "ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀਂ ਦਿੱਤੀ"
 
-#: ../xfce4-session/shutdown.c:833 ../xfce4-session/xfsm-manager.c:1119
+#: ../expidus1-session/shutdown.c:833 ../expidus1-session/essm-manager.c:1119
 msgid "Shutdown Failed"
 msgstr ""
 
-#: ../xfce4-session/shutdown.c:835
+#: ../expidus1-session/shutdown.c:835
 msgid "Unable to perform shutdown"
 msgstr ""
 
-#: ../xfce4-session/xfsm-chooser.c:91
+#: ../expidus1-session/essm-chooser.c:91
 #, c-format
 msgid "Last accessed: %s"
 msgstr ""
 
-#: ../xfce4-session/xfsm-chooser.c:177
+#: ../expidus1-session/essm-chooser.c:177
 msgid ""
 "Choose the session you want to restore. You can simply double-click the "
 "session name to restore it."
@@ -539,51 +539,51 @@ msgstr ""
 "ਵਾਰ ਕਲਿੱਕ ਕਰੋ"
 
 #. "Logout" button
-#: ../xfce4-session/xfsm-chooser.c:203
+#: ../expidus1-session/essm-chooser.c:203
 #, fuzzy
 msgid "Log out"
 msgstr "ਬਾਹਰੀ ਦਰ"
 
-#: ../xfce4-session/xfsm-chooser.c:205
+#: ../expidus1-session/essm-chooser.c:205
 msgid "Cancel the login attempt and return to the login screen."
 msgstr "ਲਾਗਇਨ ਕੋਸ਼ਿਸ਼ ਰੱਦ ਕਰੋ ਅਤੇ ਲਾਗਇਨ ਪਰਦੇ ਤੇ ਪਰਤੋ|"
 
 #. "New" button
-#: ../xfce4-session/xfsm-chooser.c:212
+#: ../expidus1-session/essm-chooser.c:212
 msgid "New session"
 msgstr "ਨਵਾਂ ਅਜਲਾਸ"
 
-#: ../xfce4-session/xfsm-chooser.c:213
+#: ../expidus1-session/essm-chooser.c:213
 msgid "Create a new session."
 msgstr "ਨਵਾਂ ਅਜਲਾਸ ਬਣਾਓ|"
 
-#: ../xfce4-session/xfsm-client.c:506 ../xfce4-session/xfsm-client.c:532
-#: ../xfce4-session/xfsm-client.c:571
+#: ../expidus1-session/essm-client.c:506 ../expidus1-session/essm-client.c:532
+#: ../expidus1-session/essm-client.c:571
 #, c-format
 msgid "The client doesn't have any properties set yet"
 msgstr ""
 
-#: ../xfce4-session/xfsm-compat-gnome.c:301
+#: ../expidus1-session/essm-compat-gnome.c:301
 msgid "Starting The Gnome Keyring Daemon"
 msgstr "ਗਨੋਮ ਕੀਰਿੰਗ ਡੈਮਨ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-compat-gnome.c:313
+#: ../expidus1-session/essm-compat-gnome.c:313
 msgid "Starting Gnome Assistive Technologies"
 msgstr "ਗਨੋਮ ਸਹਾਇਕ ਤਕਨੀਕ ਸ਼ੁਰੂ ਹੋ ਰਹੀ ਹੈ"
 
-#: ../xfce4-session/xfsm-compat-kde.c:124
+#: ../expidus1-session/essm-compat-kde.c:124
 msgid "Starting KDE services"
 msgstr "ਕੇ ਡੀ ਈ ਸੇਵਾਵਾਂ ਸ਼ੁਰੂ ਹੋ ਰਹੀਆਂ ਹਨ"
 
-#: ../xfce4-session/xfsm-dns.c:78
+#: ../expidus1-session/essm-dns.c:78
 msgid "(Unknown)"
 msgstr "(ਅਣਪਛਾਤਾ)"
 
-#: ../xfce4-session/xfsm-dns.c:147
+#: ../expidus1-session/essm-dns.c:147
 #, c-format
 msgid ""
 "Could not look up internet address for %s.\n"
-"This will prevent Xfce from operating correctly.\n"
+"This will prevent Expidus from operating correctly.\n"
 "It may be possible to correct the problem by adding\n"
 "%s to the file /etc/hosts on your system."
 msgstr ""
@@ -592,193 +592,193 @@ msgstr ""
 "ਤੁਹਾਡੇ ਸਿਸਟਮ ਉੱਪਰ /etc/hosts ਵਿੱਚ %s ਜੋੜ ਕੇ\n"
 "ਸਮੱਸਿਆ ਹੱਲ ਕਰਨੀ ਸੰਭਵ ਹੋ ਸਕਦੀ ਹੈ|"
 
-#: ../xfce4-session/xfsm-dns.c:154
+#: ../expidus1-session/essm-dns.c:154
 msgid "Continue anyway"
 msgstr "ਕਿਸੇ ਵੀ ਤਰਾਂ ਜਾਰੀ"
 
-#: ../xfce4-session/xfsm-dns.c:155
+#: ../expidus1-session/essm-dns.c:155
 msgid "Try again"
 msgstr "ਫਿਰ ਕੋਸ਼ਿਸ਼"
 
-#: ../xfce4-session/xfsm-manager.c:602
+#: ../expidus1-session/essm-manager.c:602
 #, c-format
 msgid ""
-"Unable to determine failsafe session name.  Possible causes: xfconfd isn't "
+"Unable to determine failsafe session name.  Possible causes: esconfd isn't "
 "running (D-Bus setup problem); environment variable $XDG_CONFIG_DIRS is set "
-"incorrectly (must include \"%s\"), or xfce4-session is installed incorrectly."
+"incorrectly (must include \"%s\"), or expidus1-session is installed incorrectly."
 msgstr ""
 
-#: ../xfce4-session/xfsm-manager.c:613
+#: ../expidus1-session/essm-manager.c:613
 #, c-format
 msgid ""
 "The specified failsafe session (\"%s\") is not marked as a failsafe session."
 msgstr ""
 
-#: ../xfce4-session/xfsm-manager.c:660
+#: ../expidus1-session/essm-manager.c:660
 msgid "The list of applications in the failsafe session is empty."
 msgstr ""
 
 #. FIXME: migrate this into the splash screen somehow so the
 #. * window doesn't look ugly (right now now WM is running, so it
 #. * won't have window decorations).
-#: ../xfce4-session/xfsm-manager.c:707
+#: ../expidus1-session/essm-manager.c:707
 #, fuzzy
 msgid "Session Manager Error"
 msgstr "ਅਜਲਾਸ ਨਾਂ ਚੁਣੋ"
 
-#: ../xfce4-session/xfsm-manager.c:709
+#: ../expidus1-session/essm-manager.c:709
 msgid "Unable to load a failsafe session"
 msgstr ""
 
-#: ../xfce4-session/xfsm-manager.c:1122
+#: ../expidus1-session/essm-manager.c:1122
 msgid "Failed to suspend session"
 msgstr ""
 
-#: ../xfce4-session/xfsm-manager.c:1123
+#: ../expidus1-session/essm-manager.c:1123
 msgid "Failed to hibernate session"
 msgstr ""
 
-#: ../xfce4-session/xfsm-manager.c:1411
+#: ../expidus1-session/essm-manager.c:1411
 #, c-format
 msgid "Can only terminate clients when in the idle state"
 msgstr ""
 
-#: ../xfce4-session/xfsm-manager.c:1942
+#: ../expidus1-session/essm-manager.c:1942
 #, c-format
 msgid "Session manager must be in idle state when requesting a checkpoint"
 msgstr ""
 
-#: ../xfce4-session/xfsm-manager.c:1983
+#: ../expidus1-session/essm-manager.c:1983
 #, c-format
 msgid "Session manager must be in idle state when requesting a shutdown"
 msgstr ""
 
-#: ../xfce4-session/xfsm-manager.c:1990
+#: ../expidus1-session/essm-manager.c:1990
 #, c-format
 msgid "Invalid shutdown type \"%u\""
 msgstr ""
 
-#: ../xfce4-session/xfsm-shutdown-helper.c:1601
+#: ../expidus1-session/essm-shutdown-helper.c:1601
 #, c-format
 msgid "Error sending command to shutdown helper: %s"
 msgstr ""
 
-#: ../xfce4-session/xfsm-shutdown-helper.c:1615
+#: ../expidus1-session/essm-shutdown-helper.c:1615
 #, c-format
 msgid "Error receiving response from shutdown helper: %s"
 msgstr ""
 
-#: ../xfce4-session/xfsm-shutdown-helper.c:1624
+#: ../expidus1-session/essm-shutdown-helper.c:1624
 #, c-format
 msgid "Shutdown command failed"
 msgstr ""
 
-#: ../xfce4-session/xfsm-shutdown-helper.c:1802
+#: ../expidus1-session/essm-shutdown-helper.c:1802
 msgid "Suspend failed, no backend supported"
 msgstr ""
 
-#: ../xfce4-session/xfsm-shutdown-helper.c:1829
+#: ../expidus1-session/essm-shutdown-helper.c:1829
 msgid "Hibernate failed, no backend supported"
 msgstr ""
 
-#: ../xfce4-session/xfsm-shutdown-helper.c:1859
+#: ../expidus1-session/essm-shutdown-helper.c:1859
 msgid "Shutdown Command not found"
 msgstr ""
 
-#: ../xfce4-session/xfsm-splash-screen.c:178
+#: ../expidus1-session/essm-splash-screen.c:178
 msgid "Choose session"
 msgstr "ਅਜਲਾਸ ਚੁਣੋ"
 
-#: ../xfce4-session/xfsm-splash-screen.c:208
+#: ../expidus1-session/essm-splash-screen.c:208
 msgid "Choose session name"
 msgstr "ਅਜਲਾਸ ਨਾਂ ਚੁਣੋ"
 
-#: ../xfce4-session/xfsm-splash-screen.c:222
+#: ../expidus1-session/essm-splash-screen.c:222
 msgid "Choose a name for the new session:"
 msgstr "ਨਵੇਂ ਅਜਲਾਸ ਲਈ ਨਾਂ ਚੁਣੋ"
 
-#: ../xfce4-session/xfsm-startup.c:115
+#: ../expidus1-session/essm-startup.c:115
 msgid "Starting the Volume Controller"
 msgstr "ਆਵਾਜ਼ ਕੰਟਰੋਲ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:117
+#: ../expidus1-session/essm-startup.c:117
 msgid "Starting the Panel"
 msgstr "ਪੈਨਲ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:119
+#: ../expidus1-session/essm-startup.c:119
 msgid "Starting the Desktop Manager"
 msgstr "ਵਿਹੜਾ ਮੈਨੇਜਰ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:121
+#: ../expidus1-session/essm-startup.c:121
 msgid "Starting the Taskbar"
 msgstr "ਸੰਦ-ਪੱਟੀ ਸ਼ੁਰੂ ਹੋ ਰਹੀ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:123
+#: ../expidus1-session/essm-startup.c:123
 msgid "Starting the Window Manager"
 msgstr "ਝਰੋਖਾ ਮੈਨੇਜਰ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:127
+#: ../expidus1-session/essm-startup.c:127
 msgid "Starting the Gnome Terminal Emulator"
 msgstr "ਗਨੋਮ ਟਰਮੀਨਲ ਮੁਕਾਬਲਾ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:131
+#: ../expidus1-session/essm-startup.c:131
 msgid "Starting the KDE Advanced Text Editor"
 msgstr "ਕੇ ਡੀ ਈ ਤਕਨੀਕੀ ਪਾਠ ਸੋਧਕ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:133
+#: ../expidus1-session/essm-startup.c:133
 msgid "Starting the KDE Clipboard Manager"
 msgstr "ਕੇ ਡੀ ਈ ਕਲਿੱਪ ਬੋਰਡ ਮੈਨੇਜਰ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:135
+#: ../expidus1-session/essm-startup.c:135
 msgid "Starting the KDE Mail Reader"
 msgstr "ਕੇ ਡੀ ਈ ਪੱਤਰ ਪਾੜ੍ਹਾ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:137
+#: ../expidus1-session/essm-startup.c:137
 msgid "Starting the KDE News Reader"
 msgstr "ਕੇ ਡੀ ਈ ਖਬਰ ਪਾੜ੍ਹਾ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:139
+#: ../expidus1-session/essm-startup.c:139
 msgid "Starting the Konqueror"
 msgstr "ਕੌਨਕੁਇਰਰ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:141
+#: ../expidus1-session/essm-startup.c:141
 msgid "Starting the KDE Terminal Emulator"
 msgstr "ਕੇ ਡੀ ਈ ਟਰਮੀਨਲ ਮੁਕਾਬਲਾ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:145
+#: ../expidus1-session/essm-startup.c:145
 msgid "Starting the Beep Media Player"
 msgstr "ਚੁੱਪ ਮੀਡੀਆ ਪਲੇਅਰ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:147
+#: ../expidus1-session/essm-startup.c:147
 msgid "Starting The Gimp"
 msgstr "ਜੈਂਪ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:149
+#: ../expidus1-session/essm-startup.c:149
 msgid "Starting the VI Improved Editor"
 msgstr "VI ਸੋਧਿਆ ਸੋਧਕ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:151
+#: ../expidus1-session/essm-startup.c:151
 msgid "Starting the Session Management Proxy"
 msgstr "ਅਜਲਾਸ ਪ੍ਰਬੰਧ ਪਰਾਕਸੀ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:153
+#: ../expidus1-session/essm-startup.c:153
 msgid "Starting the X-Chat IRC Client"
 msgstr "ਐਕਸ-ਚੈਟ IRC ਕਲਾਂਈਟ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:155
+#: ../expidus1-session/essm-startup.c:155
 msgid "Starting the X Multimedia System"
 msgstr "ਐਕਸ ਮਲਟੀਮੀਡੀਆ ਸਿਸਟਮ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:157
+#: ../expidus1-session/essm-startup.c:157
 msgid "Starting the X Terminal Emulator"
 msgstr "ਐਕਸ ਟਰਮੀਨਲ ਮੁਕਾਬਲਾ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:159
+#: ../expidus1-session/essm-startup.c:159
 #, c-format
 msgid "Starting %s"
 msgstr "%s ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ"
 
-#: ../xfce4-session/xfsm-startup.c:283
+#: ../expidus1-session/essm-startup.c:283
 #, c-format
 msgid ""
 "The location and the format of the autostart directory has changed.\n"
@@ -787,302 +787,302 @@ msgid ""
 "  %s\n"
 "\n"
 "where you can place .desktop files to, that describe the applications\n"
-"to start when you login to your Xfce desktop. The files in your old\n"
+"to start when you login to your Expidus desktop. The files in your old\n"
 "autostart directory have been successfully migrated to the new\n"
 "location.\n"
 "You should delete this directory now.\n"
 msgstr ""
 
-#: ../xfce4-session/xfsm-startup.c:441
+#: ../expidus1-session/essm-startup.c:441
 msgid "Performing Autostart..."
 msgstr "ਸਵੈ-ਚਾਲਕ ਚਲਾ ਰਿਹਾ ਹੈ..."
 
-#: ../xfce4-tips/main.c:48 ../xfce4-tips/main.c:284
+#: ../expidus1-tips/main.c:48 ../expidus1-tips/main.c:284
 msgid "Tips and Tricks"
 msgstr ""
 
-#: ../xfce4-tips/main.c:49
+#: ../expidus1-tips/main.c:49
 msgid "Fortunes"
 msgstr ""
 
-#: ../xfce4-tips/main.c:75
+#: ../expidus1-tips/main.c:75
 #, c-format
 msgid "Could not load tips database (%s)."
 msgstr ""
 
 #. converting it from the user's locale failed too, we give up
-#: ../xfce4-tips/main.c:190
+#: ../expidus1-tips/main.c:190
 #, c-format
 msgid "Invalid output of fortune."
 msgstr ""
 
-#: ../xfce4-tips/main.c:195 ../xfce4-tips/main.c:203
+#: ../expidus1-tips/main.c:195 ../expidus1-tips/main.c:203
 #, c-format
 msgid "Executing fortune failed (%s)"
 msgstr ""
 
-#: ../xfce4-tips/main.c:228
+#: ../expidus1-tips/main.c:228
 msgid "Error while loading tips."
 msgstr ""
 
-#: ../xfce4-tips/main.c:314
+#: ../expidus1-tips/main.c:314
 msgid "Display tips on _startup"
 msgstr ""
 
-#: ../xfce4-tips/main.c:338
+#: ../expidus1-tips/main.c:338
 msgid "Next"
 msgstr ""
 
-#: ../xfce4-session-logout/main.c:69
+#: ../expidus1-session-logout/main.c:69
 msgid "Log out without displaying the logout dialog"
 msgstr ""
 
-#: ../xfce4-session-logout/main.c:73
+#: ../expidus1-session-logout/main.c:73
 msgid "Halt without displaying the logout dialog"
 msgstr ""
 
-#: ../xfce4-session-logout/main.c:77
+#: ../expidus1-session-logout/main.c:77
 msgid "Reboot without displaying the logout dialog"
 msgstr ""
 
-#: ../xfce4-session-logout/main.c:81
+#: ../expidus1-session-logout/main.c:81
 msgid "Suspend without displaying the logout dialog"
 msgstr ""
 
-#: ../xfce4-session-logout/main.c:85
+#: ../expidus1-session-logout/main.c:85
 msgid "Hibernate without displaying the logout dialog"
 msgstr ""
 
-#: ../xfce4-session-logout/main.c:89
+#: ../expidus1-session-logout/main.c:89
 msgid "Log out quickly; don't save the session"
 msgstr ""
 
-#: ../xfce4-session-logout/main.c:107
+#: ../expidus1-session-logout/main.c:107
 #, fuzzy
 msgid "Logout Error"
 msgstr "ਬਾਹਰੀ ਦਰ"
 
-#: ../xfce4-session-logout/main.c:110 ../xfce4-session-logout/main.c:117
+#: ../expidus1-session-logout/main.c:110 ../expidus1-session-logout/main.c:117
 #, fuzzy
 msgid "Unknown error"
 msgstr "(ਅਣਪਛਾਤਾ)"
 
-#: ../xfce4-session-logout/main.c:177
+#: ../expidus1-session-logout/main.c:177
 msgid "Unable to contact D-Bus session bus."
 msgstr ""
 
-#: ../xfce4-session-logout/main.c:189
+#: ../expidus1-session-logout/main.c:189
 msgid "Failed to create new D-Bus message"
 msgstr ""
 
-#: ../xfce4-session-logout/main.c:205
+#: ../expidus1-session-logout/main.c:205
 msgid "Failed to receive a reply from the session manager"
 msgstr ""
 
-#: ../xfce4-session-logout/main.c:213
+#: ../expidus1-session-logout/main.c:213
 msgid "Received error while trying to log out"
 msgstr ""
 
-#: ../xfce4-session-logout/xfce4-session-logout.desktop.in.h:2
-msgid "Log out of the Xfce Desktop"
+#: ../expidus1-session-logout/expidus1-session-logout.desktop.in.h:2
+msgid "Log out of the Expidus Desktop"
 msgstr ""
 
-#: ../panel-plugin/xfsm-logout-plugin.desktop.in.h:1
+#: ../panel-plugin/essm-logout-plugin.desktop.in.h:1
 #, fuzzy
 msgid "Session Menu"
 msgstr "ਅਜਲਾਸ ਅਤੇ ਸ਼ੁਰੂਆਤੀ"
 
-#: ../panel-plugin/xfsm-logout-plugin.desktop.in.h:2
+#: ../panel-plugin/essm-logout-plugin.desktop.in.h:2
 msgid ""
 "Shows a menu with options to lock the screen, suspend, shutdown, or log out"
 msgstr ""
 
-#: ../settings/xfce-session-settings.desktop.in.h:1
-#: ../settings/xfce4-session-settings.glade.h:14
+#: ../settings/expidus-session-settings.desktop.in.h:1
+#: ../settings/expidus1-session-settings.glade.h:14
 msgid "Customize desktop startup and splash screen"
 msgstr ""
 
-#: ../settings/xfce-session-settings.desktop.in.h:2
-#: ../settings/xfce4-session-settings.glade.h:27
+#: ../settings/expidus-session-settings.desktop.in.h:2
+#: ../settings/expidus1-session-settings.glade.h:27
 #, fuzzy
 msgid "Session and Startup"
 msgstr "ਅਜਲਾਸ ਅਤੇ ਸ਼ੁਰੂਆਤੀ"
 
-#: ../settings/xfce4-session-settings.glade.h:1
+#: ../settings/expidus1-session-settings.glade.h:1
 msgid "<b>Author:</b>"
 msgstr "<b>ਲੇਖਕ:</b>"
 
-#: ../settings/xfce4-session-settings.glade.h:2
+#: ../settings/expidus1-session-settings.glade.h:2
 #, fuzzy
 msgid "<b>Compatibility</b>"
 msgstr "ਅਨੁਕੂਲਤਾ"
 
-#: ../settings/xfce4-session-settings.glade.h:3
+#: ../settings/expidus1-session-settings.glade.h:3
 msgid "<b>Description:</b>"
 msgstr "<b>ਵਰਣਨ:</b>"
 
-#: ../settings/xfce4-session-settings.glade.h:4
+#: ../settings/expidus1-session-settings.glade.h:4
 msgid "<b>Homepage:</b>"
 msgstr "<b>ਮੁੱਖ-ਪੰਨਾ:</b>"
 
-#: ../settings/xfce4-session-settings.glade.h:5
+#: ../settings/expidus1-session-settings.glade.h:5
 #, fuzzy
 msgid "<b>Information</b>"
 msgstr "ਜਾਣਕਾਰੀ"
 
-#: ../settings/xfce4-session-settings.glade.h:6
+#: ../settings/expidus1-session-settings.glade.h:6
 #, fuzzy
 msgid "<b>Logout Settings</b>"
 msgstr "ਲਾੱਗਆਉਟ ਵਿਵਸਥਾ"
 
-#: ../settings/xfce4-session-settings.glade.h:7
+#: ../settings/expidus1-session-settings.glade.h:7
 #, fuzzy
 msgid "<b>Security</b>"
 msgstr "<b>ਵਰਣਨ:</b>"
 
-#: ../settings/xfce4-session-settings.glade.h:8
+#: ../settings/expidus1-session-settings.glade.h:8
 #, fuzzy
 msgid "<b>Session Chooser</b>"
 msgstr "ਅਜਲਾਸ ਚੋਣਕਾਰ"
 
-#: ../settings/xfce4-session-settings.glade.h:9
+#: ../settings/expidus1-session-settings.glade.h:9
 msgid "<b>Version:</b>"
 msgstr "<b>ਵਰਜ਼ਨ:</b>"
 
-#: ../settings/xfce4-session-settings.glade.h:10
+#: ../settings/expidus1-session-settings.glade.h:10
 #, fuzzy
 msgid "Ad_vanced"
 msgstr "ਤਕਨੀਕੀ"
 
-#: ../settings/xfce4-session-settings.glade.h:11
+#: ../settings/expidus1-session-settings.glade.h:11
 #, fuzzy
 msgid "Always save the session when logging out"
 msgstr "ਲਾੱਗਆਉਟ ਕਰਨ ਸਮੇਂ ਅਜਲਾਸ ਸਵੈ-ਚਾਲਿਤ ਹੀ ਸੰਭਾਲੋ"
 
-#: ../settings/xfce4-session-settings.glade.h:12
+#: ../settings/expidus1-session-settings.glade.h:12
 #, fuzzy
 msgid "Automatically save session on _logout"
 msgstr "ਲਾੱਗਆਉਟ ਕਰਨ ਸਮੇਂ ਅਜਲਾਸ ਸਵੈ-ਚਾਲਿਤ ਹੀ ਸੰਭਾਲੋ"
 
-#: ../settings/xfce4-session-settings.glade.h:13
+#: ../settings/expidus1-session-settings.glade.h:13
 #, fuzzy
 msgid "Con_figure"
 msgstr "ਸੰਰਚਨਾ"
 
-#: ../settings/xfce4-session-settings.glade.h:15
+#: ../settings/expidus1-session-settings.glade.h:15
 #, fuzzy
 msgid "Demonstrates the selected splash screen"
 msgstr "ਚੁਣੇ ਝਲਕਾਰਾ ਪਰਦੇ ਨੂੰ ਵਿਖਾਉਦਾ ਹੈ|"
 
-#: ../settings/xfce4-session-settings.glade.h:16
-msgid "Display the session chooser every time Xfce starts"
+#: ../settings/expidus1-session-settings.glade.h:16
+msgid "Display the session chooser every time Expidus starts"
 msgstr ""
 
-#: ../settings/xfce4-session-settings.glade.h:17
+#: ../settings/expidus1-session-settings.glade.h:17
 #, fuzzy
 msgid "Launch GN_OME services on startup"
 msgstr "ਸ਼ੁਰੂਆਤੀ ਸਮੇਂ ਕੇ ਡੀ ਈ ਸੇਵਾਵਾਂ ਸ਼ੁਰੂ ਕਰੋ"
 
-#: ../settings/xfce4-session-settings.glade.h:18
+#: ../settings/expidus1-session-settings.glade.h:18
 #, fuzzy
 msgid "Launch _KDE services on startup"
 msgstr "ਸ਼ੁਰੂਆਤੀ ਸਮੇਂ ਕੇ ਡੀ ਈ ਸੇਵਾਵਾਂ ਸ਼ੁਰੂ ਕਰੋ"
 
-#: ../settings/xfce4-session-settings.glade.h:19
+#: ../settings/expidus1-session-settings.glade.h:19
 #, fuzzy
 msgid "Manage _remote applications"
 msgstr "ਦੂਰਵਰਤੀ ਕਾਰਜਾਂ ਦਾ ਪ੍ਰਬੰਧ ਕਰੋ"
 
-#: ../settings/xfce4-session-settings.glade.h:20
+#: ../settings/expidus1-session-settings.glade.h:20
 msgid ""
 "Manage remote applications over the network (this may be a security risk)"
 msgstr ""
 
-#: ../settings/xfce4-session-settings.glade.h:21
+#: ../settings/expidus1-session-settings.glade.h:21
 #, fuzzy
 msgid "Opens the configuration panel for the selected splash screen"
 msgstr "ਚੁਣੇ ਝਲਕਾਰਾ ਪਰਦੇ ਲਈ ਸੰਰਚਨਾ ਪੈਨਲ ਖੋਲਦਾ ਹੈ"
 
-#: ../settings/xfce4-session-settings.glade.h:22
+#: ../settings/expidus1-session-settings.glade.h:22
 msgid "Prompt for confirmation when logging out"
 msgstr ""
 
-#: ../settings/xfce4-session-settings.glade.h:23
+#: ../settings/expidus1-session-settings.glade.h:23
 msgid "Quit the program, and remove it from the session"
 msgstr ""
 
-#: ../settings/xfce4-session-settings.glade.h:24
+#: ../settings/expidus1-session-settings.glade.h:24
 msgid "S_plash"
 msgstr ""
 
-#: ../settings/xfce4-session-settings.glade.h:25
+#: ../settings/expidus1-session-settings.glade.h:25
 #, fuzzy
 msgid "Save Sessio_n"
 msgstr "ਨਵਾਂ ਅਜਲਾਸ"
 
-#: ../settings/xfce4-session-settings.glade.h:26
+#: ../settings/expidus1-session-settings.glade.h:26
 #, fuzzy
 msgid "Saving Session"
 msgstr "ਅਜਲਾਸ ਡਾਟਾ ਲੋਡ ਕਰ ਰਿਹਾ ਹੈ"
 
-#: ../settings/xfce4-session-settings.glade.h:28
+#: ../settings/expidus1-session-settings.glade.h:28
 msgid ""
 "Start GNOME services, such as gnome-keyring and the GNOME accessibility "
 "framework"
 msgstr ""
 
-#: ../settings/xfce4-session-settings.glade.h:29
+#: ../settings/expidus1-session-settings.glade.h:29
 msgid "Start KDE services, such as \"kdeinit,\" DCOP, and ARTS"
 msgstr ""
 
-#: ../settings/xfce4-session-settings.glade.h:30
+#: ../settings/expidus1-session-settings.glade.h:30
 msgid ""
 "These applications are a part of the currently-running session, and can be "
 "saved when you log out.  Changes below will only take effect when the "
 "session is saved."
 msgstr ""
 
-#: ../settings/xfce4-session-settings.glade.h:31
+#: ../settings/expidus1-session-settings.glade.h:31
 msgid ""
 "Your session is being saved.  If you do not wish to wait, you may close this "
 "window."
 msgstr ""
 
-#: ../settings/xfce4-session-settings.glade.h:32
+#: ../settings/expidus1-session-settings.glade.h:32
 #, fuzzy
 msgid "_Display chooser on login"
 msgstr "ਲਾਗਆਨ ਤੇ ਦਰਿਸ਼ ਚੁਣੋ"
 
-#: ../settings/xfce4-session-settings.glade.h:33
+#: ../settings/expidus1-session-settings.glade.h:33
 #, fuzzy
 msgid "_General"
 msgstr "ਆਮ"
 
-#: ../settings/xfce4-session-settings.glade.h:34
+#: ../settings/expidus1-session-settings.glade.h:34
 #, fuzzy
 msgid "_Prompt on logout"
 msgstr "ਬਾਹਰ ਜਾਣ ਤੇ ਪੁੱਛੋ"
 
-#: ../settings/xfce4-session-settings.glade.h:36
+#: ../settings/expidus1-session-settings.glade.h:36
 #, fuzzy
 msgid "_Session"
 msgstr "ਨਵਾਂ ਅਜਲਾਸ"
 
-#: ../settings/xfce4-session-settings.glade.h:37
+#: ../settings/expidus1-session-settings.glade.h:37
 #, fuzzy
 msgid "_Test"
 msgstr "ਜਾਂਚ"
 
-#: ../settings/xfce4-session-settings.glade.h:38
+#: ../settings/expidus1-session-settings.glade.h:38
 msgid "label"
 msgstr ""
 
-#: ../xfce4-tips/xfce4-tips-autostart.desktop.in.h:1
+#: ../expidus1-tips/expidus1-tips-autostart.desktop.in.h:1
 msgid "Tips and tricks"
 msgstr ""
 
-#: ../xfce4-tips/xfce4-tips-autostart.desktop.in.h:2
-msgid "xfce4-tips"
+#: ../expidus1-tips/expidus1-tips-autostart.desktop.in.h:2
+msgid "expidus1-tips"
 msgstr ""
 
 #, fuzzy
@@ -1094,7 +1094,7 @@ msgstr ""
 #~ msgstr "ਅਜਲਾਸ ਅਤੇ ਸ਼ੁਰੂਆਤੀ"
 
 #, fuzzy
-#~ msgid "Xfce Session Manager"
+#~ msgid "Expidus Session Manager"
 #~ msgstr "ਅਜਲਾਸ ਨਾਂ ਚੁਣੋ"
 
 #, fuzzy
@@ -1106,7 +1106,7 @@ msgstr ""
 #~ msgstr "ਅਜਲਾਸ ਅਤੇ ਸ਼ੁਰੂਆਤੀ"
 
 #, fuzzy
-#~ msgid "Xfce 4 Sessions and Startup Settings"
+#~ msgid "Expidus 4 Sessions and Startup Settings"
 #~ msgstr "ਅਜਲਾਸ ਅਤੇ ਸ਼ੁਰੂਆਤੀ"
 
 #, fuzzy
@@ -1115,7 +1115,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "If set, the session manager will ask you to choose a session every time "
-#~ "you log in to Xfce."
+#~ "you log in to Expidus."
 #~ msgstr ""
 #~ "ਜੇਕਰ ਨਿਰਧਾਰਿਤ ਕੀਤਾ, ਅਜਲਾਸ ਪ੍ਰਬੰਧਕ ਤੁਹਾਨੂੰ ਹਰ ਵਾਰ ਐਕਸਫਸੀ ਲਾਗਆਨ ਕਰਨ ਸਮੇਂ ਅਜਲਾਸ ਚੁਣ "
 #~ "ਲਈ ਕਹੇਗਾ।"
@@ -1152,7 +1152,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "Enable this option if you plan to run KDE applications as part of your "
-#~ "Xfce Desktop session. This will notably increase the startup time, but on "
+#~ "Expidus Desktop session. This will notably increase the startup time, but on "
 #~ "the other hand, KDE applications will startup faster. Some KDE "
 #~ "applications may not work at all if you don't enable this option."
 #~ msgstr ""
@@ -1182,7 +1182,7 @@ msgstr ""
 #~ msgstr "ਝਲਕਾਰਾ ਪਰਦਾ"
 
 #, fuzzy
-#~ msgid "Xfce 4 Splash Screen Settings"
+#~ msgid "Expidus 4 Splash Screen Settings"
 #~ msgstr "ਝਲਕਾਰਾ ਪਰਦਾ ਵਿਵਸਥਾਵਾਂ"
 
 #, fuzzy

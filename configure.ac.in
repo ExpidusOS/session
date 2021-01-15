@@ -1,28 +1,28 @@
 dnl
 dnl Copyright (c) 2003-2019
-dnl         The Xfce development team. All rights reserved.
+dnl         The Expidus development team. All rights reserved.
 dnl
-dnl Written for Xfce by Benedikt Meurer <benny@xfce.org>.
+dnl Written for Expidus by Benedikt Meurer <benny@expidus.org>.
 dnl
 
 dnl Version information
-m4_define([xfsm_version_major], [4])
-m4_define([xfsm_version_minor], [16])
-m4_define([xfsm_version_micro], [0])
-m4_define([xfsm_version_nano], []) dnl leave this empty to have no nano version
-m4_define([xfsm_version_build], [@REVISION@])
-m4_define([xfsm_version_tag], [git])
-m4_define([xfsm_version], [xfsm_version_major().xfsm_version_minor().xfsm_version_micro()ifelse(xfsm_version_nano(), [], [], [.xfsm_version_nano()])ifelse(xfsm_version_tag(), [git], [xfsm_version_tag()-xfsm_version_build()], [xfsm_version_tag()])])
+m4_define([essm_version_major], [4])
+m4_define([essm_version_minor], [16])
+m4_define([essm_version_micro], [0])
+m4_define([essm_version_nano], []) dnl leave this empty to have no nano version
+m4_define([essm_version_build], [@REVISION@])
+m4_define([essm_version_tag], [git])
+m4_define([essm_version], [essm_version_major().essm_version_minor().essm_version_micro()ifelse(essm_version_nano(), [], [], [.essm_version_nano()])ifelse(essm_version_tag(), [git], [essm_version_tag()-essm_version_build()], [essm_version_tag()])])
 
-m4_define([xfsm_debug_default], [ifelse(xfsm_version_tag(), [git], [yes], [minimum])])
+m4_define([essm_debug_default], [ifelse(essm_version_tag(), [git], [yes], [minimum])])
 m4_define([intltool_minimum_version], [0.35])
 
 dnl Initialize autoconf
 AC_COPYRIGHT([Copyright (c) 2003-2019
-        The Xfce development team. All rights reserved.
+        The Expidus development team. All rights reserved.
 
-Written for Xfce by Benedikt Meurer <benny@xfce.org>.])
-AC_INIT([xfce4-session], [xfsm_version], [https://bugzilla.xfce.org/])
+Written for Expidus by Benedikt Meurer <benny@expidus.org>.])
+AC_INIT([expidus1-session], [essm_version], [https://bugzilla.expidus.org/])
 AC_PREREQ([2.60])
 AC_REVISION([$Id$])
 AC_PROG_MAKE_SET()
@@ -100,13 +100,13 @@ dnl Check for i18n support
 XDT_I18N([@LINGUAS@])
 
 dnl Check for required packages
-XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.15.2])
-XDT_CHECK_PACKAGE([LIBXFCE4UI], [libxfce4ui-2], [4.15.1])
+XDT_CHECK_PACKAGE([LIBEXPIDUS1UTIL], [libexpidus1util-1.0], [4.15.2])
+XDT_CHECK_PACKAGE([LIBEXPIDUS1UI], [libexpidus1ui-2], [4.15.1])
 XDT_CHECK_PACKAGE([GTK], [gtk+-3.0], [3.22.0])
 XDT_CHECK_PACKAGE([GIO], [gio-2.0], [2.50.0])
 XDT_CHECK_PACKAGE([GMODULE], [gmodule-2.0], [2.50.0])
 XDT_CHECK_PACKAGE([LIBWNCK], [libwnck-3.0], [3.10])
-XDT_CHECK_PACKAGE([XFCONF], [libxfconf-0], [4.12.0])
+XDT_CHECK_PACKAGE([ESCONF], [libesconf-0], [4.12.0])
 
 dnl Check for Polkit/PolicyKit
 XDT_CHECK_OPTIONAL_PACKAGE([POLKIT], [polkit-gobject-1], [0.102],
@@ -119,7 +119,7 @@ AC_DEFINE(GDK_VERSION_MIN_REQUIRED, GDK_VERSION_3_20, [Ignore post 3.20 deprecat
 AC_DEFINE(GDK_VERSION_MAX_ALLOWED, GDK_VERSION_3_20, [Prevent post 3.20 APIs])
 
 dnl Check for debugging support
-XDT_FEATURE_DEBUG([xfsm_debug_default])
+XDT_FEATURE_DEBUG([essm_debug_default])
 
 dnl Check for linker optimizations
 XDT_FEATURE_LINKER_OPTS()
@@ -192,14 +192,14 @@ icons/48x48-actions/Makefile
 icons/48x48/Makefile
 icons/128x128/Makefile
 icons/scalable/Makefile
-libxfsm/Makefile
+libessm/Makefile
 po/Makefile.in
 settings/Makefile
 scripts/Makefile
 scripts/xinitrc.in
-xfce4-session/Makefile
-xfce4-session-logout/Makefile
-xfsm-shutdown-helper/Makefile
+expidus1-session/Makefile
+expidus1-session-logout/Makefile
+essm-shutdown-helper/Makefile
 ])
 AC_OUTPUT
 

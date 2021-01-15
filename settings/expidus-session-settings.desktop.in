@@ -1,0 +1,14 @@
+[Desktop Entry]
+_Name=Session and Startup
+_Comment=Customize desktop startup
+Exec=expidus1-session-settings
+Icon=org.expidus.session
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=EXPIDUS;GTK;Settings;DesktopSettings;X-EXPIDUS-SettingsDialog;X-EXPIDUS-SystemSettings;
+_Keywords=session;settings;preferences;manager;startup;login;logout;shutdown;lock screen;application;autostart;launch;services;daemon;agent;
+OnlyShowIn=EXPIDUS;
+X-ExpidusPluggable=true
+X-ExpidusHelpComponent=expidus1-session
+X-ExpidusHelpPage=preferences

@@ -6,31 +6,31 @@
 # Сяргей Снапкоўскі, 2020-2021
 msgid ""
 msgstr ""
-"Project-Id-Version: Xfce4-session\n"
+"Project-Id-Version: Expidus4-session\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-10 00:46+0100\n"
 "PO-Revision-Date: 2021-01-04 17:37+0000\n"
 "Last-Translator: Сяргей Снапкоўскі\n"
-"Language-Team: Belarusian (Tarask) (http://www.transifex.com/xfce/xfce4-session/language/be@tarask/)\n"
+"Language-Team: Belarusian (Tarask) (http://www.transifex.com/expidus/expidus1-session/language/be@tarask/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: be@tarask\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../xfce.desktop.in.h:1
-msgid "Xfce Session"
-msgstr "Сэанс Xfce"
+#: ../expidus.desktop.in.h:1
+msgid "Expidus Session"
+msgstr "Сэанс Expidus"
 
-#: ../xfce.desktop.in.h:2
-msgid "Use this session to run Xfce as your desktop environment"
-msgstr "Выкарыстайце гэты сэанс для запуску асяродьдзя Xfce"
+#: ../expidus.desktop.in.h:2
+msgid "Use this session to run Expidus as your desktop environment"
+msgstr "Выкарыстайце гэты сэанс для запуску асяродьдзя Expidus"
 
-#: ../libxfsm/xfsm-util.c:331
+#: ../libessm/essm-util.c:331
 msgid "Session"
 msgstr "Сэанс"
 
-#: ../libxfsm/xfsm-util.c:342
+#: ../libessm/essm-util.c:342
 msgid "Last accessed"
 msgstr "Апошні доступ"
 
@@ -54,23 +54,23 @@ msgstr "ID СОКЭТУ"
 msgid "Version information"
 msgstr "Дадзеныя аб вэрсіі"
 
-#: ../settings/main.c:111 ../xfce4-session/main.c:324
+#: ../settings/main.c:111 ../expidus1-session/main.c:324
 #, c-format
 msgid "Type '%s --help' for usage."
 msgstr "Увядзіце '%s --help' для выкарыстаньня."
 
-#: ../settings/main.c:123 ../xfce4-session/main.c:334
-#: ../xfce4-session-logout/main.c:146
-msgid "The Xfce development team. All rights reserved."
-msgstr "Суполка распрацоўкі XFCE. Усе правы абароненыя."
+#: ../settings/main.c:123 ../expidus1-session/main.c:334
+#: ../expidus1-session-logout/main.c:146
+msgid "The Expidus development team. All rights reserved."
+msgstr "Суполка распрацоўкі EXPIDUS. Усе правы абароненыя."
 
-#: ../settings/main.c:124 ../xfce4-session/main.c:335
-#: ../xfce4-session-logout/main.c:149
+#: ../settings/main.c:124 ../expidus1-session/main.c:335
+#: ../expidus1-session-logout/main.c:149
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Паведамляйце пра памылкі <%s>."
 
-#: ../settings/main.c:133 ../xfce4-session/main.c:343
+#: ../settings/main.c:133 ../expidus1-session/main.c:343
 msgid "Unable to contact settings server"
 msgstr "Немагчыма зьвязацца з сэрвэрам наладаў"
 
@@ -111,8 +111,8 @@ msgid "Unable to save the session"
 msgstr "Немагчыма захаваць сэанс"
 
 #: ../settings/session-editor.c:141 ../settings/session-editor.c:314
-#: ../xfce4-session/xfsm-manager.c:1281
-#: ../settings/xfce4-session-settings.ui.h:6
+#: ../expidus1-session/essm-manager.c:1281
+#: ../settings/expidus1-session-settings.ui.h:6
 msgid "_Close"
 msgstr "Зачыніць"
 
@@ -131,8 +131,8 @@ msgid ""
 msgstr "Захаваны стан вашых дастасаваньняў не будзе адноўлены падчас наступнага ўваходу ў сыстэму."
 
 #: ../settings/session-editor.c:202 ../settings/session-editor.c:289
-#: ../settings/xfae-dialog.c:77 ../xfce4-session/xfsm-manager.c:682
-#: ../xfce4-session/xfsm-logout-dialog.c:221
+#: ../settings/esae-dialog.c:77 ../expidus1-session/essm-manager.c:682
+#: ../expidus1-session/essm-logout-dialog.c:221
 msgid "_Cancel"
 msgstr "_Скасаваць"
 
@@ -146,8 +146,8 @@ msgid "You might need to delete some files manually in \"%s\"."
 msgstr "Магчыма, трэба выдаліць некаторыя файлы ў \"%s\"."
 
 #: ../settings/session-editor.c:244
-msgid "All Xfce cache files could not be cleared"
-msgstr "Не атрымалася ачысьціць усе файлы кішэню Xfce"
+msgid "All Expidus cache files could not be cleared"
+msgstr "Не атрымалася ачысьціць усе файлы кішэню Expidus"
 
 #: ../settings/session-editor.c:283
 #, c-format
@@ -164,7 +164,7 @@ msgid ""
 "your next session."
 msgstr "Праграма страціць усе незахаваныя дадзеныя й ня будзе запушчаная ў вашым наступным сэансе."
 
-#: ../settings/session-editor.c:290 ../settings/xfce4-session-settings.ui.h:21
+#: ../settings/session-editor.c:290 ../settings/expidus1-session-settings.ui.h:21
 msgid "_Quit Program"
 msgstr "Вы_йсьці з дастасаваньня"
 
@@ -184,7 +184,7 @@ msgstr "Прыярытэт"
 msgid "PID"
 msgstr "PID"
 
-#: ../settings/session-editor.c:801 ../settings/xfae-window.c:190
+#: ../settings/session-editor.c:801 ../settings/esae-window.c:190
 msgid "Program"
 msgstr "Дастасаваньне"
 
@@ -192,288 +192,288 @@ msgstr "Дастасаваньне"
 msgid "Restart Style"
 msgstr "Стыль перазапуску"
 
-#: ../settings/xfae-dialog.c:78 ../xfce4-session/xfsm-manager.c:684
+#: ../settings/esae-dialog.c:78 ../expidus1-session/essm-manager.c:684
 msgid "_OK"
 msgstr "_Добра"
 
-#: ../settings/xfae-dialog.c:82 ../settings/xfae-window.c:244
+#: ../settings/esae-dialog.c:82 ../settings/esae-window.c:244
 msgid "Add application"
 msgstr "Дадаць дастасаваньне"
 
-#: ../settings/xfae-dialog.c:96
+#: ../settings/esae-dialog.c:96
 msgid "Name:"
 msgstr "Імя:"
 
-#: ../settings/xfae-dialog.c:111
+#: ../settings/esae-dialog.c:111
 msgid "Description:"
 msgstr "Апісаньне:"
 
-#: ../settings/xfae-dialog.c:125 ../settings/xfae-model.c:687
+#: ../settings/esae-dialog.c:125 ../settings/esae-model.c:687
 msgid "Command:"
 msgstr "Загад:"
 
-#: ../settings/xfae-dialog.c:138
+#: ../settings/esae-dialog.c:138
 msgid "Trigger:"
 msgstr "Запусьціць:"
 
-#: ../settings/xfae-dialog.c:209
+#: ../settings/esae-dialog.c:209
 msgid "Select a command"
 msgstr "Абраць загад"
 
-#: ../settings/xfae-dialog.c:212
+#: ../settings/esae-dialog.c:212
 msgid "Cancel"
 msgstr "Скасаваць"
 
-#: ../settings/xfae-dialog.c:213
+#: ../settings/esae-dialog.c:213
 msgid "OK"
 msgstr "Добра"
 
-#: ../settings/xfae-dialog.c:260 ../settings/xfae-window.c:266
+#: ../settings/esae-dialog.c:260 ../settings/esae-window.c:266
 msgid "Edit application"
 msgstr "Рэдагаваць дастасаваньне"
 
-#: ../settings/xfae-model.c:114
+#: ../settings/esae-model.c:114
 msgid "on login"
 msgstr "падчас уваходу"
 
-#: ../settings/xfae-model.c:115
+#: ../settings/esae-model.c:115
 msgid "on logout"
 msgstr "падчас выхаду"
 
-#: ../settings/xfae-model.c:116
+#: ../settings/esae-model.c:116
 msgid "on shutdown"
 msgstr "падчас выключэньня"
 
-#: ../settings/xfae-model.c:117
+#: ../settings/esae-model.c:117
 msgid "on restart"
 msgstr "падчас перазапуску"
 
-#: ../settings/xfae-model.c:118
+#: ../settings/esae-model.c:118
 msgid "on suspend"
 msgstr "падчас прыпыненьня"
 
-#: ../settings/xfae-model.c:119
+#: ../settings/esae-model.c:119
 msgid "on hibernate"
 msgstr "падчас сну"
 
-#: ../settings/xfae-model.c:120
+#: ../settings/esae-model.c:120
 msgid "on hybrid sleep"
 msgstr "падчас спалучанага рэжыму сну"
 
-#: ../settings/xfae-model.c:121
+#: ../settings/esae-model.c:121
 msgid "on switch user"
 msgstr "падчас абраньня карыстача"
 
-#: ../settings/xfae-model.c:463 ../settings/xfae-model.c:1182
-#: ../settings/xfae-model.c:1240
+#: ../settings/esae-model.c:463 ../settings/esae-model.c:1182
+#: ../settings/esae-model.c:1240
 #, c-format
 msgid "Failed to open %s for writing"
 msgstr "Немагчыма адчыніць %s для запісу"
 
-#: ../settings/xfae-model.c:820
+#: ../settings/esae-model.c:820
 #, c-format
 msgid "Failed to unlink %s: %s"
 msgstr "Немагчыма адвязаць %s: %s"
 
-#: ../settings/xfae-model.c:982
+#: ../settings/esae-model.c:982
 #, c-format
 msgid "Failed to create file %s"
 msgstr "Немагчыма стварыць файл %s"
 
-#: ../settings/xfae-model.c:1006
+#: ../settings/esae-model.c:1006
 #, c-format
 msgid "Failed to write file %s"
 msgstr "Немагчыма прачытаць файл %s"
 
-#: ../settings/xfae-model.c:1066
+#: ../settings/esae-model.c:1066
 #, c-format
 msgid "Failed to open %s for reading"
 msgstr "Немагчыма адчыніць %s для чытаньня"
 
-#: ../settings/xfae-window.c:100
+#: ../settings/esae-window.c:100
 msgid "Failed to set run hook"
 msgstr "Немагчыма прызначыць апрацоўшчык"
 
-#: ../settings/xfae-window.c:215
+#: ../settings/esae-window.c:215
 msgid "Trigger"
 msgstr "Запусьціць"
 
-#: ../settings/xfae-window.c:253
+#: ../settings/esae-window.c:253
 msgid "Remove application"
 msgstr "Прыбраць дастасаваньне"
 
-#: ../settings/xfae-window.c:330
+#: ../settings/esae-window.c:330
 msgid "Add"
 msgstr "Добавить"
 
-#: ../settings/xfae-window.c:336
+#: ../settings/esae-window.c:336
 msgid "Remove"
 msgstr "Прыбраць"
 
-#: ../settings/xfae-window.c:390
+#: ../settings/esae-window.c:390
 #, c-format
 msgid "Failed adding \"%s\""
 msgstr "Немагчыма дадаць \"%s\""
 
-#: ../settings/xfae-window.c:421 ../settings/xfae-window.c:435
+#: ../settings/esae-window.c:421 ../settings/esae-window.c:435
 msgid "Failed to remove item"
 msgstr "Немагчыма прыбраць файл"
 
-#: ../settings/xfae-window.c:464
+#: ../settings/esae-window.c:464
 msgid "Failed to edit item"
 msgstr "Немагчыма рэдагаваць элэмэнт"
 
-#: ../settings/xfae-window.c:484
+#: ../settings/esae-window.c:484
 #, c-format
 msgid "Failed to edit item \"%s\""
 msgstr "Немагчыма рэдагаваць элэмэнт \"%s\""
 
-#: ../settings/xfae-window.c:512
+#: ../settings/esae-window.c:512
 msgid "Failed to toggle item"
 msgstr "Немагчыма пераключыць элэмэнт"
 
-#: ../xfce4-session/main.c:77
+#: ../expidus1-session/main.c:77
 msgid "Disable binding to TCP ports"
 msgstr "Выключыць зьвязваньне з партамі TCP"
 
-#: ../xfce4-session/main.c:78 ../xfce4-session-logout/main.c:102
+#: ../expidus1-session/main.c:78 ../expidus1-session-logout/main.c:102
 msgid "Print version information and exit"
 msgstr "Друкаваць дадзеныя аб вэрсыі й выйсьці"
 
-#: ../xfce4-session/xfsm-chooser.c:147
+#: ../expidus1-session/essm-chooser.c:147
 msgid "Session Manager"
 msgstr "Кіраўнік сэансу"
 
-#: ../xfce4-session/xfsm-chooser.c:168
+#: ../expidus1-session/essm-chooser.c:168
 msgid ""
 "Choose the session you want to restore. You can simply double-click the "
 "session name to restore it."
 msgstr "Сэанс, які трэба аднавіць. Можна пстрыкнуць двойчы па назве сэансу, каб аднавіць яго."
 
-#: ../xfce4-session/xfsm-chooser.c:184
+#: ../expidus1-session/essm-chooser.c:184
 msgid "Create a new session."
 msgstr "Стварыць новы сеанс."
 
-#: ../xfce4-session/xfsm-chooser.c:191
+#: ../expidus1-session/essm-chooser.c:191
 msgid "Delete a saved session."
 msgstr "Выдаліць захаваны сэанс."
 
 #. "Logout" button
-#: ../xfce4-session/xfsm-chooser.c:202
-#: ../xfce4-session-logout/xfce4-session-logout.desktop.in.h:1
+#: ../expidus1-session/essm-chooser.c:202
+#: ../expidus1-session-logout/expidus1-session-logout.desktop.in.h:1
 msgid "Log Out"
 msgstr "Выйсьці"
 
-#: ../xfce4-session/xfsm-chooser.c:204
+#: ../expidus1-session/essm-chooser.c:204
 msgid "Cancel the login attempt and return to the login screen."
 msgstr "Скасаваньне ўваходу прывядзе да вяртаньня да экрану ўваходу ў сістэму."
 
 #. "Start" button
-#: ../xfce4-session/xfsm-chooser.c:211
+#: ../expidus1-session/essm-chooser.c:211
 msgid "Start"
 msgstr "Пачаць"
 
-#: ../xfce4-session/xfsm-chooser.c:212
+#: ../expidus1-session/essm-chooser.c:212
 msgid "Start an existing session."
 msgstr "Пачаць існую сэсію."
 
-#: ../xfce4-session/xfsm-dns.c:78
+#: ../expidus1-session/essm-dns.c:78
 msgid "(Unknown)"
 msgstr "(Невядома)"
 
-#: ../xfce4-session/xfsm-dns.c:152
+#: ../expidus1-session/essm-dns.c:152
 #, c-format
 msgid ""
 "Could not look up internet address for %s.\n"
-"This will prevent Xfce from operating correctly.\n"
+"This will prevent Expidus from operating correctly.\n"
 "It may be possible to correct the problem by adding\n"
 "%s to the file /etc/hosts on your system."
-msgstr "Немагчыма адшукаць сеціўны адрас для %s.\nГэта перашкаджае Xfce правільна працаваць.\nМагчыма, каб выправіць хібу, дадайце\n%s у файл /etc/hosts вашае сыстэмы."
+msgstr "Немагчыма адшукаць сеціўны адрас для %s.\nГэта перашкаджае Expidus правільна працаваць.\nМагчыма, каб выправіць хібу, дадайце\n%s у файл /etc/hosts вашае сыстэмы."
 
-#: ../xfce4-session/xfsm-dns.c:159
+#: ../expidus1-session/essm-dns.c:159
 msgid "Continue anyway"
 msgstr "Працягнуць у любым разе"
 
-#: ../xfce4-session/xfsm-dns.c:160
+#: ../expidus1-session/essm-dns.c:160
 msgid "Try again"
 msgstr "Паспрабаваць зноў"
 
-#: ../xfce4-session/xfsm-manager.c:566
+#: ../expidus1-session/essm-manager.c:566
 #, c-format
 msgid ""
-"Unable to determine failsafe session name.  Possible causes: xfconfd isn't "
+"Unable to determine failsafe session name.  Possible causes: esconfd isn't "
 "running (D-Bus setup problem); environment variable $XDG_CONFIG_DIRS is set "
-"incorrectly (must include \"%s\"), or xfce4-session is installed "
+"incorrectly (must include \"%s\"), or expidus1-session is installed "
 "incorrectly."
-msgstr "Немагчыма вызначыць назву бясьпечнага сэансу.  Магчымыя прычыны: xfconfd ня запушчаны (хібы ў D-Bus); пераменная асяродьдзя $XDG_CONFIG_DIRS наладжана няслушна (яна мусіць уключаць \"%s\"), або xfce4-session кепска ўсталяваны."
+msgstr "Немагчыма вызначыць назву бясьпечнага сэансу.  Магчымыя прычыны: esconfd ня запушчаны (хібы ў D-Bus); пераменная асяродьдзя $XDG_CONFIG_DIRS наладжана няслушна (яна мусіць уключаць \"%s\"), або expidus1-session кепска ўсталяваны."
 
-#: ../xfce4-session/xfsm-manager.c:577
+#: ../expidus1-session/essm-manager.c:577
 #, c-format
 msgid ""
 "The specified failsafe session (\"%s\") is not marked as a failsafe session."
 msgstr "Зададзены небясьпечны сэанс (\"%s\") не пазначаны як небясьпечны."
 
-#: ../xfce4-session/xfsm-manager.c:610
+#: ../expidus1-session/essm-manager.c:610
 msgid "The list of applications in the failsafe session is empty."
 msgstr "Сьпіс дастасаваньняў бясьпечнага сеансу пусты."
 
-#: ../xfce4-session/xfsm-manager.c:696
+#: ../expidus1-session/essm-manager.c:696
 msgid "Name for the new session"
 msgstr "Назва новага сэансу"
 
 #. FIXME: migrate this into the splash screen somehow so the
 #. * window doesn't look ugly (right now no WM is running, so it
 #. * won't have window decorations).
-#: ../xfce4-session/xfsm-manager.c:774
+#: ../expidus1-session/essm-manager.c:774
 msgid "Session Manager Error"
 msgstr "Памылка кіраўніка сэансу"
 
-#: ../xfce4-session/xfsm-manager.c:776
+#: ../expidus1-session/essm-manager.c:776
 msgid "Unable to load a failsafe session"
 msgstr "Немагчыма загрузіць бясьпечны сэанс"
 
-#: ../xfce4-session/xfsm-manager.c:778
+#: ../expidus1-session/essm-manager.c:778
 msgid "_Quit"
 msgstr "_Выйсьці"
 
-#: ../xfce4-session/xfsm-manager.c:1271
+#: ../expidus1-session/essm-manager.c:1271
 msgid "Shutdown Failed"
 msgstr "Памылка падчас выключэньня"
 
-#: ../xfce4-session/xfsm-manager.c:1274
+#: ../expidus1-session/essm-manager.c:1274
 msgid "Failed to suspend session"
 msgstr "Немагчыма прыпыніць сэанс"
 
-#: ../xfce4-session/xfsm-manager.c:1276
+#: ../expidus1-session/essm-manager.c:1276
 msgid "Failed to hibernate session"
 msgstr "Немагчыма ўсыпіць сэанс"
 
-#: ../xfce4-session/xfsm-manager.c:1278
+#: ../expidus1-session/essm-manager.c:1278
 msgid "Failed to hybrid sleep session"
 msgstr "Немагчыма ўвайсьці ў спалучаны рэжым сну"
 
-#: ../xfce4-session/xfsm-manager.c:1279
+#: ../expidus1-session/essm-manager.c:1279
 msgid "Failed to switch user"
 msgstr "Немагчыма абраць карыстача"
 
-#: ../xfce4-session/xfsm-manager.c:1585
+#: ../expidus1-session/essm-manager.c:1585
 #, c-format
 msgid "Can only terminate clients when in the idle state"
 msgstr "Магчыма толькі завяршаць працу кліэнтаў калі сэанс прастойвае"
 
-#: ../xfce4-session/xfsm-manager.c:2247
+#: ../expidus1-session/essm-manager.c:2247
 msgid "Session manager must be in idle state when requesting a checkpoint"
 msgstr "Кіраўнік сэансаў мусіць прастойваць, калі ідзе запыт на кантрольны пункт"
 
-#: ../xfce4-session/xfsm-manager.c:2317 ../xfce4-session/xfsm-manager.c:2337
+#: ../expidus1-session/essm-manager.c:2317 ../expidus1-session/essm-manager.c:2337
 msgid "Session manager must be in idle state when requesting a shutdown"
 msgstr "Кіраўнік сэансаў мусіць прастойваць калі ідзе запыт на выключэньне"
 
-#: ../xfce4-session/xfsm-manager.c:2382
+#: ../expidus1-session/essm-manager.c:2382
 msgid "Session manager must be in idle state when requesting a restart"
 msgstr "Кіраўнік сэансаў мусіць быць у рэжыме чаканьня падчас запыту перазапуску"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:193
+#: ../expidus1-session/essm-logout-dialog.c:193
 #, c-format
 msgid "Log out %s"
 msgstr "Выйсьці з %s"
@@ -481,252 +481,252 @@ msgstr "Выйсьці з %s"
 #. *
 #. * Logout
 #. *
-#: ../xfce4-session/xfsm-logout-dialog.c:238
+#: ../expidus1-session/essm-logout-dialog.c:238
 msgid "_Log Out"
 msgstr "_Выйсьці"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:258
+#: ../expidus1-session/essm-logout-dialog.c:258
 msgid "_Restart"
 msgstr "Пераза_пусьціць"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:278
+#: ../expidus1-session/essm-logout-dialog.c:278
 msgid "Shut _Down"
 msgstr "Вык_лючыць"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:302
+#: ../expidus1-session/essm-logout-dialog.c:302
 msgid "Sus_pend"
 msgstr "Пры_пыніць"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:336
+#: ../expidus1-session/essm-logout-dialog.c:336
 msgid "_Hibernate"
 msgstr "_Усыпіць"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:367
+#: ../expidus1-session/essm-logout-dialog.c:367
 msgid "H_ybrid Sleep"
 msgstr "Спалучаны сон"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:398
+#: ../expidus1-session/essm-logout-dialog.c:398
 msgid "Switch _User"
 msgstr "Абраць _карыстача"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:423
+#: ../expidus1-session/essm-logout-dialog.c:423
 msgid "_Save session for future logins"
 msgstr "За_хаваць сэанс для будучых уваходаў"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:451
+#: ../expidus1-session/essm-logout-dialog.c:451
 msgid "An error occurred"
 msgstr "Узьнікла памылка"
 
-#: ../xfce4-session/xfsm-shutdown.c:159
+#: ../expidus1-session/essm-shutdown.c:159
 msgid "Shutdown is blocked by the kiosk settings"
 msgstr "Выключэньне недаступна ў рэжыме кіёску"
 
-#: ../xfce4-session/xfsm-shutdown.c:216
+#: ../expidus1-session/essm-shutdown.c:216
 #, c-format
 msgid "Unknown shutdown method %d"
 msgstr "Невядомы мэтад выключэньня %d"
 
-#: ../xfce4-session-logout/main.c:70
+#: ../expidus1-session-logout/main.c:70
 msgid "Log out without displaying the logout dialog"
 msgstr "Выходзіць з сыстэмы не адлюстроўваючы вакно выключэньня"
 
-#: ../xfce4-session-logout/main.c:74
+#: ../expidus1-session-logout/main.c:74
 msgid "Halt without displaying the logout dialog"
 msgstr "Выключаць кампутар не адлюстроўваючы вакно выключэньня"
 
-#: ../xfce4-session-logout/main.c:78
+#: ../expidus1-session-logout/main.c:78
 msgid "Reboot without displaying the logout dialog"
 msgstr "Перазапускаць кампутар не адлюстроўваючы вакно выключэньня"
 
-#: ../xfce4-session-logout/main.c:82
+#: ../expidus1-session-logout/main.c:82
 msgid "Suspend without displaying the logout dialog"
 msgstr "Прыпыняць кампутар не адлюстроўваючы вакно выключэньня"
 
-#: ../xfce4-session-logout/main.c:86
+#: ../expidus1-session-logout/main.c:86
 msgid "Hibernate without displaying the logout dialog"
 msgstr "Усыпляць кампутар не адлюстроўваючы вакно выключэньня"
 
-#: ../xfce4-session-logout/main.c:90
+#: ../expidus1-session-logout/main.c:90
 msgid "Hybrid Sleep without displaying the logout dialog"
 msgstr "Пераходзіць у спалучаны сон не адлюстроўваючы вакно выключэньня"
 
-#: ../xfce4-session-logout/main.c:94
+#: ../expidus1-session-logout/main.c:94
 msgid "Switch user without displaying the logout dialog"
 msgstr "Абіраць карыстача не адлюстроўваючы вакно выключэньня"
 
-#: ../xfce4-session-logout/main.c:98
+#: ../expidus1-session-logout/main.c:98
 msgid "Log out quickly; don't save the session"
 msgstr "Хутка выйсьці без захаваньня сэансу"
 
-#: ../xfce4-session-logout/main.c:121
+#: ../expidus1-session-logout/main.c:121
 msgid "Unknown error"
 msgstr "Невядомая памылка"
 
-#: ../xfce4-session-logout/main.c:147
-msgid "Written by Benedikt Meurer <benny@xfce.org>"
-msgstr "Напісана Бэнэдыктам Мёрэрам <benny@xfce.org>"
+#: ../expidus1-session-logout/main.c:147
+msgid "Written by Benedikt Meurer <benny@expidus.org>"
+msgstr "Напісана Бэнэдыктам Мёрэрам <benny@expidus.org>"
 
-#: ../xfce4-session-logout/main.c:148
-msgid "and Brian Tarricone <kelnos@xfce.org>."
-msgstr "і Браянам Таррыконэ <kelnos@xfce.org>."
+#: ../expidus1-session-logout/main.c:148
+msgid "and Brian Tarricone <kelnos@expidus.org>."
+msgstr "і Браянам Таррыконэ <kelnos@expidus.org>."
 
-#: ../xfce4-session-logout/main.c:168 ../xfce4-session-logout/main.c:279
+#: ../expidus1-session-logout/main.c:168 ../expidus1-session-logout/main.c:279
 msgid "Received error while trying to log out"
 msgstr "Падчас завяршэньня сэансу адбылася памылка"
 
-#: ../xfce4-session-logout/main.c:244
+#: ../expidus1-session-logout/main.c:244
 #, c-format
 msgid "Received error while trying to log out, error was %s"
 msgstr "Памылка падчас завяршэньня сэансу %s"
 
-#: ../xfce4-session-logout/xfce4-session-logout.desktop.in.h:2
-msgid "Log out of the Xfce Desktop"
-msgstr "Выйсьці з Xfce"
+#: ../expidus1-session-logout/expidus1-session-logout.desktop.in.h:2
+msgid "Log out of the Expidus Desktop"
+msgstr "Выйсьці з Expidus"
 
-#: ../settings/xfce-session-settings.desktop.in.h:1
-#: ../settings/xfce4-session-settings.ui.h:4
+#: ../settings/expidus-session-settings.desktop.in.h:1
+#: ../settings/expidus1-session-settings.ui.h:4
 msgid "Session and Startup"
 msgstr "Сэансы й запуск (аўтазапуск, аўтазагрузка)"
 
-#: ../settings/xfce-session-settings.desktop.in.h:2
+#: ../settings/expidus-session-settings.desktop.in.h:2
 msgid "Customize desktop startup"
 msgstr "Наладзіць запуск працоўнага асяродьдзя"
 
-#: ../settings/xfce-session-settings.desktop.in.h:3
+#: ../settings/expidus-session-settings.desktop.in.h:3
 msgid ""
 "session;settings;preferences;manager;startup;login;logout;shutdown;lock "
 "screen;application;autostart;launch;services;daemon;agent;"
 msgstr "сэанс;налады;перавагі;мэнэджэр;запуск;уваход;выхад з сыстэмы;завяршэньне працы;экран блякаваньня;дастасаваньне;аўтазапуск;запуск;службы;дэман;агэнт;"
 
-#: ../settings/xfce4-session-settings.ui.h:1
+#: ../settings/expidus1-session-settings.ui.h:1
 msgid ""
 "These applications are a part of the currently-running session,\n"
 "and can be saved now or when you log out.\n"
 "Changes below will only take effect when the session is saved."
 msgstr "Гэтыя дастасаваньні не зьяўляюцца часткай дзейнага сэансу\nй могуць быць захаваныя калі Вы завяршыце яго.  \nНаступныя зьмены ажыцьцявяцца толькі калі сэанс будзе захаваны."
 
-#: ../settings/xfce4-session-settings.ui.h:5
+#: ../settings/expidus1-session-settings.ui.h:5
 msgid "_Help"
 msgstr "_Даведка"
 
-#: ../settings/xfce4-session-settings.ui.h:7
+#: ../settings/expidus1-session-settings.ui.h:7
 msgid "_Display chooser on login"
 msgstr "Абіральнік сэансаў пры ўваходзе"
 
-#: ../settings/xfce4-session-settings.ui.h:8
-msgid "Display the session chooser every time Xfce starts"
-msgstr "Абіральнік сэансаў падчас кожнага запуску Xfce"
+#: ../settings/expidus1-session-settings.ui.h:8
+msgid "Display the session chooser every time Expidus starts"
+msgstr "Абіральнік сэансаў падчас кожнага запуску Expidus"
 
-#: ../settings/xfce4-session-settings.ui.h:9
+#: ../settings/expidus1-session-settings.ui.h:9
 msgid "<b>Session Chooser</b>"
 msgstr "<b>Абіральнік сэансаў</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:10
+#: ../settings/expidus1-session-settings.ui.h:10
 msgid "Automatically save session on logo_ut"
 msgstr "Аўтаматам захоўваць сэанс падчас вы_хаду"
 
-#: ../settings/xfce4-session-settings.ui.h:11
+#: ../settings/expidus1-session-settings.ui.h:11
 msgid "Always save the session when logging out"
 msgstr "Заўсёды захоўваць сэанс падчас яго завяршэньня"
 
-#: ../settings/xfce4-session-settings.ui.h:12
+#: ../settings/expidus1-session-settings.ui.h:12
 msgid "Pro_mpt on logout"
 msgstr "_Пацьверджаньне падчас выхаду"
 
-#: ../settings/xfce4-session-settings.ui.h:13
+#: ../settings/expidus1-session-settings.ui.h:13
 msgid "Prompt for confirmation when logging out"
 msgstr "Пацверджаньне пры выхадзе з сэансу"
 
-#: ../settings/xfce4-session-settings.ui.h:14
+#: ../settings/expidus1-session-settings.ui.h:14
 msgid "<b>Logout Settings</b>"
 msgstr "<b>Налады выхаду</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:15
+#: ../settings/expidus1-session-settings.ui.h:15
 msgid "Lock screen be_fore sleep"
 msgstr "Блякаваць экран перад пераходам у сон"
 
-#: ../settings/xfce4-session-settings.ui.h:16
+#: ../settings/expidus1-session-settings.ui.h:16
 msgid "Run xflock4 before suspending or hibernating the system"
 msgstr "Запускаць xflock4 перад прыпыненьнем або усыпленьнем сыстэмы"
 
-#: ../settings/xfce4-session-settings.ui.h:17
+#: ../settings/expidus1-session-settings.ui.h:17
 msgid "<b>Shutdown</b>"
 msgstr "<b>Выключэньне</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:18
+#: ../settings/expidus1-session-settings.ui.h:18
 msgid "_General"
 msgstr "_Агульныя"
 
-#: ../settings/xfce4-session-settings.ui.h:19
+#: ../settings/expidus1-session-settings.ui.h:19
 msgid "Save Sess_ion"
 msgstr "Захаваць _сеанс"
 
-#: ../settings/xfce4-session-settings.ui.h:20
+#: ../settings/expidus1-session-settings.ui.h:20
 msgid "Currently active session: <b>Default</b>"
 msgstr "Бягучы сэанс: <b>Прадвызначана</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:22
+#: ../settings/expidus1-session-settings.ui.h:22
 msgid "Current Sessio_n"
 msgstr "Бягучы _сэанс"
 
-#: ../settings/xfce4-session-settings.ui.h:23
+#: ../settings/expidus1-session-settings.ui.h:23
 msgid "_Remove"
 msgstr "_Выдаліць"
 
-#: ../settings/xfce4-session-settings.ui.h:24
+#: ../settings/expidus1-session-settings.ui.h:24
 msgid "Delete the selected session"
 msgstr "Выдаліць абраны сэанс"
 
-#: ../settings/xfce4-session-settings.ui.h:25
+#: ../settings/expidus1-session-settings.ui.h:25
 msgid "Clear Save_d Sessions"
 msgstr "Прыбраць _захаваныя сеансы"
 
-#: ../settings/xfce4-session-settings.ui.h:26
+#: ../settings/expidus1-session-settings.ui.h:26
 msgid "Saved _Sessions"
 msgstr "Захаваныя _сэансы"
 
-#: ../settings/xfce4-session-settings.ui.h:27
+#: ../settings/expidus1-session-settings.ui.h:27
 msgid "Launch GN_OME services on startup"
 msgstr "Запускаць службы GN_OME падчас запуску"
 
-#: ../settings/xfce4-session-settings.ui.h:28
+#: ../settings/expidus1-session-settings.ui.h:28
 msgid "Start GNOME services, such as gnome-keyring"
 msgstr "Запускаць службы GNOME кшталту gnome-keyring"
 
-#: ../settings/xfce4-session-settings.ui.h:29
+#: ../settings/expidus1-session-settings.ui.h:29
 msgid "Launch _KDE services on startup"
 msgstr "Запускаць службы _KDE падчас запуску"
 
-#: ../settings/xfce4-session-settings.ui.h:30
+#: ../settings/expidus1-session-settings.ui.h:30
 msgid "Start KDE services, such as kdeinit"
 msgstr "Запускаць службы KDE кшталту kdeinit"
 
-#: ../settings/xfce4-session-settings.ui.h:31
+#: ../settings/expidus1-session-settings.ui.h:31
 msgid "<b>Compatibility</b>"
 msgstr "<b>Сумяшчальнасьць</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:32
+#: ../settings/expidus1-session-settings.ui.h:32
 msgid "Manage _remote applications"
 msgstr "Кіраваньне _адлеглымі дастасаваньнямі"
 
-#: ../settings/xfce4-session-settings.ui.h:33
+#: ../settings/expidus1-session-settings.ui.h:33
 msgid ""
 "Manage remote applications over the network (this may be a security risk)"
 msgstr "Кіраваньне адлеглымі дастасаваньнямі праз сеціва (можа быць небясьпечна)"
 
-#: ../settings/xfce4-session-settings.ui.h:34
+#: ../settings/expidus1-session-settings.ui.h:34
 msgid "<b>Security</b>"
 msgstr "<b>Бясьпека</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:35
+#: ../settings/expidus1-session-settings.ui.h:35
 msgid "Ad_vanced"
 msgstr "_Адмысловыя"
 
-#: ../settings/xfce4-session-settings.ui.h:36
+#: ../settings/expidus1-session-settings.ui.h:36
 msgid "Saving Session"
 msgstr "Захаваньне сэансу"
 
-#: ../settings/xfce4-session-settings.ui.h:37
+#: ../settings/expidus1-session-settings.ui.h:37
 msgid ""
 "Your session is being saved.  If you do not wish to wait, you may close this"
 " window."

@@ -5,38 +5,38 @@
 # Translators:
 # Ammuu5, 2020
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2019
-# Juha Kautto <juha@xfce.org>, 2004
+# Juha Kautto <juha@expidus.org>, 2004
 # Juhani Numminen <juhaninumminen0@gmail.com>, 2019
 # Lasse Liehu <larso@gmx.com>, 2015
 # Pasi Lallinaho <pasi@shimmerproject.org>, 2014,2017-2018
 # Tero Mononen <tero@mononen.eu>, 2019
 msgid ""
 msgstr ""
-"Project-Id-Version: Xfce4-session\n"
+"Project-Id-Version: Expidus4-session\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-01 00:31+0200\n"
 "PO-Revision-Date: 2020-03-31 22:31+0000\n"
-"Last-Translator: Xfce Bot <transifex@xfce.org>\n"
-"Language-Team: Finnish (http://www.transifex.com/xfce/xfce4-session/language/fi/)\n"
+"Last-Translator: Expidus Bot <transifex@expidus.org>\n"
+"Language-Team: Finnish (http://www.transifex.com/expidus/expidus1-session/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../xfce.desktop.in.h:1
-msgid "Xfce Session"
-msgstr "Xfce-istunto"
+#: ../expidus.desktop.in.h:1
+msgid "Expidus Session"
+msgstr "Expidus-istunto"
 
-#: ../xfce.desktop.in.h:2
-msgid "Use this session to run Xfce as your desktop environment"
-msgstr "Valitse tämä istunto käyttääksesi Xfce-työpöytäympäristöä "
+#: ../expidus.desktop.in.h:2
+msgid "Use this session to run Expidus as your desktop environment"
+msgstr "Valitse tämä istunto käyttääksesi Expidus-työpöytäympäristöä "
 
-#: ../libxfsm/xfsm-util.c:331
+#: ../libessm/essm-util.c:331
 msgid "Session"
 msgstr "Istunto"
 
-#: ../libxfsm/xfsm-util.c:342
+#: ../libessm/essm-util.c:342
 msgid "Last accessed"
 msgstr "Viimeksi käytetty"
 
@@ -60,23 +60,23 @@ msgstr "PISTOKE"
 msgid "Version information"
 msgstr "Versiotiedot"
 
-#: ../settings/main.c:111 ../xfce4-session/main.c:333
+#: ../settings/main.c:111 ../expidus1-session/main.c:333
 #, c-format
 msgid "Type '%s --help' for usage."
 msgstr "Saat käyttöohjeita kirjoittamalla \"%s --help\"."
 
-#: ../settings/main.c:123 ../xfce4-session/main.c:343
-#: ../xfce4-session-logout/main.c:146
-msgid "The Xfce development team. All rights reserved."
-msgstr "Xfce:n kehitystiimi. Kaikki oikeudet pidätetään."
+#: ../settings/main.c:123 ../expidus1-session/main.c:343
+#: ../expidus1-session-logout/main.c:146
+msgid "The Expidus development team. All rights reserved."
+msgstr "Expidus:n kehitystiimi. Kaikki oikeudet pidätetään."
 
-#: ../settings/main.c:124 ../xfce4-session/main.c:344
-#: ../xfce4-session-logout/main.c:149
+#: ../settings/main.c:124 ../expidus1-session/main.c:344
+#: ../expidus1-session-logout/main.c:149
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Ilmoita ohjelmavirheistä osoitteeseen <%s>."
 
-#: ../settings/main.c:133 ../xfce4-session/main.c:352
+#: ../settings/main.c:133 ../expidus1-session/main.c:352
 msgid "Unable to contact settings server"
 msgstr "Asetuspalvelimeen ei voi yhdistää"
 
@@ -117,8 +117,8 @@ msgid "Unable to save the session"
 msgstr "Istuntoa ei voi tallentaa"
 
 #: ../settings/session-editor.c:141 ../settings/session-editor.c:313
-#: ../xfce4-session/xfsm-manager.c:1281
-#: ../settings/xfce4-session-settings.ui.h:3
+#: ../expidus1-session/essm-manager.c:1281
+#: ../settings/expidus1-session-settings.ui.h:3
 msgid "_Close"
 msgstr "_Sulje"
 
@@ -137,8 +137,8 @@ msgid ""
 msgstr "Sovellusten tallennettuja tiloja ei palauteta, kun kirjaudut sisään seuraavan kerran."
 
 #: ../settings/session-editor.c:201 ../settings/session-editor.c:288
-#: ../settings/xfae-dialog.c:77 ../xfce4-session/xfsm-manager.c:682
-#: ../xfce4-session/xfsm-logout-dialog.c:221
+#: ../settings/esae-dialog.c:77 ../expidus1-session/essm-manager.c:682
+#: ../expidus1-session/essm-logout-dialog.c:221
 msgid "_Cancel"
 msgstr "_Peru"
 
@@ -152,8 +152,8 @@ msgid "You might need to delete some files manually in \"%s\"."
 msgstr "Sinun on ehkä poistettava tiedostoja käsin kansiosta \"%s\"."
 
 #: ../settings/session-editor.c:243
-msgid "All Xfce cache files could not be cleared"
-msgstr "Kaikkia Xfce:n väliaikaistiedostoja ei voitu poistaa"
+msgid "All Expidus cache files could not be cleared"
+msgstr "Kaikkia Expidus:n väliaikaistiedostoja ei voitu poistaa"
 
 #: ../settings/session-editor.c:282
 #, c-format
@@ -170,7 +170,7 @@ msgid ""
 "your next session."
 msgstr "Sovelluksen tallentamattomat tiedot katoavat eikä sitä käynnistetä seuraavassa istunnossasi."
 
-#: ../settings/session-editor.c:289 ../settings/xfce4-session-settings.ui.h:19
+#: ../settings/session-editor.c:289 ../settings/expidus1-session-settings.ui.h:19
 msgid "_Quit Program"
 msgstr "_Lopeta sovellus"
 
@@ -190,7 +190,7 @@ msgstr "Tärkeys"
 msgid "PID"
 msgstr "PID"
 
-#: ../settings/session-editor.c:782 ../settings/xfae-window.c:172
+#: ../settings/session-editor.c:782 ../settings/esae-window.c:172
 msgid "Program"
 msgstr "Sovellus"
 
@@ -198,288 +198,288 @@ msgstr "Sovellus"
 msgid "Restart Style"
 msgstr "Käynnistystapa"
 
-#: ../settings/xfae-dialog.c:78 ../xfce4-session/xfsm-manager.c:684
+#: ../settings/esae-dialog.c:78 ../expidus1-session/essm-manager.c:684
 msgid "_OK"
 msgstr "_OK"
 
-#: ../settings/xfae-dialog.c:82 ../settings/xfae-window.c:220
+#: ../settings/esae-dialog.c:82 ../settings/esae-window.c:220
 msgid "Add application"
 msgstr "Lisää sovellus"
 
-#: ../settings/xfae-dialog.c:96
+#: ../settings/esae-dialog.c:96
 msgid "Name:"
 msgstr "Nimi:"
 
-#: ../settings/xfae-dialog.c:111
+#: ../settings/esae-dialog.c:111
 msgid "Description:"
 msgstr "Kuvaus:"
 
-#: ../settings/xfae-dialog.c:125 ../settings/xfae-model.c:548
+#: ../settings/esae-dialog.c:125 ../settings/esae-model.c:548
 msgid "Command:"
 msgstr "Komento:"
 
-#: ../settings/xfae-dialog.c:138
+#: ../settings/esae-dialog.c:138
 msgid "Trigger:"
 msgstr "Laukaisin:"
 
-#: ../settings/xfae-dialog.c:209
+#: ../settings/esae-dialog.c:209
 msgid "Select a command"
 msgstr "Valitse komento"
 
-#: ../settings/xfae-dialog.c:212
+#: ../settings/esae-dialog.c:212
 msgid "Cancel"
 msgstr "Peru"
 
-#: ../settings/xfae-dialog.c:213
+#: ../settings/esae-dialog.c:213
 msgid "OK"
 msgstr "OK"
 
-#: ../settings/xfae-dialog.c:260 ../settings/xfae-window.c:242
+#: ../settings/esae-dialog.c:260 ../settings/esae-window.c:242
 msgid "Edit application"
 msgstr "Muokkaa sovellusta"
 
-#: ../settings/xfae-model.c:87
+#: ../settings/esae-model.c:87
 msgid "on login"
 msgstr "sisäänkirjauduttaessa"
 
-#: ../settings/xfae-model.c:88
+#: ../settings/esae-model.c:88
 msgid "on logout"
 msgstr "uloskirjauduttaessa"
 
-#: ../settings/xfae-model.c:89
+#: ../settings/esae-model.c:89
 msgid "on shutdown"
 msgstr "sammutuksessa"
 
-#: ../settings/xfae-model.c:90
+#: ../settings/esae-model.c:90
 msgid "on restart"
 msgstr "uudelleenkäynnistyksessä"
 
-#: ../settings/xfae-model.c:91
+#: ../settings/esae-model.c:91
 msgid "on suspend"
 msgstr "keskeytystilan yhteydessä"
 
-#: ../settings/xfae-model.c:92
+#: ../settings/esae-model.c:92
 msgid "on hibernate"
 msgstr "lepotilan yhteydessä"
 
-#: ../settings/xfae-model.c:93
+#: ../settings/esae-model.c:93
 msgid "on hybrid sleep"
 msgstr "hybridilepotilan yhteydessä"
 
-#: ../settings/xfae-model.c:94
+#: ../settings/esae-model.c:94
 msgid "on switch user"
 msgstr "käyttäjän vaihdon yhteydessä"
 
-#: ../settings/xfae-model.c:304 ../settings/xfae-model.c:972
-#: ../settings/xfae-model.c:1030
+#: ../settings/esae-model.c:304 ../settings/esae-model.c:972
+#: ../settings/esae-model.c:1030
 #, c-format
 msgid "Failed to open %s for writing"
 msgstr "Tiedoston %s avaaminen kirjoitettavaksi ei onnistu"
 
-#: ../settings/xfae-model.c:681
+#: ../settings/esae-model.c:681
 #, c-format
 msgid "Failed to unlink %s: %s"
 msgstr "Kohteen %s irroitus epäonnistui: %s"
 
-#: ../settings/xfae-model.c:772
+#: ../settings/esae-model.c:772
 #, c-format
 msgid "Failed to create file %s"
 msgstr "Tiedostoa %s ei voi luoda"
 
-#: ../settings/xfae-model.c:796
+#: ../settings/esae-model.c:796
 #, c-format
 msgid "Failed to write file %s"
 msgstr "Tiedostoon %s ei voi kirjoittaa"
 
-#: ../settings/xfae-model.c:856
+#: ../settings/esae-model.c:856
 #, c-format
 msgid "Failed to open %s for reading"
 msgstr "Tiedoston %s avaaminen luettavaksi ei onnistu"
 
-#: ../settings/xfae-window.c:98
+#: ../settings/esae-window.c:98
 msgid "Failed to set run hook"
 msgstr "Suorituskoukun asettaminen epäonnistui"
 
-#: ../settings/xfae-window.c:193
+#: ../settings/esae-window.c:193
 msgid "Trigger"
 msgstr "Laukaisin"
 
-#: ../settings/xfae-window.c:229
+#: ../settings/esae-window.c:229
 msgid "Remove application"
 msgstr "Poista sovellus"
 
-#: ../settings/xfae-window.c:306
+#: ../settings/esae-window.c:306
 msgid "Add"
 msgstr "Lisää"
 
-#: ../settings/xfae-window.c:312
+#: ../settings/esae-window.c:312
 msgid "Remove"
 msgstr "Poista"
 
-#: ../settings/xfae-window.c:366
+#: ../settings/esae-window.c:366
 #, c-format
 msgid "Failed adding \"%s\""
 msgstr "Kohteen \"%s\" lisääminen epäonnistui"
 
-#: ../settings/xfae-window.c:397 ../settings/xfae-window.c:411
+#: ../settings/esae-window.c:397 ../settings/esae-window.c:411
 msgid "Failed to remove item"
 msgstr "Kohteen poistaminen epäonnistui"
 
-#: ../settings/xfae-window.c:440
+#: ../settings/esae-window.c:440
 msgid "Failed to edit item"
 msgstr "Kohteen muokkaus epäonnistui"
 
-#: ../settings/xfae-window.c:460
+#: ../settings/esae-window.c:460
 #, c-format
 msgid "Failed to edit item \"%s\""
 msgstr "Kohteen \"%s\" muokkaus epäonnistui"
 
-#: ../settings/xfae-window.c:488
+#: ../settings/esae-window.c:488
 msgid "Failed to toggle item"
 msgstr "Kohteen tilan muutos epäonnistui"
 
-#: ../xfce4-session/main.c:77
+#: ../expidus1-session/main.c:77
 msgid "Disable binding to TCP ports"
 msgstr "Älä sido TCP-portteja"
 
-#: ../xfce4-session/main.c:78 ../xfce4-session-logout/main.c:102
+#: ../expidus1-session/main.c:78 ../expidus1-session-logout/main.c:102
 msgid "Print version information and exit"
 msgstr "Versiotiedot"
 
-#: ../xfce4-session/xfsm-chooser.c:147
+#: ../expidus1-session/essm-chooser.c:147
 msgid "Session Manager"
 msgstr "Istunnonhallinta"
 
-#: ../xfce4-session/xfsm-chooser.c:168
+#: ../expidus1-session/essm-chooser.c:168
 msgid ""
 "Choose the session you want to restore. You can simply double-click the "
 "session name to restore it."
 msgstr "Valitse istunto, jonka haluat palauttaa. Voit kaksoisnapsauttaa istunnon nimeä palauttaaksesi sen."
 
-#: ../xfce4-session/xfsm-chooser.c:184
+#: ../expidus1-session/essm-chooser.c:184
 msgid "Create a new session."
 msgstr "Luo uusi istunto."
 
-#: ../xfce4-session/xfsm-chooser.c:191
+#: ../expidus1-session/essm-chooser.c:191
 msgid "Delete a saved session."
 msgstr "Poista tallennettu istunto."
 
 #. "Logout" button
-#: ../xfce4-session/xfsm-chooser.c:202
-#: ../xfce4-session-logout/xfce4-session-logout.desktop.in.h:1
+#: ../expidus1-session/essm-chooser.c:202
+#: ../expidus1-session-logout/expidus1-session-logout.desktop.in.h:1
 msgid "Log Out"
 msgstr "Kirjaudu ulos"
 
-#: ../xfce4-session/xfsm-chooser.c:204
+#: ../expidus1-session/essm-chooser.c:204
 msgid "Cancel the login attempt and return to the login screen."
 msgstr "Peru kirjautumisyritys ja palaa sisäänkirjautumisruutuun."
 
 #. "Start" button
-#: ../xfce4-session/xfsm-chooser.c:211
+#: ../expidus1-session/essm-chooser.c:211
 msgid "Start"
 msgstr "Käynnistä"
 
-#: ../xfce4-session/xfsm-chooser.c:212
+#: ../expidus1-session/essm-chooser.c:212
 msgid "Start an existing session."
 msgstr "Käynnistä olemassaoleva istunto."
 
-#: ../xfce4-session/xfsm-dns.c:78
+#: ../expidus1-session/essm-dns.c:78
 msgid "(Unknown)"
 msgstr "(Tuntematon)"
 
-#: ../xfce4-session/xfsm-dns.c:152
+#: ../expidus1-session/essm-dns.c:152
 #, c-format
 msgid ""
 "Could not look up internet address for %s.\n"
-"This will prevent Xfce from operating correctly.\n"
+"This will prevent Expidus from operating correctly.\n"
 "It may be possible to correct the problem by adding\n"
 "%s to the file /etc/hosts on your system."
-msgstr "%s:n internetosoitteen selvitys ei onnistunut.\nTämä estää Xfce:tä toimimasta oikein.\nOngelman voi ehkä korjata lisäämällä %s tiedostoon\n/etc/hosts järjestelmässäsi."
+msgstr "%s:n internetosoitteen selvitys ei onnistunut.\nTämä estää Expidus:tä toimimasta oikein.\nOngelman voi ehkä korjata lisäämällä %s tiedostoon\n/etc/hosts järjestelmässäsi."
 
-#: ../xfce4-session/xfsm-dns.c:159
+#: ../expidus1-session/essm-dns.c:159
 msgid "Continue anyway"
 msgstr "Jatka kuitenkin"
 
-#: ../xfce4-session/xfsm-dns.c:160
+#: ../expidus1-session/essm-dns.c:160
 msgid "Try again"
 msgstr "Yritä uudelleen"
 
-#: ../xfce4-session/xfsm-manager.c:566
+#: ../expidus1-session/essm-manager.c:566
 #, c-format
 msgid ""
-"Unable to determine failsafe session name.  Possible causes: xfconfd isn't "
+"Unable to determine failsafe session name.  Possible causes: esconfd isn't "
 "running (D-Bus setup problem); environment variable $XDG_CONFIG_DIRS is set "
-"incorrectly (must include \"%s\"), or xfce4-session is installed "
+"incorrectly (must include \"%s\"), or expidus1-session is installed "
 "incorrectly."
-msgstr "Vikasietoisen istunnon nimeä ei voi määrittää. Mahdollisia syitä: xfconfd ei ole käynnissä (D-Bus -ongelma), ympäristömuuttuja $XDG_CONFIG_DIRS on väärin asetettu (pitäisi sisältää \"%s\") tai xfce4-session on asennettu väärin."
+msgstr "Vikasietoisen istunnon nimeä ei voi määrittää. Mahdollisia syitä: esconfd ei ole käynnissä (D-Bus -ongelma), ympäristömuuttuja $XDG_CONFIG_DIRS on väärin asetettu (pitäisi sisältää \"%s\") tai expidus1-session on asennettu väärin."
 
-#: ../xfce4-session/xfsm-manager.c:577
+#: ../expidus1-session/essm-manager.c:577
 #, c-format
 msgid ""
 "The specified failsafe session (\"%s\") is not marked as a failsafe session."
 msgstr "Määritettyä vikasietoista istuntoa (\"%s\") ei ole merkitty vikasietoiseksi."
 
-#: ../xfce4-session/xfsm-manager.c:610
+#: ../expidus1-session/essm-manager.c:610
 msgid "The list of applications in the failsafe session is empty."
 msgstr "Vikasietoinen istunto ei sisällä sovelluksia."
 
-#: ../xfce4-session/xfsm-manager.c:696
+#: ../expidus1-session/essm-manager.c:696
 msgid "Name for the new session"
 msgstr "Uuden istunnon nimi"
 
 #. FIXME: migrate this into the splash screen somehow so the
 #. * window doesn't look ugly (right now no WM is running, so it
 #. * won't have window decorations).
-#: ../xfce4-session/xfsm-manager.c:774
+#: ../expidus1-session/essm-manager.c:774
 msgid "Session Manager Error"
 msgstr "Istunnonhallinnan virhe"
 
-#: ../xfce4-session/xfsm-manager.c:776
+#: ../expidus1-session/essm-manager.c:776
 msgid "Unable to load a failsafe session"
 msgstr "Vikasietoista istuntoa ei voi ladata"
 
-#: ../xfce4-session/xfsm-manager.c:778
+#: ../expidus1-session/essm-manager.c:778
 msgid "_Quit"
 msgstr "_Lopeta"
 
-#: ../xfce4-session/xfsm-manager.c:1271
+#: ../expidus1-session/essm-manager.c:1271
 msgid "Shutdown Failed"
 msgstr "Sammutus epäonnistui"
 
-#: ../xfce4-session/xfsm-manager.c:1274
+#: ../expidus1-session/essm-manager.c:1274
 msgid "Failed to suspend session"
 msgstr "Keskeytystilaan asettaminen epäonnistui"
 
-#: ../xfce4-session/xfsm-manager.c:1276
+#: ../expidus1-session/essm-manager.c:1276
 msgid "Failed to hibernate session"
 msgstr "Lepotilaan asettaminen epäonnistui"
 
-#: ../xfce4-session/xfsm-manager.c:1278
+#: ../expidus1-session/essm-manager.c:1278
 msgid "Failed to hybrid sleep session"
 msgstr "Istunnon hybridiunitilaan siirtyminen epäonnistui"
 
-#: ../xfce4-session/xfsm-manager.c:1279
+#: ../expidus1-session/essm-manager.c:1279
 msgid "Failed to switch user"
 msgstr "Käyttäjän vaihtaminen epäonnistui"
 
-#: ../xfce4-session/xfsm-manager.c:1585
+#: ../expidus1-session/essm-manager.c:1585
 #, c-format
 msgid "Can only terminate clients when in the idle state"
 msgstr "Asiakasohjelmia voi sulkea vain joutenollessa"
 
-#: ../xfce4-session/xfsm-manager.c:2247
+#: ../expidus1-session/essm-manager.c:2247
 msgid "Session manager must be in idle state when requesting a checkpoint"
 msgstr "Istunnonhallinnan on oltava jouten pyydettäessä varmistuspistettä"
 
-#: ../xfce4-session/xfsm-manager.c:2317 ../xfce4-session/xfsm-manager.c:2337
+#: ../expidus1-session/essm-manager.c:2317 ../expidus1-session/essm-manager.c:2337
 msgid "Session manager must be in idle state when requesting a shutdown"
 msgstr "Istunnonhallinnan on oltava jouten pyydettäessä sammutusta"
 
-#: ../xfce4-session/xfsm-manager.c:2382
+#: ../expidus1-session/essm-manager.c:2382
 msgid "Session manager must be in idle state when requesting a restart"
 msgstr "Istunnonhallinnan on oltava jouten pyydettäessä uudelleenkäynnistystä"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:193
+#: ../expidus1-session/essm-logout-dialog.c:193
 #, c-format
 msgid "Log out %s"
 msgstr "Kirjaa ulos %s"
@@ -487,248 +487,248 @@ msgstr "Kirjaa ulos %s"
 #. *
 #. * Logout
 #. *
-#: ../xfce4-session/xfsm-logout-dialog.c:238
+#: ../expidus1-session/essm-logout-dialog.c:238
 msgid "_Log Out"
 msgstr "Kirjaudu _ulos"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:258
+#: ../expidus1-session/essm-logout-dialog.c:258
 msgid "_Restart"
 msgstr "_Käynnistä\nuudelleen"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:278
+#: ../expidus1-session/essm-logout-dialog.c:278
 msgid "Shut _Down"
 msgstr "_Sammuta"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:302
+#: ../expidus1-session/essm-logout-dialog.c:302
 msgid "Sus_pend"
 msgstr "K_eskeytystila"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:336
+#: ../expidus1-session/essm-logout-dialog.c:336
 msgid "_Hibernate"
 msgstr "L_epotila"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:367
+#: ../expidus1-session/essm-logout-dialog.c:367
 msgid "H_ybrid Sleep"
 msgstr "H_ybridilepo"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:398
+#: ../expidus1-session/essm-logout-dialog.c:398
 msgid "Switch _User"
 msgstr "Vaihda _käyttäjää"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:423
+#: ../expidus1-session/essm-logout-dialog.c:423
 msgid "_Save session for future logins"
 msgstr "_Tallenna istunto"
 
-#: ../xfce4-session/xfsm-logout-dialog.c:451
+#: ../expidus1-session/essm-logout-dialog.c:451
 msgid "An error occurred"
 msgstr "Virhe"
 
-#: ../xfce4-session/xfsm-shutdown.c:162
+#: ../expidus1-session/essm-shutdown.c:162
 msgid "Shutdown is blocked by the kiosk settings"
 msgstr "Kioskiasetukset estävät sammuttamisen"
 
-#: ../xfce4-session/xfsm-shutdown.c:219
+#: ../expidus1-session/essm-shutdown.c:219
 #, c-format
 msgid "Unknown shutdown method %d"
 msgstr "Tuntematon sammutustapa: %d"
 
-#: ../xfce4-session-logout/main.c:70
+#: ../expidus1-session-logout/main.c:70
 msgid "Log out without displaying the logout dialog"
 msgstr "Kirjaudu ulos näyttämättä uloskirjausdialogia"
 
-#: ../xfce4-session-logout/main.c:74
+#: ../expidus1-session-logout/main.c:74
 msgid "Halt without displaying the logout dialog"
 msgstr "Sammuta näyttämättä uloskirjausdialogia"
 
-#: ../xfce4-session-logout/main.c:78
+#: ../expidus1-session-logout/main.c:78
 msgid "Reboot without displaying the logout dialog"
 msgstr "Käynnistä uudelleen näyttämättä uloskirjausdialogia"
 
-#: ../xfce4-session-logout/main.c:82
+#: ../expidus1-session-logout/main.c:82
 msgid "Suspend without displaying the logout dialog"
 msgstr "Siirry keskeytystilaan näyttämättä uloskirjausdialogia"
 
-#: ../xfce4-session-logout/main.c:86
+#: ../expidus1-session-logout/main.c:86
 msgid "Hibernate without displaying the logout dialog"
 msgstr "Siirry lepotilaan näyttämättä uloskirjausdialogia"
 
-#: ../xfce4-session-logout/main.c:90
+#: ../expidus1-session-logout/main.c:90
 msgid "Hybrid Sleep without displaying the logout dialog"
 msgstr "Hybridilepotila ilman uloskirjautumista"
 
-#: ../xfce4-session-logout/main.c:94
+#: ../expidus1-session-logout/main.c:94
 msgid "Switch user without displaying the logout dialog"
 msgstr "Vaihda käyttäjää näyttämättä uloskirjausdialogia"
 
-#: ../xfce4-session-logout/main.c:98
+#: ../expidus1-session-logout/main.c:98
 msgid "Log out quickly; don't save the session"
 msgstr "Kirjaa ulos nopeasti; älä tallenna istuntoa"
 
-#: ../xfce4-session-logout/main.c:121
+#: ../expidus1-session-logout/main.c:121
 msgid "Unknown error"
 msgstr "Tuntematon virhe"
 
-#: ../xfce4-session-logout/main.c:147
-msgid "Written by Benedikt Meurer <benny@xfce.org>"
-msgstr "Kirjoittanut Benedikt Meurer <benny@xfce.org>"
+#: ../expidus1-session-logout/main.c:147
+msgid "Written by Benedikt Meurer <benny@expidus.org>"
+msgstr "Kirjoittanut Benedikt Meurer <benny@expidus.org>"
 
-#: ../xfce4-session-logout/main.c:148
-msgid "and Brian Tarricone <kelnos@xfce.org>."
-msgstr "sekä Brian Tarricone <kelnos@xfce.org>."
+#: ../expidus1-session-logout/main.c:148
+msgid "and Brian Tarricone <kelnos@expidus.org>."
+msgstr "sekä Brian Tarricone <kelnos@expidus.org>."
 
-#: ../xfce4-session-logout/main.c:168 ../xfce4-session-logout/main.c:279
+#: ../expidus1-session-logout/main.c:168 ../expidus1-session-logout/main.c:279
 msgid "Received error while trying to log out"
 msgstr "Virhe uloskirjautuessa"
 
-#: ../xfce4-session-logout/main.c:244
+#: ../expidus1-session-logout/main.c:244
 #, c-format
 msgid "Received error while trying to log out, error was %s"
 msgstr "Virhe uloskirjautuessa: %s"
 
-#: ../xfce4-session-logout/xfce4-session-logout.desktop.in.h:2
-msgid "Log out of the Xfce Desktop"
-msgstr "Kirjaudu ulos Xfce-työpöydältä"
+#: ../expidus1-session-logout/expidus1-session-logout.desktop.in.h:2
+msgid "Log out of the Expidus Desktop"
+msgstr "Kirjaudu ulos Expidus-työpöydältä"
 
-#: ../settings/xfce-session-settings.desktop.in.h:1
-#: ../settings/xfce4-session-settings.ui.h:1
+#: ../settings/expidus-session-settings.desktop.in.h:1
+#: ../settings/expidus1-session-settings.ui.h:1
 msgid "Session and Startup"
 msgstr "Istunto ja käynnistys"
 
-#: ../settings/xfce-session-settings.desktop.in.h:2
+#: ../settings/expidus-session-settings.desktop.in.h:2
 msgid "Customize desktop startup"
 msgstr "Mukauta työpöydän käynnistystä"
 
-#: ../settings/xfce-session-settings.desktop.in.h:3
+#: ../settings/expidus-session-settings.desktop.in.h:3
 msgid ""
 "session;settings;preferences;manager;startup;login;logout;shutdown;lock "
 "screen;application;autostart;launch;services;daemon;agent;"
 msgstr ""
 
-#: ../settings/xfce4-session-settings.ui.h:2
+#: ../settings/expidus1-session-settings.ui.h:2
 msgid "_Help"
 msgstr "_Ohje"
 
-#: ../settings/xfce4-session-settings.ui.h:4
+#: ../settings/expidus1-session-settings.ui.h:4
 msgid "_Display chooser on login"
 msgstr "Näytä istunnon_valitsin kirjautuessa"
 
-#: ../settings/xfce4-session-settings.ui.h:5
-msgid "Display the session chooser every time Xfce starts"
-msgstr "Näytä istunnon valitsin aina Xfce:n käynnistyessä"
+#: ../settings/expidus1-session-settings.ui.h:5
+msgid "Display the session chooser every time Expidus starts"
+msgstr "Näytä istunnon valitsin aina Expidus:n käynnistyessä"
 
-#: ../settings/xfce4-session-settings.ui.h:6
+#: ../settings/expidus1-session-settings.ui.h:6
 msgid "<b>Session Chooser</b>"
 msgstr "<b>Istunnon valitsin</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:7
+#: ../settings/expidus1-session-settings.ui.h:7
 msgid "Automatically save session on logo_ut"
 msgstr "Tallenna istunto automaattisesti kirjautuessa _ulos"
 
-#: ../settings/xfce4-session-settings.ui.h:8
+#: ../settings/expidus1-session-settings.ui.h:8
 msgid "Always save the session when logging out"
 msgstr "Tallenna istunto aina uloskirjautuessa"
 
-#: ../settings/xfce4-session-settings.ui.h:9
+#: ../settings/expidus1-session-settings.ui.h:9
 msgid "Pro_mpt on logout"
 msgstr "_Vahvista kirjautuessa ulos"
 
-#: ../settings/xfce4-session-settings.ui.h:10
+#: ../settings/expidus1-session-settings.ui.h:10
 msgid "Prompt for confirmation when logging out"
 msgstr "Pyydä vahvistus uloskirjautuessa"
 
-#: ../settings/xfce4-session-settings.ui.h:11
+#: ../settings/expidus1-session-settings.ui.h:11
 msgid "<b>Logout Settings</b>"
 msgstr "<b>Uloskirjausasetukset</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:12
+#: ../settings/expidus1-session-settings.ui.h:12
 msgid "Lock screen be_fore sleep"
 msgstr "Lukitse näyttö _ennen keskeytys- ja lepotilaan siirtymistä"
 
-#: ../settings/xfce4-session-settings.ui.h:13
+#: ../settings/expidus1-session-settings.ui.h:13
 msgid "Run xflock4 before suspending or hibernating the system"
 msgstr "Suorita xflock4 ennen keskeytys- tai lepotilaan siirtymistä"
 
-#: ../settings/xfce4-session-settings.ui.h:14
+#: ../settings/expidus1-session-settings.ui.h:14
 msgid "<b>Shutdown</b>"
 msgstr "<b>Sammutus</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:15
+#: ../settings/expidus1-session-settings.ui.h:15
 msgid "_General"
 msgstr "_Yleiset"
 
-#: ../settings/xfce4-session-settings.ui.h:16
+#: ../settings/expidus1-session-settings.ui.h:16
 msgid "Currently active session: <b>Default</b>"
 msgstr "Nykyinen aktiivinen istunto: <b>Oletus</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:17
+#: ../settings/expidus1-session-settings.ui.h:17
 msgid "Save Sess_ion"
 msgstr "Tallenna _istunto"
 
-#: ../settings/xfce4-session-settings.ui.h:18
+#: ../settings/expidus1-session-settings.ui.h:18
 msgid ""
 "These applications are a part of the currently-running session, and can be "
 "saved now or when you log out.  Changes below will only take effect when the"
 " session is saved."
 msgstr "Nämä sovellukset sisältyvät tämänhetkiseen istuntoon ja voidaan tallentaa uloskirjauksen yhteydessä. Tekemäsi muutokset astuvat voimaan vasta, kun istunto tallennetaan."
 
-#: ../settings/xfce4-session-settings.ui.h:20
+#: ../settings/expidus1-session-settings.ui.h:20
 msgid "Current Sessio_n"
 msgstr "_Nykyinen istunto"
 
-#: ../settings/xfce4-session-settings.ui.h:21
+#: ../settings/expidus1-session-settings.ui.h:21
 msgid "Delete the selected session"
 msgstr "Poista valittu istunto"
 
-#: ../settings/xfce4-session-settings.ui.h:22
+#: ../settings/expidus1-session-settings.ui.h:22
 msgid "Clear Save_d Sessions"
 msgstr "Tyhjennä _tallennetut istunnot"
 
-#: ../settings/xfce4-session-settings.ui.h:23
+#: ../settings/expidus1-session-settings.ui.h:23
 msgid "Saved _Sessions"
 msgstr "Tallennetut _istunnot"
 
-#: ../settings/xfce4-session-settings.ui.h:24
+#: ../settings/expidus1-session-settings.ui.h:24
 msgid "Launch GN_OME services on startup"
 msgstr "Alusta _GNOME-palvelut käynnistäessä"
 
-#: ../settings/xfce4-session-settings.ui.h:25
+#: ../settings/expidus1-session-settings.ui.h:25
 msgid "Start GNOME services, such as gnome-keyring"
 msgstr "Käynnistä GNOME-palvelut kuten avainrengas"
 
-#: ../settings/xfce4-session-settings.ui.h:26
+#: ../settings/expidus1-session-settings.ui.h:26
 msgid "Launch _KDE services on startup"
 msgstr "Alusta _KDE-palvelut käynnistetäessä"
 
-#: ../settings/xfce4-session-settings.ui.h:27
+#: ../settings/expidus1-session-settings.ui.h:27
 msgid "Start KDE services, such as kdeinit"
 msgstr "Käynnistä KDE-palvelut kuten kdeinit"
 
-#: ../settings/xfce4-session-settings.ui.h:28
+#: ../settings/expidus1-session-settings.ui.h:28
 msgid "<b>Compatibility</b>"
 msgstr "<b>Yhteensopivuus</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:29
+#: ../settings/expidus1-session-settings.ui.h:29
 msgid "Manage _remote applications"
 msgstr "Hallitse etäso_velluksia"
 
-#: ../settings/xfce4-session-settings.ui.h:30
+#: ../settings/expidus1-session-settings.ui.h:30
 msgid ""
 "Manage remote applications over the network (this may be a security risk)"
 msgstr "Hallitse etäsovelluksia verkon yli (voi muodostaa turvallisuusriskin)"
 
-#: ../settings/xfce4-session-settings.ui.h:31
+#: ../settings/expidus1-session-settings.ui.h:31
 msgid "<b>Security</b>"
 msgstr "<b>Turvallisuus</b>"
 
-#: ../settings/xfce4-session-settings.ui.h:32
+#: ../settings/expidus1-session-settings.ui.h:32
 msgid "Ad_vanced"
 msgstr "_Lisäasetukset"
 
-#: ../settings/xfce4-session-settings.ui.h:33
+#: ../settings/expidus1-session-settings.ui.h:33
 msgid "Saving Session"
 msgstr "Tallennetaan istunto"
 
-#: ../settings/xfce4-session-settings.ui.h:34
+#: ../settings/expidus1-session-settings.ui.h:34
 msgid ""
 "Your session is being saved.  If you do not wish to wait, you may close this"
 " window."

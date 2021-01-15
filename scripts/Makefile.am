@@ -1,5 +1,5 @@
 bin_SCRIPTS= \
-	startxfce4 \
+	startexpidus1 \
 	xflock4
 
 # cannot be set from configure, because ${prefix} is not expanded
@@ -9,17 +9,17 @@ edit = $(SED) \
 	-e "s,@_docdir_\@,$$(dirname $(docdir)),g" \
 	-e "s,@_sysconfdir_\@,$(sysconfdir),g"
 
-startxfce4: Makefile $(srcdir)/startxfce4.in
-	rm -f startxfce4 startxfce4.tmp
-	$(edit) $(srcdir)/startxfce4.in >startxfce4.tmp
-	mv startxfce4.tmp startxfce4
+startexpidus1: Makefile $(srcdir)/startexpidus1.in
+	rm -f startexpidus1 startexpidus1.tmp
+	$(edit) $(srcdir)/startexpidus1.in >startexpidus1.tmp
+	mv startexpidus1.tmp startexpidus1
 
 xinitrc: Makefile xinitrc.in
 	rm -f xinitrc xinitrc.tmp
 	$(edit) xinitrc.in >xinitrc.tmp
 	mv xinitrc.tmp xinitrc
 
-conffilesdir=@sysconfdir@/xdg/xfce4
+conffilesdir=@sysconfdir@/xdg/expidus1
 conffiles_DATA = \
 	xinitrc \
 	Xft.xrdb
@@ -31,12 +31,12 @@ autostart_DATA = $(autostart_in_files:.desktop.in=.desktop)
 
 EXTRA_DIST = \
 	$(autostart_in_files) \
-	startxfce4.in \
+	startexpidus1.in \
 	xinitrc.in \
 	Xft.xrdb \
 	xflock4
 
 DISTCLEANFILES = \
 	$(autostart_DATA) \
-	startxfce4 \
+	startexpidus1 \
 	xinitrc

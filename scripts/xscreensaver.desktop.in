@@ -6,4 +6,4 @@ _Comment=Launch screensaver and locker program
 Icon=preferences-desktop-screensaver
 Exec=xscreensaver -no-splash
 TryExec=xscreensaver
-OnlyShowIn=XFCE;
+OnlyShowIn=EXPIDUS;

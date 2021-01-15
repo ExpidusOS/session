@@ -30,15 +30,15 @@
 
 #include <gio/gio.h>
 
-#include <libxfce4util/libxfce4util.h>
-#include <libxfce4ui/libxfce4ui.h>
+#include <libexpidus1util/libexpidus1util.h>
+#include <libexpidus1ui/libexpidus1ui.h>
 
-#include <libxfsm/xfsm-util.h>
+#include <libessm/essm-util.h>
 
-#include "xfce4-session-settings-common.h"
-#include "xfce4-session-marshal.h"
-#include "xfsm-client-dbus-client.h"
-#include "xfsm-manager-dbus-client.h"
+#include "expidus1-session-settings-common.h"
+#include "expidus1-session-marshal.h"
+#include "essm-client-dbus-client.h"
+#include "essm-manager-dbus-client.h"
 
 #define GsmPriority       "_GSM_Priority"
 #define GsmDesktopFile    "_GSM_DesktopFile"
@@ -67,7 +67,7 @@ static const gchar *restart_styles[] = {
     NULL,
 };
 
-static XfsmManager *manager_dbus_proxy = NULL;
+static EssmManager *manager_dbus_proxy = NULL;
 
 
 static gboolean
@@ -80,15 +80,15 @@ session_editor_ensure_dbus(void)
     if (manager_dbus_proxy)
         return TRUE;
 
-    manager_dbus_proxy = xfsm_manager_proxy_new_for_bus_sync(G_BUS_TYPE_SESSION,
+    manager_dbus_proxy = essm_manager_proxy_new_for_bus_sync(G_BUS_TYPE_SESSION,
                                                              G_DBUS_PROXY_FLAGS_NONE,
-                                                             "org.xfce.SessionManager",
-                                                             "/org/xfce/SessionManager",
+                                                             "org.expidus.SessionManager",
+                                                             "/org/expidus/SessionManager",
                                                              NULL,
                                                              &error);
 
     if (manager_dbus_proxy == NULL) {
-        g_error ("error connecting to org.xfce.SessionManager, reason was: %s", error->message);
+        g_error ("error connecting to org.expidus.SessionManager, reason was: %s", error->message);
         g_clear_error(&error);
         return FALSE;
     }
@@ -97,7 +97,7 @@ session_editor_ensure_dbus(void)
 }
 
 static void
-manager_state_changed_saving(XfsmManager *proxy,
+manager_state_changed_saving(EssmManager *proxy,
                              guint old_state,
                              guint new_state,
                              gpointer user_data)
@@ -124,7 +124,7 @@ session_editor_save_session(GtkWidget *btn,
     GtkWidget *pbar = g_object_get_data(G_OBJECT(dialog), "pbar");
     GtkTreeModel    *model;
     GList *sessions;
-    XfceRc *rc;
+    ExpidusRc *rc;
     guint pulse_id;
     guint sig_id;
     GError *error = NULL;
@@ -133,12 +133,12 @@ session_editor_save_session(GtkWidget *btn,
 
     gtk_widget_set_sensitive(btn, FALSE);
 
-    if(!xfsm_manager_call_checkpoint_sync(manager_dbus_proxy, "", NULL, &error)) {
-        xfce_message_dialog(GTK_WINDOW(gtk_widget_get_toplevel(btn)),
+    if(!essm_manager_call_checkpoint_sync(manager_dbus_proxy, "", NULL, &error)) {
+        expidus_message_dialog(GTK_WINDOW(gtk_widget_get_toplevel(btn)),
                             _("Session Save Error"), "dialog-error",
                             _("Unable to save the session"),
                             error ? error->message : "Unknown error.",
-                            XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("_Close"), GTK_RESPONSE_ACCEPT,
+                            EXPIDUS_BUTTON_TYPE_MIXED, "window-close-symbolic", _("_Close"), GTK_RESPONSE_ACCEPT,
                             NULL);
         gtk_widget_set_sensitive(btn, TRUE);
         if (error)
@@ -195,7 +195,7 @@ session_editor_clear_sessions(GtkWidget *btn,
 
     gtk_widget_set_sensitive(btn, FALSE);
 
-    if(xfce_message_dialog(GTK_WINDOW(gtk_widget_get_toplevel(treeview)),
+    if(expidus_message_dialog(GTK_WINDOW(gtk_widget_get_toplevel(treeview)),
                            _("Clear sessions"), "dialog-question",
                            _("Are you sure you want to empty the session cache?"),
                            _("The saved states of your applications will not be restored during your next login."),
@@ -220,8 +220,8 @@ session_editor_clear_sessions(GtkWidget *btn,
         }
 
         while((item_name = g_dir_read_name(cache_dir))) {
-            /* only clean Xfce related items */
-            if(!g_str_has_prefix(item_name, "xfce4-session-") &&
+            /* only clean Expidus related items */
+            if(!g_str_has_prefix(item_name, "expidus1-session-") &&
                !g_str_has_prefix(item_name, "Thunar-") &&
                !g_str_has_prefix(item_name, "xfwm4-")) {
                 continue;
@@ -239,9 +239,9 @@ session_editor_clear_sessions(GtkWidget *btn,
             gchar *secondary_text;
 
             secondary_text = g_strdup_printf (_("You might need to delete some files manually in \"%s\"."), cache_dir_path);
-            xfce_dialog_show_warning(GTK_WINDOW(gtk_widget_get_toplevel(treeview)),
+            expidus_dialog_show_warning(GTK_WINDOW(gtk_widget_get_toplevel(treeview)),
                                      secondary_text,
-                                     _("All Xfce cache files could not be cleared"));
+                                     _("All Expidus cache files could not be cleared"));
             g_free(secondary_text);
         }
 
@@ -263,7 +263,7 @@ session_editor_quit_client(GtkWidget *btn,
     GtkTreeSelection *sel;
     GtkTreeModel *model = NULL;
     GtkTreeIter iter;
-    XfsmClient *proxy = NULL;
+    EssmClient *proxy = NULL;
     gchar *name = NULL;
     guchar hint = SmRestartIfRunning;
     gchar *primary;
@@ -282,12 +282,12 @@ session_editor_quit_client(GtkWidget *btn,
 
     primary = g_strdup_printf(_("Are you sure you want to terminate \"%s\"?"),
                               name);
-    if(xfce_message_dialog(GTK_WINDOW(gtk_widget_get_toplevel(treeview)),
+    if(expidus_message_dialog(GTK_WINDOW(gtk_widget_get_toplevel(treeview)),
                            _("Terminate Program"), "dialog-question",
                            primary,
                            _("The application will lose any unsaved state and will not be restarted in your next session."),
                            _("_Cancel"), GTK_RESPONSE_CANCEL,
-                           XFCE_BUTTON_TYPE_MIXED, "application-exit", _("_Quit Program"), GTK_RESPONSE_ACCEPT,
+                           EXPIDUS_BUTTON_TYPE_MIXED, "application-exit", _("_Quit Program"), GTK_RESPONSE_ACCEPT,
                            NULL) == GTK_RESPONSE_ACCEPT)
     {
         GError *error = NULL;
@@ -300,18 +300,18 @@ session_editor_quit_client(GtkWidget *btn,
             variant = g_variant_new_byte(SmRestartIfRunning);
             g_variant_builder_add (&properties, "{sv}", SmRestartStyleHint, variant);
 
-            if(!xfsm_client_call_set_sm_properties_sync(proxy, g_variant_builder_end (&properties), NULL, &error)) {
+            if(!essm_client_call_set_sm_properties_sync(proxy, g_variant_builder_end (&properties), NULL, &error)) {
                 g_error("error setting 'SmRestartStyleHint', error: %s", error->message);
                 g_clear_error(&error);
             }
         }
 
-        if(!xfsm_client_call_terminate_sync(proxy, NULL, &error)) {
-            xfce_message_dialog(GTK_WINDOW(gtk_widget_get_toplevel(treeview)),
+        if(!essm_client_call_terminate_sync(proxy, NULL, &error)) {
+            expidus_message_dialog(GTK_WINDOW(gtk_widget_get_toplevel(treeview)),
                                 _("Terminate Program"), "dialog-error",
                                 _("Unable to terminate program."),
                                 error->message,
-                                XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("_Close"), GTK_RESPONSE_ACCEPT,
+                                EXPIDUS_BUTTON_TYPE_MIXED, "window-close-symbolic", _("_Close"), GTK_RESPONSE_ACCEPT,
                                 NULL);
             g_error_free(error);
         }
@@ -327,31 +327,31 @@ session_editor_set_from_desktop_file(GtkTreeModel *model,
                                      GtkTreeIter *iter,
                                      const gchar *desktop_file)
 {
-    XfceRc *rcfile;
+    ExpidusRc *rcfile;
     const gchar *name, *icon;
     GIcon *gicon;
 
     TRACE("entering\n");
 
-    rcfile = xfce_rc_simple_open(desktop_file, TRUE);
+    rcfile = expidus_rc_simple_open(desktop_file, TRUE);
     if(!rcfile)
         return;
 
-    if(!xfce_rc_has_group(rcfile, "Desktop Entry")) {
-        xfce_rc_close(rcfile);
+    if(!expidus_rc_has_group(rcfile, "Desktop Entry")) {
+        expidus_rc_close(rcfile);
         return;
     }
 
-    xfce_rc_set_group(rcfile, "Desktop Entry");
+    expidus_rc_set_group(rcfile, "Desktop Entry");
 
-    name = xfce_rc_read_entry(rcfile, "Name", NULL);
+    name = expidus_rc_read_entry(rcfile, "Name", NULL);
     if(!name) {
         /* we require at least Name to make things simpler */
-        xfce_rc_close(rcfile);
+        expidus_rc_close(rcfile);
         return;
     }
 
-    icon = xfce_rc_read_entry (rcfile, "Icon", NULL);
+    icon = expidus_rc_read_entry (rcfile, "Icon", NULL);
     gicon = g_themed_icon_new_with_default_fallbacks (icon);
 
     gtk_list_store_set(GTK_LIST_STORE(model), iter,
@@ -360,11 +360,11 @@ session_editor_set_from_desktop_file(GtkTreeModel *model,
                        COL_HAS_DESKTOP_FILE, TRUE,
                        -1);
 
-    xfce_rc_close(rcfile);
+    expidus_rc_close(rcfile);
 }
 
 static void
-client_sm_property_changed(XfsmClient *proxy,
+client_sm_property_changed(EssmClient *proxy,
                            const gchar *name,
                            const GValue *value,
                            gpointer user_data)
@@ -420,7 +420,7 @@ client_sm_property_changed(XfsmClient *proxy,
 }
 
 static void
-client_state_changed(XfsmClient *proxy,
+client_state_changed(EssmClient *proxy,
                      guint old_state,
                      guint new_state,
                      gpointer user_data)
@@ -446,7 +446,7 @@ client_state_changed(XfsmClient *proxy,
 }
 
 static void
-manager_client_registered(XfsmManager *proxy,
+manager_client_registered(EssmManager *proxy,
                           const gchar *object_path,
                           gpointer user_data)
 {
@@ -454,7 +454,7 @@ manager_client_registered(XfsmManager *proxy,
     GtkTreeModel *model = gtk_tree_view_get_model(treeview);
     GtkTreePath *path;
     GtkTreeIter iter;
-    XfsmClient *client_proxy;
+    EssmClient *client_proxy;
     const gchar *propnames[] = {
         SmProgram, SmRestartStyleHint,SmProcessID, GsmPriority,
         GsmDesktopFile, NULL
@@ -471,22 +471,22 @@ manager_client_registered(XfsmManager *proxy,
 
     DBG("new client at %s", object_path);
 
-    client_proxy = xfsm_client_proxy_new_for_bus_sync(G_BUS_TYPE_SESSION,
+    client_proxy = essm_client_proxy_new_for_bus_sync(G_BUS_TYPE_SESSION,
                                                       G_DBUS_PROXY_FLAGS_NONE,
-                                                      "org.xfce.SessionManager",
+                                                      "org.expidus.SessionManager",
                                                       object_path,
                                                       NULL,
                                                       &error);
 
     if(error != NULL)
     {
-        g_warning("Unable to connect to org.xfce.SessionManager, reason: %s",
+        g_warning("Unable to connect to org.expidus.SessionManager, reason: %s",
                   error->message);
         g_clear_error(&error);
         return;
     }
 
-    if(!xfsm_client_call_get_sm_properties_sync(client_proxy, propnames,
+    if(!essm_client_call_get_sm_properties_sync(client_proxy, propnames,
                                                 &variant, NULL, &error))
     {
         g_warning("Unable to get properties for client at %s: %s",
@@ -554,7 +554,7 @@ manager_client_registered(XfsmManager *proxy,
     }
     else
     {
-        gicon = xfce_gicon_from_name (name);
+        gicon = expidus_gicon_from_name (name);
 
         gtk_list_store_set (GTK_LIST_STORE (model), &iter,
                             COL_ICON_NAME, gicon,
@@ -609,7 +609,7 @@ priority_changed(GtkCellRenderer *render,
     TRACE("entering\n");
 
     if(gtk_tree_model_get_iter(model, &iter, path)) {
-        XfsmClient *proxy = NULL;
+        EssmClient *proxy = NULL;
         gint new_prio_i = atoi(new_text);
         guchar old_prio, new_prio;
 
@@ -637,7 +637,7 @@ priority_changed(GtkCellRenderer *render,
             variant = g_variant_new_byte(new_prio);
             g_variant_builder_add (&properties, "{sv}", GsmPriority, variant);
 
-            if(!xfsm_client_call_set_sm_properties_sync(proxy, g_variant_builder_end (&properties), NULL, &error)) {
+            if(!essm_client_call_set_sm_properties_sync(proxy, g_variant_builder_end (&properties), NULL, &error)) {
                 g_error("error setting 'GsmPriority', error: %s", error->message);
                 g_clear_error(&error);
             }
@@ -668,7 +668,7 @@ restart_style_hint_changed(GtkCellRenderer *render,
     if(gtk_tree_model_get_iter(model, &iter, path)) {
         gint i;
         guchar old_hint = SmRestartIfRunning, hint;
-        XfsmClient *proxy = NULL;
+        EssmClient *proxy = NULL;
 
         gtk_tree_model_get(GTK_TREE_MODEL(model), &iter,
                            COL_DBUS_PROXY, &proxy,
@@ -693,7 +693,7 @@ restart_style_hint_changed(GtkCellRenderer *render,
             variant = g_variant_new_byte(hint);
             g_variant_builder_add (&properties, "{sv}", SmRestartStyleHint, variant);
 
-            if(!xfsm_client_call_set_sm_properties_sync(proxy, g_variant_builder_end (&properties), NULL, &error)) {
+            if(!essm_client_call_set_sm_properties_sync(proxy, g_variant_builder_end (&properties), NULL, &error)) {
                 g_error("error setting 'SmRestartStyleHint', error: %s", error->message);
                 g_clear_error(&error);
             }
@@ -854,7 +854,7 @@ session_editor_populate_treeview(GtkTreeView *treeview)
                      G_CALLBACK(manager_client_registered),
                      treeview);
 
-    if(!xfsm_manager_call_list_clients_sync(manager_dbus_proxy,
+    if(!essm_manager_call_list_clients_sync(manager_dbus_proxy,
                                             &clients, NULL, &error))
     {
         g_critical("Unable to query session manager for client list: %s",

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=expidus1-session-logout
+Icon=essm-logout
+StartupNotify=false
+Terminal=false
+Categories=System;X-EXPIDUS;X-Expidus-Toplevel;
+OnlyShowIn=EXPIDUS;
+_Name=Log Out
+_Comment=Log out of the Expidus Desktop
