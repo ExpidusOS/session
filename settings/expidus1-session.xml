@@ -25,7 +25,7 @@
       <property name="Client2_Priority" type="int" value="25"/>
       <property name="Client2_PerScreen" type="bool" value="false"/>
       <property name="Client3_Command" type="array">
-        <value type="string" value="Thunar"/>
+        <value type="string" value="Lunar"/>
         <value type="string" value="--daemon"/>
       </property>
       <property name="Client3_Priority" type="int" value="30"/>

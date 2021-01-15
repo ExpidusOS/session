@@ -222,7 +222,7 @@ session_editor_clear_sessions(GtkWidget *btn,
         while((item_name = g_dir_read_name(cache_dir))) {
             /* only clean Expidus related items */
             if(!g_str_has_prefix(item_name, "expidus1-session-") &&
-               !g_str_has_prefix(item_name, "Thunar-") &&
+               !g_str_has_prefix(item_name, "Lunar-") &&
                !g_str_has_prefix(item_name, "eswm1-")) {
                 continue;
             }
