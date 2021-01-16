@@ -654,8 +654,8 @@ msgid "Lock screen be_fore sleep"
 msgstr "Uyku_dan önce ekranı kilitle"
 
 #: ../settings/expidus1-session-settings.ui.h:16
-msgid "Run xflock4 before suspending or hibernating the system"
-msgstr "Askıya alma ve hazırda beklemeden önce xflock4 programını çalıştır"
+msgid "Run eslock1 before suspending or hibernating the system"
+msgstr "Askıya alma ve hazırda beklemeden önce eslock1 programını çalıştır"
 
 #: ../settings/expidus1-session-settings.ui.h:17
 msgid "<b>Shutdown</b>"

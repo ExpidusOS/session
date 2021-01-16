@@ -646,8 +646,8 @@ msgid "Lock screen be_fore sleep"
 msgstr "Κλείδωμα οθόνης πριν την αναστολή"
 
 #: ../settings/expidus1-session-settings.ui.h:13
-msgid "Run xflock4 before suspending or hibernating the system"
-msgstr "Εκτέλεση xflock4 πριν την αναστολή ή την αδράνεια του συστήματος"
+msgid "Run eslock1 before suspending or hibernating the system"
+msgstr "Εκτέλεση eslock1 πριν την αναστολή ή την αδράνεια του συστήματος"
 
 #: ../settings/expidus1-session-settings.ui.h:14
 msgid "<b>Shutdown</b>"

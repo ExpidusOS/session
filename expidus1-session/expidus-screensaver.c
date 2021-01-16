@@ -556,7 +556,7 @@ expidus_screensaver_lock (ExpidusScreenSaver *saver)
                            "Please set the esconf property %s%s in expidus1-session to the desired lock command",
                            ESSM_PROPERTIES_PREFIX, LOCK_COMMAND);
 
-                ret = g_spawn_command_line_async ("xflock4", NULL);
+                ret = g_spawn_command_line_async ("eslock1", NULL);
             }
 
             if (!ret)

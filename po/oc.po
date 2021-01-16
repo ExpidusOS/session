@@ -641,8 +641,8 @@ msgid "Lock screen be_fore sleep"
 msgstr "_Varrolhar l'ecran abans la mesa en velha"
 
 #: ../settings/expidus1-session-settings.ui.h:13
-msgid "Run xflock4 before suspending or hibernating the system"
-msgstr "Executar xflock4 abans la mesa en velha o l'ivernacion del sistèma"
+msgid "Run eslock1 before suspending or hibernating the system"
+msgstr "Executar eslock1 abans la mesa en velha o l'ivernacion del sistèma"
 
 #: ../settings/expidus1-session-settings.ui.h:14
 msgid "<b>Shutdown</b>"

@@ -641,8 +641,8 @@ msgid "Lock screen be_fore sleep"
 msgstr "Scherm vergrendelen voor pauzestand/slaapstand"
 
 #: ../settings/expidus1-session-settings.ui.h:13
-msgid "Run xflock4 before suspending or hibernating the system"
-msgstr "Draai xflock4 alvorens het systeem in pauzestand of slaapstand te brengen"
+msgid "Run eslock1 before suspending or hibernating the system"
+msgstr "Draai eslock1 alvorens het systeem in pauzestand of slaapstand te brengen"
 
 #: ../settings/expidus1-session-settings.ui.h:14
 msgid "<b>Shutdown</b>"

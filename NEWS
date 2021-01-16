@@ -122,9 +122,9 @@
 - Drop splash screens
 - Introduce priority-group startup for FailSafe Session
 - Optionally run commands on logout, suspend etc. (Bug #10172)
-- xflock4:
+- eslock1:
   - Do not override PATH with hardcoded value.
-  - Add support for expidus1-screensaver to xflock4
+  - Add support for expidus1-screensaver to eslock1
 - chooser:
   - Improve look and feel of the session chooser
   - Improve UI and add delete button (Bug #12799)
@@ -244,7 +244,7 @@ MAX_USER_GROUPS (bug #14722)
   were dropped from it.
 - Handle screensaver with it's own object (Bug #12603)
 - Fix a crash when warning about the screenlocker (Bug #12603)
-- When locking fallback to xflock4 first (Bug #12603)
+- When locking fallback to eslock1 first (Bug #12603)
 - Add switch-user to the essm-logout program
 - Translation updates: am, ast, ca, da, de, el, en_AU, es, fi, fr, gl, he,
   hr, hu, id, is, it, ja, kk, ko, lt, ms, nb, nl, nn, oc, pl, pt, pt_BR,
@@ -346,7 +346,7 @@ Stable release of expidus1-session for Expidus 4.12.
 - Remove deprecated or unused code from xinit.
 - Use macro to search for sed.
 - Fallback to old method for shutdown (bug #8630).
-- Improve xflock4 script (bug #3770).
+- Improve eslock1 script (bug #3770).
 - Drop the sync code because it can segfault on ext2 (bug #7887).
 - Always escape name and comment in dialog.
 - Translation updates: Catalan (Valencian), Danish, German, Greek,
@@ -365,7 +365,7 @@ Stable release of expidus1-session for Expidus 4.12.
 - Fix crash if save timeout for a client is triggered (bug #7320).
 - Add a way to delete sessions (Bug #5730).
 - Drop usage of G_CONST_RETURN macro.
-- Add Xft.xrdb, startexpidus1, xinit, expidus.desktop and xflock4
+- Add Xft.xrdb, startexpidus1, xinit, expidus.desktop and eslock1
   files from expidus-utils.
 - Explicitly link to libm where needed (bug #7953).
 - Remove the expidus1-panel logout menu plugin.
@@ -433,7 +433,7 @@ Stable release of expidus1-session for Expidus 4.12.
 4.7.1
 =====
 - Add support for new gnome-keyring (bugs #5912, #5137 and #6073).
-- Fix typo in xflock4 error message.
+- Fix typo in eslock1 error message.
 - Don't use consolekit when it's not enabled.
 - Remove consolekit session creation in expidus1-session.
 - Use cairo to draw the fadeout.

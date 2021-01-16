@@ -35,6 +35,11 @@
       </property>
       <property name="Client4_Priority" type="int" value="35"/>
       <property name="Client4_PerScreen" type="bool" value="false"/>
+      <property name="Client5_Command" type="array">
+        <value type="string" value="esdashboard -d"/>
+      </property>
+      <property name="Client5_Priority" type="int" value="40"/>
+      <property name="Client5_PerScreen" type="bool" value="false"/>
     </property>
   </property>
 </channel>

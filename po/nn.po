@@ -639,8 +639,8 @@ msgid "Lock screen be_fore sleep"
 msgstr "_Lås skjermen føre kvile"
 
 #: ../settings/expidus1-session-settings.ui.h:13
-msgid "Run xflock4 before suspending or hibernating the system"
-msgstr "Køyr xflock4 før du set maskina i dvale- eller kvilemodus"
+msgid "Run eslock1 before suspending or hibernating the system"
+msgstr "Køyr eslock1 før du set maskina i dvale- eller kvilemodus"
 
 #: ../settings/expidus1-session-settings.ui.h:14
 msgid "<b>Shutdown</b>"

@@ -643,8 +643,8 @@ msgid "Lock screen be_fore sleep"
 msgstr "B_loqueja la pantalla abans del repòs"
 
 #: ../settings/expidus1-session-settings.ui.h:13
-msgid "Run xflock4 before suspending or hibernating the system"
-msgstr "Executa «xflock4» abans de suspendre o hibernar el sistema"
+msgid "Run eslock1 before suspending or hibernating the system"
+msgstr "Executa «eslock1» abans de suspendre o hibernar el sistema"
 
 #: ../settings/expidus1-session-settings.ui.h:14
 msgid "<b>Shutdown</b>"

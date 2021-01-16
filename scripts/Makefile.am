@@ -1,6 +1,6 @@
 bin_SCRIPTS= \
 	startexpidus1 \
-	xflock4
+	eslock1
 
 # cannot be set from configure, because ${prefix} is not expanded
 edit = $(SED) \
@@ -34,7 +34,7 @@ EXTRA_DIST = \
 	startexpidus1.in \
 	xinitrc.in \
 	Xft.xrdb \
-	xflock4
+	eslock1
 
 DISTCLEANFILES = \
 	$(autostart_DATA) \

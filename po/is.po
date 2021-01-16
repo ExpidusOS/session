@@ -640,8 +640,8 @@ msgid "Lock screen be_fore sleep"
 msgstr "Læsa skjá _fyrir svæfingu"
 
 #: ../settings/expidus1-session-settings.ui.h:13
-msgid "Run xflock4 before suspending or hibernating the system"
-msgstr "Keyra xflock4 fyrir svæfingu eða dvala"
+msgid "Run eslock1 before suspending or hibernating the system"
+msgstr "Keyra eslock1 fyrir svæfingu eða dvala"
 
 #: ../settings/expidus1-session-settings.ui.h:14
 msgid "<b>Shutdown</b>"
