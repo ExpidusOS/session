@@ -8,7 +8,7 @@
   <property name="sessions" type="empty">
     <property name="Failsafe" type="empty">
       <property name="IsFailsafe" type="bool" value="true"/>
-      <property name="Count" type="int" value="5"/>
+      <property name="Count" type="int" value="6"/>
       <property name="Client0_Command" type="array">
         <value type="string" value="eswm1"/>
       </property>
@@ -40,6 +40,11 @@
       </property>
       <property name="Client5_Priority" type="int" value="40"/>
       <property name="Client5_PerScreen" type="bool" value="false"/>
+      <property name="Client6_Command" type="array">
+        <value type="string" value="expidus-inputd"/>
+      </property>
+      <property name="Client6_Priority" type="int" value="45"/>
+      <property name="Client6_PerScreen" type="bool" value="false"/>
     </property>
   </property>
 </channel>
