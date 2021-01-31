@@ -767,6 +767,7 @@ essm_manager_load_settings (EssmManager   *manager,
     {
       gchar *errorstr = NULL;
 
+      essm_verbose ("Loading failsafe session\n");
       if (!essm_manager_load_failsafe (manager, channel, &errorstr))
         {
           /* FIXME: migrate this into the splash screen somehow so the
