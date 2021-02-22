@@ -46,6 +46,11 @@
       </property>
       <property name="Client6_Priority" type="int" value="45"/>
       <property name="Client6_PerScreen" type="bool" value="false"/>
+      <property name="Client7_Command" type="array">
+        <value type="string" value="/usr/libexec/caribou"/>
+      </property>
+      <property name="Client7_Priority" type="int" value="50"/>
+      <property name="Client7_PerScreen" type="bool" value="false"/>
     </property>
   </property>
 </channel>
